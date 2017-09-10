@@ -1,0 +1,2 @@
+model_checkpoint_path: "damagedproperties.ckpt"
+all_model_checkpoint_paths: "damagedproperties.ckpt"
