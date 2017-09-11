@@ -1,33 +1,27 @@
 import tensorflow as tf
 
-n_output = 1
 
 def neural_network_model(data, n_inputs, n_nodes):
+    n_output = 1
+
     hidden_1_layer = {'weights': tf.Variable(tf.random_normal([n_inputs, n_nodes])),
                       'biases': tf.Variable(tf.random_normal([n_nodes]))}
-
     hidden_2_layer = {'weights': tf.Variable(tf.random_normal([n_nodes, n_nodes])),
                       'biases': tf.Variable(tf.random_normal([n_nodes]))}
-
     hidden_3_layer = {'weights': tf.Variable(tf.random_normal([n_nodes, n_nodes])),
                       'biases': tf.Variable(tf.random_normal([n_nodes]))}
-
     output_layer = {'weights': tf.Variable(tf.random_normal([n_nodes, n_output])),
                     'biases': tf.Variable(tf.random_normal([n_output])), }
 
     l1 = tf.add(tf.matmul(data, hidden_1_layer['weights']), hidden_1_layer['biases'])
     l1 = tf.nn.relu(l1)
-
     l2 = tf.add(tf.matmul(l1, hidden_2_layer['weights']), hidden_2_layer['biases'])
     l2 = tf.nn.relu(l2)
-
     l3 = tf.add(tf.matmul(l2, hidden_3_layer['weights']), hidden_3_layer['biases'])
-    l3 = tf.nn.relu(l3)
+    l3 = tf.nn.sigmoid(l3)
 
     output = tf.matmul(l3, output_layer['weights']) + output_layer['biases']
-
     return output
-
 
 def use_neural_network(x, model_name):
     tf.reset_default_graph()
@@ -48,11 +42,9 @@ def use_neural_network(x, model_name):
         result = prediction.eval(feed_dict={x_placeholder: x_input})
         return result[0][0]
 
-
-
-CASUALTIES_MODEL = "casualties.ckpt"
-DAMAGED_HOUSES_MODEL = "damagedhouses.ckpt"
-DAMAGED_PROPERTIES_MODEL = "damagedproperties.ckpt"
+CASUALTIES_MODEL = "casualties_e_500.ckpt"
+DAMAGED_HOUSES_MODEL = "damagedhouses_e_500.ckpt"
+DAMAGED_PROPERTIES_MODEL = "damagedproperties_e_500.ckpt"
 
 #input for casualties
 DURATION = 4.0
@@ -71,7 +63,6 @@ HMD = 12955.0
 CASUALTY = 48
 DAMAGED_HOUSES = 1283
 DAMAGED_PROPERTIES = 8392000
-
 
 def predict_casualties():
     CASUALTIES_x = [[DURATION, WIND, INTENSITY, SIGNAL, DR, FLR]]
@@ -118,7 +109,6 @@ def predict_damaged_properties():
     print("Actual damaged properties: " + str(DAMAGED_PROPERTIES))
     print("Predicted damaged properties: " + str(result))
 
-
 predict_casualties()
 predict_damaged_houses()
-#predict_damaged_properties()
+predict_damaged_properties()
