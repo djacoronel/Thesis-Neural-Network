@@ -1,0 +1,2 @@
+model_checkpoint_path: "casualties_fixed_mape.ckpt"
+all_model_checkpoint_paths: "casualties_fixed_mape.ckpt"
