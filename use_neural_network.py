@@ -1,26 +1,9 @@
 import tensorflow as tf
 
-def use_neural_network(x, model_name):
-    tf.reset_default_graph()
 
-    n_inputs = len(x[0])
-
-    x_placeholder = tf.placeholder('float')
-
-    from neural_network_model import NeuralNetworkModel
-    prediction = NeuralNetworkModel.use_model(x, n_inputs)
-
-    with tf.Session() as sess:
-        sess.run(tf.global_variables_initializer())
-        saver = tf.train.Saver()
-        saver.restore(sess, model_name)
-
-        result = prediction.eval(feed_dict={x_placeholder: x})
-        return result[0][0]
-
-CASUALTIES_MODEL = "models/casualties_e_500.ckpt"
-DAMAGED_HOUSES_MODEL = "models/damagedhouses_e_500.ckpt"
-DAMAGED_PROPERTIES_MODEL = "models/damagedproperties_e_500.ckpt"
+CASUALTIES_MODEL = "models/casualties_test.ckpt"
+DAMAGED_HOUSES_MODEL = "models/damagedhouses_test.ckpt"
+DAMAGED_PROPERTIES_MODEL = "models/damagedproperties_test.ckpt"
 
 DURATION = 4.0
 WIND = 105.0
@@ -38,6 +21,24 @@ HMD = 12955.0
 CASUALTY = 48
 DAMAGED_HOUSES = 1283
 DAMAGED_PROPERTIES = 8392000
+
+
+def use_neural_network(x, model_name):
+    n_inputs = len(x[0])
+
+    x_placeholder = tf.placeholder('float')
+
+    from neural_network_model import NeuralNetworkModel
+    model = NeuralNetworkModel(x, n_inputs)
+    prediction = model.use_model()
+
+    with tf.Session() as sess:
+        sess.run(tf.global_variables_initializer())
+        saver = tf.train.Saver()
+        saver.restore(sess, model_name)
+
+        result = prediction.eval(feed_dict={x_placeholder: x})
+        return result[0][0]
 
 
 def predict_casualties():

@@ -78,6 +78,7 @@ class TrainingSettings:
 
                 saver.save(sess, self.model_name)
 
+                #Accuracy is based on the results of last batch
                 actual_value = train_y
                 estimated_value = p
 

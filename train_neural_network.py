@@ -33,20 +33,19 @@ model_name_2 = "models/damagedhouses_test.ckpt"
 model_name_3 = "models/damagedproperties_test.ckpt"
 
 print("\n\n***********CASUALTIES**************")
-training_options = train(model_name_1, feature_list_1, col_y_1)
-training_options.learning_rate = 0.01
-training_options.n_epoch = 1
-training_options.load_previous_training = True
-training_options.train_neural_network()
+training = train(model_name_1, feature_list_1, col_y_1)
+training.learning_rate = 0.01
+training.n_epoch = 1
+training.train_neural_network()
 
 print("\n\n***********DAMAGED HOUSES**************")
-training_options = train(model_name_2, feature_list_2, col_y_2)
-training_options.learning_rate = 0.0001
-training_options.n_epoch = 1
-training_options.train_neural_network()
+training = train(model_name_2, feature_list_2, col_y_2)
+training.learning_rate = 0.0001
+training.n_epoch = 1
+training.train_neural_network()
 
 print("\n\n***********DAMAGED PROPERTIES**************")
-training_options = train(model_name_3, feature_list_3, col_y_3)
-training_options.learning_rate = 0.01
-training_options.n_epoch = 12
-training_options.train_neural_network()
+training = train(model_name_3, feature_list_3, col_y_3)
+training.learning_rate = 0.01
+training.n_epoch = 12
+training.train_neural_network()
