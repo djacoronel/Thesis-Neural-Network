@@ -10,6 +10,7 @@ training_epochs = 100
 
 display_step = 1
 
+
 def neural_network_model(data, n_inputs):
     n_nodes = n_inputs * 3
     n_output = 1
@@ -33,6 +34,7 @@ def neural_network_model(data, n_inputs):
     output = tf.matmul(l3, output_layer['weights']) + output_layer['biases']
     return output
 
+
 def next_batch(features, col_y, sess):
     batch_x = []
     batch_y = []
@@ -42,6 +44,7 @@ def next_batch(features, col_y, sess):
         batch_y.append(y)
     return batch_x, batch_y
 
+
 def compute_mse_mape(actual_value, estimated_value):
     sse = 0
     spe = 0
@@ -50,7 +53,7 @@ def compute_mse_mape(actual_value, estimated_value):
         print("actual value:", actual_value[i],
               "estimated value:", estimated_value[i][0])
         sse += (actual_value[i] - estimated_value[i][0]) ** 2
-        if (actual_value[i] != 0):
+        if actual_value[i] != 0:
             spe += abs((actual_value[i] - estimated_value[i][0]) / actual_value[i])
 
     mse = sse / batch_size
@@ -59,6 +62,7 @@ def compute_mse_mape(actual_value, estimated_value):
     print("MSE:" + str(mse))
     print("MAPE:" + str(mape))
     print("[*]============================")
+
 
 def train_neural_network(model_name, feature_list, col_y):
 
@@ -79,7 +83,7 @@ def train_neural_network(model_name, feature_list, col_y):
         threads = tf.train.start_queue_runners(coord=coord)
 
         for epoch in range(training_epochs):
-            if (load_previous_training and epoch==0):
+            if load_previous_training and epoch == 0:
                 saver.restore(sess, model_name)
 
             epoch_loss = 0
@@ -124,12 +128,12 @@ record_defaults = [[1], [""], [""], [""], [1.0],
                    [1.0], [1.0], [1.0], [1.0], [1.0],
                    [1.0]]
 
-ROW_NUMBER,NAME,REGION,PROVINCE,YEAR, \
-TYPE,DURATION,WIND,INTENSITY,SIGNAL, \
-POP,DEN,AI,PR,DR, \
-SR,FLR,HP,HS, HMA, \
+ROW_NUMBER, NAME, REGION, PROVINCE, YEAR, \
+TYPE, DURATION, WIND, INTENSITY, SIGNAL, \
+POP, DEN, AI, PR, DR, \
+SR, FLR, HP, HS, HMA, \
 HMB, HMC, HMD,\
-CASUALTIES,DAMAGED_HOUSES,DAMAGED_PROPERTIES = tf.decode_csv(value, record_defaults=record_defaults)
+CASUALTIES, DAMAGED_HOUSES, DAMAGED_PROPERTIES = tf.decode_csv(value, record_defaults=record_defaults)
 
 feature_list_1 = [DURATION, WIND, INTENSITY, SIGNAL, DR, FLR]
 col_y_1 = CASUALTIES
@@ -140,7 +144,7 @@ col_y_2 = DAMAGED_HOUSES
 feature_list_3 = [WIND, INTENSITY, SIGNAL, DEN, DR, FLR, HS, HMB, HMD]
 col_y_3 = DAMAGED_PROPERTIES
 
-model_name_1 = "models/casualties_fixed_mape.ckpt"
+model_name_1 = "models/casualties_e_500.ckpt"
 model_name_2 = "models/damagedhouses_e_500.ckpt"
 model_name_3 = "models/damagedproperties_e_500.ckpt"
 

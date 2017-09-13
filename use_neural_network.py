@@ -110,5 +110,5 @@ def predict_damaged_properties():
     print("Predicted damaged properties: " + str(result))
 
 predict_casualties()
-#predict_damaged_houses()
-#predict_damaged_properties()
+predict_damaged_houses()
+predict_damaged_properties()
