@@ -46,6 +46,8 @@ def use_neural_network(x, model_name):
 def predict_casualties():
     CASUALTIES_x = [[DURATION, WIND, INTENSITY, SIGNAL, DR, FLR]]
     result = use_neural_network(CASUALTIES_x, CASUALTIES_MODEL)
+    if result < 0:
+        result = 0
 
     print("\n*****PREDICT CASUALTIES*****")
     print("DURATION: " + str(DURATION))
@@ -60,6 +62,8 @@ def predict_casualties():
 def predict_damaged_houses():
     DAMAGED_HOUSES_x = [[DURATION, WIND, INTENSITY, SIGNAL, DEN, FLR, HMB, HMD]]
     result = use_neural_network(DAMAGED_HOUSES_x, DAMAGED_HOUSES_MODEL)
+    if result < 0:
+        result = 0
 
     print("\n*****PREDICT DAMAGED HOUSES*****")
     print("DURATION: " + str(DURATION))
@@ -77,6 +81,8 @@ def predict_damaged_houses():
 def predict_damaged_properties():
     DAMAGED_PROPERTIES_x = [[WIND, INTENSITY, SIGNAL, DEN, DR, FLR, HS, HMB, HMD]]
     result = use_neural_network(DAMAGED_PROPERTIES_x, DAMAGED_PROPERTIES_MODEL)
+    if result < 0:
+        result = 0
 
     print("\n*****PREDICT DAMAGED PROPERTIES*****")
     print("WIND: " + str(WIND))
