@@ -8,7 +8,7 @@ class NeuralNetworkModel():
         self.n_input = n_input
 
     def use_model(self):
-        n_nodes = self.n_input * 3
+        n_nodes = self.n_input
         n_output = 1
 
         hidden_1_layer = {'weights': tf.Variable(tf.random_normal([self.n_input, n_nodes])),
@@ -24,7 +24,7 @@ class NeuralNetworkModel():
         l1 = tf.nn.relu(l1)
         l2 = tf.add(tf.matmul(l1, hidden_2_layer['weights']), hidden_2_layer['biases'])
         l2 = tf.nn.relu(l2)
-        l3 = tf.add(tf.matmul(l2, hidden_3_layer['weights']), hidden_3_layer['biases'])
+        l3 = tf.add(tf.matmul(l1, hidden_3_layer['weights']), hidden_3_layer['biases'])
         l3 = tf.nn.sigmoid(l3)
 
         output = tf.matmul(l3, output_layer['weights']) + output_layer['biases']

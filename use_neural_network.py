@@ -24,6 +24,8 @@ DAMAGED_PROPERTIES = 8392000
 
 
 def use_neural_network(x, model_name):
+    tf.reset_default_graph()
+
     n_inputs = len(x[0])
 
     x_placeholder = tf.placeholder('float')
