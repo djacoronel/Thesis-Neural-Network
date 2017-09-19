@@ -6,12 +6,15 @@ model_name_3 = "models/damagedproperties_test.ckpt"
 
 print("\n\n***********CASUALTIES**************")
 training = train(model_name_1)
+training.n_epoch = 5
 training.train_neural_network()
 
 print("\n\n***********DAMAGED HOUSES**************")
 training = train(model_name_2)
+training.n_epoch = 5
 training.train_neural_network()
 
 print("\n\n***********DAMAGED PROPERTIES**************")
 training = train(model_name_3)
+training.n_epoch = 5
 training.train_neural_network()

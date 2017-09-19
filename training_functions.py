@@ -15,6 +15,16 @@ class TrainingSettings:
 
     def __init__(self, model_name):
         self.model_name = model_name
+        self.log_file_name = model_name[0:-5] + "_log.txt"
+
+
+    def log_training_settings(self, n_nodes_per_layer, n_hidden_layers):
+        output = "Number of hidden layers: " + str(n_hidden_layers) + \
+            "\nNodes per layer: " + str(n_nodes_per_layer) + \
+            "\nLearning rate: " + str(self.learning_rate) + \
+            "\nNumber of epoch: " + str(self.n_epoch) + \
+            "\nBatch size: " + str(self.batch_size)
+        self.log_to_file(output)
 
     def get_features(self, model_name):
         filename_queue = tf.train.string_input_producer(["dataset.csv"])
@@ -58,23 +68,57 @@ class TrainingSettings:
             batch_y.append(y)
         return batch_x, batch_y
 
+
+    def log_actual_estimated_values(self, actual_value, estimated_value):
+        output  = "[*]----------------------------" + "\n"
+        for i in range(self.batch_size):
+            output += "actual value: " +  str(actual_value[i]) + \
+                    " estimated value: " + str(estimated_value[i][0]) + "\n"
+        output += "[*]----------------------------"
+
+        self.log_to_file(output)
+        print(output)
+
+
+    def log_mse_mape(self, mse, mape):
+        output  = "MSE: " + str(mse) + "\n" \
+                + "MAPE: " + str(mape) + "\n" \
+                + "[*]============================"
+
+        self.log_to_file(output)
+        print(output)
+
+    def log_test_cost_difference(self, testing_cost, cost_difference):
+        print("Testing cost = ", testing_cost)
+        print("Absolute mean square loss difference:", cost_difference)
+
+
     def compute_mse_mape(self, actual_value, estimated_value):
         sse = 0
         spe = 0
-        print("[*]----------------------------")
-        for i in range(self.batch_size):
-            print("actual value:", actual_value[i],
-                  "estimated value:", estimated_value[i][0])
-            sse += (actual_value[i] - estimated_value[i][0]) ** 2
+        n_spe_included = 0
+        for i in range(len(actual_value)):
+            error = (actual_value[i] - estimated_value[i][0])
+            sqerror = error**2
+            sse += sqerror
+
             if actual_value[i] != 0:
                 spe += abs((actual_value[i] - estimated_value[i][0]) / actual_value[i])
+                n_spe_included += 1
 
-        mse = sse / self.batch_size
-        mape = (100 / self.batch_size) * spe
+        mse = sse / len(actual_value)
+        mape = (spe / n_spe_included) * 100
 
-        print("MSE:" + str(mse))
-        print("MAPE:" + str(mape))
-        print("[*]============================")
+        return mse, mape
+
+    def log_epoch_cost(self, epoch, epoch_loss):
+        output = "Epoch: " + '%04d' % (epoch + 1) + " cost = " + "{:.9f}".format(epoch_loss)
+        self.log_to_file(output)
+        print(output)
+
+    def log_to_file(self, line):
+        with open(self.log_file_name, 'a') as f:
+            f.write(line + '\n')
 
     def train_neural_network(self):
         feature_list, col_y = self.get_features(self.model_name)
@@ -87,6 +131,8 @@ class TrainingSettings:
         from neural_network_model import NeuralNetworkModel
         model = NeuralNetworkModel(x, n_inputs)
         prediction = model.use_model()
+
+        self.log_training_settings(model.n_nodes, model.n_hidden_layers)
 
         cost = tf.reduce_mean(tf.square(prediction - y))
         optimizer = tf.train.AdamOptimizer(self.learning_rate).minimize(cost)
@@ -117,9 +163,10 @@ class TrainingSettings:
 
                 # Display logs per epoch step
                 if epoch % self.display_step == 0:
-                    print("Epoch:", '%04d' % (epoch + 1), "cost=",
-                          "{:.9f}".format(epoch_loss))
-                    self.compute_mse_mape(actual_value, estimated_value)
+                    self.log_epoch_cost(epoch,epoch_loss)
+                    self.log_actual_estimated_values(actual_value, estimated_value)
+                    mse, mape = self.compute_mse_mape(actual_value, estimated_value)
+                    self.log_mse_mape(mse, mape)
 
             coord.request_stop()
             coord.join(threads)
@@ -129,9 +176,13 @@ class TrainingSettings:
             testing_cost = sess.run(cost, feed_dict={x: test_x, y: test_y})
             predicted_values = sess.run(prediction, feed_dict={x: test_x})
 
-            print("***Test Batch Accuracy***")
-            self.compute_mse_mape(test_y, predicted_values)
-            print("Testing cost=", testing_cost)
-            print("Absolute mean square loss difference:", abs(epoch_loss - testing_cost))
+            cost_difference = abs(epoch_loss - testing_cost)
+
+            self.log_to_file("***Test Batch Accuracy***")
+            mse, mape = self.compute_mse_mape(test_y, predicted_values)
+            self.log_actual_estimated_values(test_y,predicted_values)
+            self.log_mse_mape(mse, mape)
+            self.log_test_cost_difference(testing_cost, cost_difference)
 
         tf.reset_default_graph()
+
