@@ -2,7 +2,7 @@ import tensorflow as tf
 
 
 class NeuralNetworkModel():
-    n_hidden_layers = 3
+    n_hidden_layers = 1
     n_nodes = 1
 
     def __init__(self, data, n_input):
@@ -30,7 +30,8 @@ class NeuralNetworkModel():
         l0 = l1
         for n in range(self.n_hidden_layers):
             l0 = tf.add(tf.matmul(l0, hidden_layers[n]['weights']), hidden_layers[n]['biases'])
-            l0 = tf.nn.relu(l0)
+            # l0 = tf.nn.relu(l0)
+            l0 = tf.nn.sigmoid(l0)
 
         output = tf.matmul(l0, output_layer['weights']) + output_layer['biases']
         return output
