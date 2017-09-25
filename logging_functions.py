@@ -28,6 +28,13 @@ class LoggingFunctions:
         self.log_to_file(output)
         print(output)
 
+    def log_accuracy_rmse(self, accuracy, mse):
+        output = "Model Accuracy: " + "{:.2f}".format(accuracy) + "%\n" \
+                + "RMSE: " + str(math.sqrt(mse))
+
+        self.log_to_file(output)
+        print(output)
+
     def log_actual_estimated_values(self, actual_value, estimated_value):
         output = "[*]----------------------------" + "\n"
         for i in range(len(actual_value)):
