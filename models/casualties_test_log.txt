@@ -1,1608 +1,3308 @@
 models/casualties_test
 Number of hidden layers: 1
 Nodes per layer: 5
-Learning rate: 0.001
-Number of epoch: 100
-Batch size: 10
-Epoch: 0001 cost = 353342.617083056
-[*]----------------------------
-actual value: 0.0 estimated value: -0.980459
-actual value: 0.0 estimated value: -0.980459
-actual value: 0.0 estimated value: -0.980459
-actual value: 0.0 estimated value: -0.980459
-actual value: 0.0 estimated value: -0.980459
-actual value: 0.0 estimated value: -0.980459
-actual value: 4.0 estimated value: -0.980459
-actual value: 15.0 estimated value: -0.980459
-actual value: 1.0 estimated value: -0.980459
-actual value: 0.0 estimated value: -0.980459
-[*]----------------------------
-RMSE: 5.392878331669312
-MAPE: 143.031259378
-[*]============================
-Epoch: 0002 cost = 353259.201332575
-[*]----------------------------
-actual value: 1.0 estimated value: -0.865881
-actual value: 0.0 estimated value: -0.865881
-actual value: 0.0 estimated value: -0.865881
-actual value: 0.0 estimated value: -0.865881
-actual value: 2.0 estimated value: -0.865881
-actual value: 2.0 estimated value: -0.865881
-actual value: 2.0 estimated value: -0.865881
-actual value: 0.0 estimated value: -0.865881
-actual value: 0.0 estimated value: -0.865881
-actual value: 8.0 estimated value: -0.865881
-[*]----------------------------
-RMSE: 3.323761858778515
-MAPE: 145.458753109
-[*]============================
-Epoch: 0003 cost = 349150.539330684
-[*]----------------------------
-actual value: 0.0 estimated value: -0.747133
-actual value: 0.0 estimated value: -0.747133
-actual value: 0.0 estimated value: -0.747133
-actual value: 450.0 estimated value: -0.747133
-actual value: 0.0 estimated value: -0.747133
-actual value: 1.0 estimated value: -0.747133
-actual value: 1.0 estimated value: -0.747133
-actual value: 0.0 estimated value: -0.747133
-actual value: 0.0 estimated value: -0.747133
-actual value: 0.0 estimated value: -0.747133
-[*]----------------------------
-RMSE: 142.54227051164438
-MAPE: 149.864236514
-[*]============================
-Epoch: 0004 cost = 352446.238054030
-[*]----------------------------
-actual value: 0.0 estimated value: -0.621422
-actual value: 2.0 estimated value: -0.621422
-actual value: 0.0 estimated value: -0.621422
-actual value: 11.0 estimated value: -0.621422
-actual value: 1.0 estimated value: -0.621422
-actual value: 2.0 estimated value: -0.621422
-actual value: 2.0 estimated value: -0.621422
-actual value: 0.0 estimated value: -0.621422
-actual value: 0.0 estimated value: -0.621422
-actual value: 0.0 estimated value: -0.621422
-[*]----------------------------
-RMSE: 4.002909377990943
-MAPE: 132.200946808
-[*]============================
-Epoch: 0005 cost = 353449.687266686
-[*]----------------------------
-actual value: 0.0 estimated value: -0.49386
-actual value: 0.0 estimated value: -0.49386
-actual value: 5.0 estimated value: -0.49386
-actual value: 1.0 estimated value: -0.49386
-actual value: 0.0 estimated value: -0.49386
-actual value: 0.0 estimated value: -0.49386
-actual value: 3.0 estimated value: -0.49386
-actual value: 2.0 estimated value: -0.49386
-actual value: 0.0 estimated value: -0.49386
-actual value: 5.0 estimated value: -0.49386
-[*]----------------------------
-RMSE: 2.8677955295040984
-MAPE: 122.059099674
-[*]============================
-Epoch: 0006 cost = 344880.845646748
-[*]----------------------------
-actual value: 8.0 estimated value: -0.376758
-actual value: 1.0 estimated value: -0.376758
-actual value: 0.0 estimated value: -0.376758
-actual value: 0.0 estimated value: -0.376758
-actual value: 2.0 estimated value: -0.376758
-actual value: 0.0 estimated value: -0.376758
-actual value: 1567.0 estimated value: -0.376758
-actual value: 0.0 estimated value: -0.376758
-actual value: 0.0 estimated value: -0.376758
-actual value: 0.0 estimated value: -0.376758
-[*]----------------------------
-RMSE: 495.65596072800196
-MAPE: 115.311792493
-[*]============================
-Epoch: 0007 cost = 342102.696402347
-[*]----------------------------
-actual value: 0.0 estimated value: -0.264066
-actual value: 1.0 estimated value: -0.264066
-actual value: 0.0 estimated value: -0.264066
-actual value: 0.0 estimated value: -0.264066
-actual value: 2.0 estimated value: -0.264066
-actual value: 0.0 estimated value: -0.264066
-actual value: 0.0 estimated value: -0.264066
-actual value: 0.0 estimated value: -0.264066
-actual value: 0.0 estimated value: -0.264066
-actual value: 0.0 estimated value: -0.264066
-[*]----------------------------
-RMSE: 0.8533288236955361
-MAPE: 119.804924726
-[*]============================
-Epoch: 0008 cost = 312371.717231696
-[*]----------------------------
-actual value: 0.0 estimated value: -0.168618
-actual value: 0.0 estimated value: -0.168618
-actual value: 0.0 estimated value: -0.168618
-actual value: 0.0 estimated value: -0.168618
-actual value: 9.0 estimated value: -0.168618
-actual value: 0.0 estimated value: -0.168618
-actual value: 3.0 estimated value: -0.168618
-actual value: 0.0 estimated value: -0.168618
-actual value: 6.0 estimated value: -0.168618
-actual value: 0.0 estimated value: -0.168618
-[*]----------------------------
-RMSE: 3.6380568436913228
-MAPE: 103.434816996
-[*]============================
-Epoch: 0009 cost = 68421.141330529
-[*]----------------------------
-actual value: 2.0 estimated value: -0.0650421
-actual value: 0.0 estimated value: -0.0650421
-actual value: 5.0 estimated value: -0.0650421
-actual value: 0.0 estimated value: -0.0650421
-actual value: 4.0 estimated value: -0.0650421
-actual value: 2.0 estimated value: -0.0650421
-actual value: 201.0 estimated value: -0.0650421
-actual value: 0.0 estimated value: -0.0650421
-actual value: 0.0 estimated value: -0.0650421
-actual value: 0.0 estimated value: -0.0650421
-[*]----------------------------
-RMSE: 63.62223100580665
-MAPE: 101.892690659
-[*]============================
-Epoch: 0010 cost = 351743.183183304
-[*]----------------------------
-actual value: 10.0 estimated value: 0.0623245
-actual value: 0.0 estimated value: 0.0623245
-actual value: 1.0 estimated value: 0.0623245
-actual value: 0.0 estimated value: 0.0623245
-actual value: 4.0 estimated value: 0.0623245
-actual value: 0.0 estimated value: 0.0623245
-actual value: 1.0 estimated value: 0.0623245
-actual value: 0.0 estimated value: 0.0623245
-actual value: 0.0 estimated value: 0.0623245
-actual value: 43.0 estimated value: 0.0623245
-[*]----------------------------
-RMSE: 13.998873346236058
-MAPE: 97.041759491
-[*]============================
-Epoch: 0011 cost = 353160.018182124
-[*]----------------------------
-actual value: 4.0 estimated value: 0.191604
-actual value: 6.0 estimated value: 0.191604
-actual value: 10.0 estimated value: 0.191604
-actual value: 0.0 estimated value: 0.191604
-actual value: 0.0 estimated value: 0.191604
-actual value: 0.0 estimated value: 0.191604
-actual value: 0.0 estimated value: 0.191604
-actual value: 5.0 estimated value: 0.191604
-actual value: 0.0 estimated value: 0.191604
-actual value: 0.0 estimated value: 0.191604
-[*]----------------------------
-RMSE: 4.09617985245958
-MAPE: 96.5670868754
-[*]============================
-Epoch: 0012 cost = 353274.256210543
-[*]----------------------------
-actual value: 1.0 estimated value: 0.317556
-actual value: 0.0 estimated value: 0.317556
-actual value: 130.0 estimated value: 0.317556
-actual value: 14.0 estimated value: 0.317556
-actual value: 0.0 estimated value: 0.317556
-actual value: 1.0 estimated value: 0.317556
-actual value: 1.0 estimated value: 0.317556
-actual value: 1.0 estimated value: 0.317556
-actual value: 0.0 estimated value: 0.317556
-actual value: 0.0 estimated value: 0.317556
-[*]----------------------------
-RMSE: 41.23956018636077
-MAPE: 78.4108599027
-[*]============================
-Epoch: 0013 cost = 348951.799163973
-[*]----------------------------
-actual value: 11.0 estimated value: 0.442113
-actual value: 4.0 estimated value: 0.442113
-actual value: 0.0 estimated value: 0.442113
-actual value: 127.0 estimated value: 0.442113
-actual value: 5.0 estimated value: 0.442113
-actual value: 4.0 estimated value: 0.442113
-actual value: 0.0 estimated value: 0.442113
-actual value: 0.0 estimated value: 0.442113
-actual value: 0.0 estimated value: 0.442113
-actual value: 0.0 estimated value: 0.442113
-[*]----------------------------
-RMSE: 40.21869687394871
-MAPE: 92.9369449615
-[*]============================
-Epoch: 0014 cost = 352483.829647556
-[*]----------------------------
-actual value: 1.0 estimated value: 0.57007
-actual value: 0.0 estimated value: 0.57007
-actual value: 0.0 estimated value: 0.57007
-actual value: 9.0 estimated value: 0.57007
-actual value: 1.0 estimated value: 0.57007
-actual value: 28.0 estimated value: 0.57007
-actual value: 1.0 estimated value: 0.57007
-actual value: 1.0 estimated value: 0.57007
-actual value: 0.0 estimated value: 0.57007
-actual value: 0.0 estimated value: 0.57007
-[*]----------------------------
-RMSE: 9.085725283204889
-MAPE: 60.6003026168
-[*]============================
-Epoch: 0015 cost = 353364.777785833
-[*]----------------------------
-actual value: 0.0 estimated value: 0.69668
-actual value: 0.0 estimated value: 0.69668
-actual value: 3.0 estimated value: 0.69668
-actual value: 0.0 estimated value: 0.69668
-actual value: 0.0 estimated value: 0.69668
-actual value: 99.0 estimated value: 0.69668
-actual value: 0.0 estimated value: 0.69668
-actual value: 4.0 estimated value: 0.69668
-actual value: 24.0 estimated value: 0.69668
-actual value: 0.0 estimated value: 0.69668
-[*]----------------------------
-RMSE: 31.97767532296142
-MAPE: 88.9384508133
-[*]============================
-Epoch: 0016 cost = 343274.285058828
-[*]----------------------------
-actual value: 0.0 estimated value: 0.81147
-actual value: 0.0 estimated value: 0.81147
-actual value: 2.0 estimated value: 0.81147
-actual value: 1.0 estimated value: 0.81147
-actual value: 0.0 estimated value: 0.81147
-actual value: 0.0 estimated value: 0.81147
-actual value: 3.0 estimated value: 0.81147
-actual value: 0.0 estimated value: 0.81147
-actual value: 0.0 estimated value: 0.81147
-actual value: 0.0 estimated value: 0.81147
-[*]----------------------------
-RMSE: 1.0414987638783906
-MAPE: 50.4101494948
-[*]============================
-Epoch: 0017 cost = 343545.692073507
-[*]----------------------------
-actual value: 0.0 estimated value: 0.920215
-actual value: 3.0 estimated value: 0.920215
-actual value: 0.0 estimated value: 0.920215
-actual value: 2.0 estimated value: 0.920215
-actual value: 0.0 estimated value: 0.920215
-actual value: 2.0 estimated value: 0.920215
-actual value: 0.0 estimated value: 0.920215
-actual value: 7.0 estimated value: 0.920215
-actual value: 0.0 estimated value: 0.920215
-actual value: 9.0 estimated value: 0.920215
-[*]----------------------------
-RMSE: 3.363600303280229
-MAPE: 70.7868254185
-[*]============================
-Epoch: 0018 cost = 312243.190734291
-[*]----------------------------
-actual value: 2.0 estimated value: 1.00361
-actual value: 3.0 estimated value: 1.00361
-actual value: 0.0 estimated value: 1.00361
-actual value: 0.0 estimated value: 1.00361
-actual value: 5.0 estimated value: 1.00361
-actual value: 2.0 estimated value: 1.00361
-actual value: 0.0 estimated value: 1.00361
-actual value: 14.0 estimated value: 1.00361
-actual value: 4.0 estimated value: 1.00361
-actual value: 0.0 estimated value: 1.00361
-[*]----------------------------
-RMSE: 4.515040416649453
-MAPE: 68.9758419991
-[*]============================
-Epoch: 0019 cost = 68373.712621994
-[*]----------------------------
-actual value: 10.0 estimated value: 1.11553
-actual value: 5.0 estimated value: 1.11553
-actual value: 0.0 estimated value: 1.11553
-actual value: 0.0 estimated value: 1.11553
-actual value: 0.0 estimated value: 1.11553
-actual value: 41.0 estimated value: 1.11553
-actual value: 29.0 estimated value: 1.11553
-actual value: 0.0 estimated value: 1.11553
-actual value: 0.0 estimated value: 1.11553
-actual value: 0.0 estimated value: 1.11553
-[*]----------------------------
-RMSE: 15.715609040418135
-MAPE: 89.9916365743
-[*]============================
-Epoch: 0020 cost = 351642.056528341
-[*]----------------------------
-actual value: 1.0 estimated value: 1.24073
-actual value: 0.0 estimated value: 1.24073
-actual value: 0.0 estimated value: 1.24073
-actual value: 2.0 estimated value: 1.24073
-actual value: 7.0 estimated value: 1.24073
-actual value: 1.0 estimated value: 1.24073
-actual value: 3.0 estimated value: 1.24073
-actual value: 5.0 estimated value: 1.24073
-actual value: 14.0 estimated value: 1.24073
-actual value: 0.0 estimated value: 1.24073
-[*]----------------------------
-RMSE: 4.674461643607545
-MAPE: 56.1928868294
-[*]============================
-Epoch: 0021 cost = 353165.545787719
-[*]----------------------------
-actual value: 0.0 estimated value: 1.36659
-actual value: 0.0 estimated value: 1.36659
-actual value: 0.0 estimated value: 1.36659
-actual value: 0.0 estimated value: 1.36659
-actual value: 3.0 estimated value: 1.36659
-actual value: 0.0 estimated value: 1.36659
-actual value: 0.0 estimated value: 1.36659
-actual value: 0.0 estimated value: 1.36659
-actual value: 4.0 estimated value: 1.36659
-actual value: 0.0 estimated value: 1.36659
-[*]----------------------------
-RMSE: 1.5666333437776803
-MAPE: 60.1411730051
-[*]============================
-Epoch: 0022 cost = 353182.208893136
-[*]----------------------------
-actual value: 39.0 estimated value: 1.48733
-actual value: 2.0 estimated value: 1.48733
-actual value: 0.0 estimated value: 1.48733
-actual value: 0.0 estimated value: 1.48733
-actual value: 8.0 estimated value: 1.48733
-actual value: 0.0 estimated value: 1.48733
-actual value: 28.0 estimated value: 1.48733
-actual value: 0.0 estimated value: 1.48733
-actual value: 0.0 estimated value: 1.48733
-actual value: 2.0 estimated value: 1.48733
-[*]----------------------------
-RMSE: 14.710960798395183
-MAPE: 64.7100102901
-[*]============================
-Epoch: 0023 cost = 348874.966511613
-[*]----------------------------
-actual value: 16.0 estimated value: 1.60975
-actual value: 7.0 estimated value: 1.60975
-actual value: 0.0 estimated value: 1.60975
-actual value: 0.0 estimated value: 1.60975
-actual value: 2.0 estimated value: 1.60975
-actual value: 0.0 estimated value: 1.60975
-actual value: 4.0 estimated value: 1.60975
-actual value: 15.0 estimated value: 1.60975
-actual value: 0.0 estimated value: 1.60975
-actual value: 0.0 estimated value: 1.60975
-[*]----------------------------
-RMSE: 6.589801228753674
-MAPE: 67.0958805084
-[*]============================
-Epoch: 0024 cost = 352414.790457870
-[*]----------------------------
-actual value: 0.0 estimated value: 1.73442
-actual value: 13.0 estimated value: 1.73442
-actual value: 0.0 estimated value: 1.73442
-actual value: 0.0 estimated value: 1.73442
-actual value: 0.0 estimated value: 1.73442
-actual value: 0.0 estimated value: 1.73442
-actual value: 1.0 estimated value: 1.73442
-actual value: 0.0 estimated value: 1.73442
-actual value: 2.0 estimated value: 1.73442
-actual value: 0.0 estimated value: 1.73442
-[*]----------------------------
-RMSE: 3.8546164643777137
-MAPE: 57.7930967013
-[*]============================
-Epoch: 0025 cost = 353278.758551672
-[*]----------------------------
-actual value: 0.0 estimated value: 1.85577
-actual value: 8.0 estimated value: 1.85577
-actual value: 0.0 estimated value: 1.85577
-actual value: 0.0 estimated value: 1.85577
-actual value: 1.0 estimated value: 1.85577
-actual value: 0.0 estimated value: 1.85577
-actual value: 5.0 estimated value: 1.85577
-actual value: 0.0 estimated value: 1.85577
-actual value: 0.0 estimated value: 1.85577
-actual value: 8.0 estimated value: 1.85577
-[*]----------------------------
-RMSE: 3.267796186798045
-MAPE: 75.516885519
-[*]============================
-Epoch: 0026 cost = 343197.995800332
-[*]----------------------------
-actual value: 0.0 estimated value: 1.96614
-actual value: 0.0 estimated value: 1.96614
-actual value: 2.0 estimated value: 1.96614
-actual value: 0.0 estimated value: 1.96614
-actual value: 0.0 estimated value: 1.96614
-actual value: 0.0 estimated value: 1.96614
-actual value: 1.0 estimated value: 1.96614
-actual value: 0.0 estimated value: 1.96614
-actual value: 0.0 estimated value: 1.96614
-actual value: 1.0 estimated value: 1.96614
-[*]----------------------------
-RMSE: 1.7008226205069465
-MAPE: 64.9737159411
-[*]============================
-Epoch: 0027 cost = 343477.587580046
-[*]----------------------------
-actual value: 0.0 estimated value: 2.06846
-actual value: 0.0 estimated value: 2.06846
-actual value: 6.0 estimated value: 2.06846
-actual value: 0.0 estimated value: 2.06846
-actual value: 0.0 estimated value: 2.06846
-actual value: 0.0 estimated value: 2.06846
-actual value: 0.0 estimated value: 2.06846
-actual value: 0.0 estimated value: 2.06846
-actual value: 3.0 estimated value: 2.06846
-actual value: 0.0 estimated value: 2.06846
-[*]----------------------------
-RMSE: 2.2483981598905203
-MAPE: 48.2885479927
-[*]============================
-Epoch: 0028 cost = 312163.845852302
-[*]----------------------------
-actual value: 0.0 estimated value: 2.13907
-actual value: 1.0 estimated value: 2.13907
-actual value: 0.0 estimated value: 2.13907
-actual value: 0.0 estimated value: 2.13907
-actual value: 12.0 estimated value: 2.13907
-actual value: 0.0 estimated value: 2.13907
-actual value: 4.0 estimated value: 2.13907
-actual value: 22005.0 estimated value: 2.13907
-actual value: 0.0 estimated value: 2.13907
-actual value: 0.0 estimated value: 2.13907
-[*]----------------------------
-RMSE: 6957.916614022441
-MAPE: 85.6487244368
-[*]============================
-Epoch: 0029 cost = 68346.777968102
-[*]----------------------------
-actual value: 0.0 estimated value: 2.2594
-actual value: 0.0 estimated value: 2.2594
-actual value: 0.0 estimated value: 2.2594
-actual value: 0.0 estimated value: 2.2594
-actual value: 0.0 estimated value: 2.2594
-actual value: 0.0 estimated value: 2.2594
-actual value: 6.0 estimated value: 2.2594
-actual value: 0.0 estimated value: 2.2594
-actual value: 0.0 estimated value: 2.2594
-actual value: 0.0 estimated value: 2.2594
-[*]----------------------------
-RMSE: 2.4481833403185327
-MAPE: 62.343364954
-[*]============================
-Epoch: 0030 cost = 351569.594916704
-[*]----------------------------
-actual value: 1.0 estimated value: 2.38135
-actual value: 80.0 estimated value: 2.38135
-actual value: 4.0 estimated value: 2.38135
-actual value: 0.0 estimated value: 2.38135
-actual value: 1.0 estimated value: 2.38135
-actual value: 0.0 estimated value: 2.38135
-actual value: 19.0 estimated value: 2.38135
-actual value: 1.0 estimated value: 2.38135
-actual value: 15.0 estimated value: 2.38135
-actual value: 0.0 estimated value: 2.38135
-[*]----------------------------
-RMSE: 25.46649177603145
-MAPE: 103.354980264
-[*]============================
-Epoch: 0031 cost = 353088.774871921
-[*]----------------------------
-actual value: 2.0 estimated value: 2.50287
-actual value: 0.0 estimated value: 2.50287
-actual value: 2.0 estimated value: 2.50287
-actual value: 3.0 estimated value: 2.50287
-actual value: 0.0 estimated value: 2.50287
-actual value: 0.0 estimated value: 2.50287
-actual value: 0.0 estimated value: 2.50287
-actual value: 27.0 estimated value: 2.50287
-actual value: 2.0 estimated value: 2.50287
-actual value: 0.0 estimated value: 2.50287
-[*]----------------------------
-RMSE: 7.95259051530303
-MAPE: 36.5462812781
-[*]============================
-Epoch: 0032 cost = 348891.877080205
-[*]----------------------------
-actual value: 8.0 estimated value: 2.61825
-actual value: 0.0 estimated value: 2.61825
-actual value: 0.0 estimated value: 2.61825
-actual value: 1.0 estimated value: 2.61825
-actual value: 0.0 estimated value: 2.61825
-actual value: 0.0 estimated value: 2.61825
-actual value: 1.0 estimated value: 2.61825
-actual value: 0.0 estimated value: 2.61825
-actual value: 387.0 estimated value: 2.61825
-actual value: 1.0 estimated value: 2.61825
-[*]----------------------------
-RMSE: 121.58142173334359
-MAPE: 130.414277315
-[*]============================
-Epoch: 0033 cost = 352197.179710168
-[*]----------------------------
-actual value: 0.0 estimated value: 2.73772
-actual value: 21.0 estimated value: 2.73772
-actual value: 2.0 estimated value: 2.73772
-actual value: 0.0 estimated value: 2.73772
-actual value: 2.0 estimated value: 2.73772
-actual value: 0.0 estimated value: 2.73772
-actual value: 0.0 estimated value: 2.73772
-actual value: 4.0 estimated value: 2.73772
-actual value: 28.0 estimated value: 2.73772
-actual value: 0.0 estimated value: 2.73772
-[*]----------------------------
-RMSE: 10.059080469820119
-MAPE: 56.5029394627
-[*]============================
-Epoch: 0034 cost = 353154.269999944
-[*]----------------------------
-actual value: 0.0 estimated value: 2.85894
-actual value: 3.0 estimated value: 2.85894
-actual value: 0.0 estimated value: 2.85894
-actual value: 6.0 estimated value: 2.85894
-actual value: 0.0 estimated value: 2.85894
-actual value: 0.0 estimated value: 2.85894
-actual value: 4.0 estimated value: 2.85894
-actual value: 0.0 estimated value: 2.85894
-actual value: 1.0 estimated value: 2.85894
-actual value: 0.0 estimated value: 2.85894
-[*]----------------------------
-RMSE: 2.5235870656114114
-MAPE: 67.8683444858
-[*]============================
-Epoch: 0035 cost = 353211.319621283
-[*]----------------------------
-actual value: 0.0 estimated value: 2.97349
-actual value: 23.0 estimated value: 2.97349
-actual value: 0.0 estimated value: 2.97349
-actual value: 2.0 estimated value: 2.97349
-actual value: 0.0 estimated value: 2.97349
-actual value: 1.0 estimated value: 2.97349
-actual value: 2.0 estimated value: 2.97349
-actual value: 8.0 estimated value: 2.97349
-actual value: 11.0 estimated value: 2.97349
-actual value: 2.0 estimated value: 2.97349
-[*]----------------------------
-RMSE: 7.238882948549235
-MAPE: 80.8920953955
-[*]============================
-Epoch: 0036 cost = 343131.587424873
-[*]----------------------------
-actual value: 15.0 estimated value: 3.07948
-actual value: 2.0 estimated value: 3.07948
-actual value: 4.0 estimated value: 3.07948
-actual value: 0.0 estimated value: 3.07948
-actual value: 0.0 estimated value: 3.07948
-actual value: 20.0 estimated value: 3.07948
-actual value: 0.0 estimated value: 3.07948
-actual value: 0.0 estimated value: 3.07948
-actual value: 0.0 estimated value: 3.07948
-actual value: 0.0 estimated value: 3.07948
-[*]----------------------------
-RMSE: 6.980792537005121
-MAPE: 60.2649345994
-[*]============================
-Epoch: 0037 cost = 342954.340684074
-[*]----------------------------
-actual value: 0.0 estimated value: 3.17369
-actual value: 1.0 estimated value: 3.17369
-actual value: 0.0 estimated value: 3.17369
-actual value: 1.0 estimated value: 3.17369
-actual value: 0.0 estimated value: 3.17369
-actual value: 12.0 estimated value: 3.17369
-actual value: 4.0 estimated value: 3.17369
-actual value: 0.0 estimated value: 3.17369
-actual value: 0.0 estimated value: 3.17369
-actual value: 0.0 estimated value: 3.17369
-[*]----------------------------
-RMSE: 3.853181890610052
-MAPE: 132.236878574
-[*]============================
-Epoch: 0038 cost = 27805.153426796
-[*]----------------------------
-actual value: 2.0 estimated value: 3.24706
-actual value: 2.0 estimated value: 3.24706
-actual value: 0.0 estimated value: 3.24706
-actual value: 1.0 estimated value: 3.24706
-actual value: 0.0 estimated value: 3.24706
-actual value: 210.0 estimated value: 3.24706
-actual value: 0.0 estimated value: 3.24706
-actual value: 0.0 estimated value: 3.24706
-actual value: 2.0 estimated value: 3.24706
-actual value: 0.0 estimated value: 3.24706
-[*]----------------------------
-RMSE: 65.42874897998792
-MAPE: 102.043688297
-[*]============================
-Epoch: 0039 cost = 351458.420942385
-[*]----------------------------
-actual value: 6.0 estimated value: 3.36291
-actual value: 0.0 estimated value: 3.36291
-actual value: 0.0 estimated value: 3.36291
-actual value: 0.0 estimated value: 3.36291
-actual value: 1.0 estimated value: 3.36291
-actual value: 2.0 estimated value: 3.36291
-actual value: 2.0 estimated value: 3.36291
-actual value: 1.0 estimated value: 3.36291
-actual value: 3.0 estimated value: 3.36291
-actual value: 0.0 estimated value: 3.36291
-[*]----------------------------
-RMSE: 2.592377034147814
-MAPE: 110.820037996
-[*]============================
-Epoch: 0040 cost = 353096.843848122
-[*]----------------------------
-actual value: 0.0 estimated value: 3.48141
-actual value: 14.0 estimated value: 3.48141
-actual value: 2.0 estimated value: 3.48141
-actual value: 0.0 estimated value: 3.48141
-actual value: 0.0 estimated value: 3.48141
-actual value: 0.0 estimated value: 3.48141
-actual value: 3.0 estimated value: 3.48141
-actual value: 3.0 estimated value: 3.48141
-actual value: 0.0 estimated value: 3.48141
-actual value: 0.0 estimated value: 3.48141
-[*]----------------------------
-RMSE: 4.313005486365623
-MAPE: 45.3243628144
-[*]============================
-Epoch: 0041 cost = 353020.359691802
-[*]----------------------------
-actual value: 4.0 estimated value: 3.5984
-actual value: 2.0 estimated value: 3.5984
-actual value: 0.0 estimated value: 3.5984
-actual value: 0.0 estimated value: 3.5984
-actual value: 2.0 estimated value: 3.5984
-actual value: 0.0 estimated value: 3.5984
-actual value: 0.0 estimated value: 3.5984
-actual value: 0.0 estimated value: 3.5984
-actual value: 0.0 estimated value: 3.5984
-actual value: 0.0 estimated value: 3.5984
-[*]----------------------------
-RMSE: 3.096942236357014
-MAPE: 56.6267053286
-[*]============================
-Epoch: 0042 cost = 348737.129474402
-[*]----------------------------
-actual value: 1.0 estimated value: 3.7104
-actual value: 11.0 estimated value: 3.7104
-actual value: 0.0 estimated value: 3.7104
-actual value: 0.0 estimated value: 3.7104
-actual value: 0.0 estimated value: 3.7104
-actual value: 5.0 estimated value: 3.7104
-actual value: 0.0 estimated value: 3.7104
-actual value: 0.0 estimated value: 3.7104
-actual value: 1.0 estimated value: 3.7104
-actual value: 0.0 estimated value: 3.7104
-[*]----------------------------
-RMSE: 3.8999513725702366
-MAPE: 158.535186201
-[*]============================
-Epoch: 0043 cost = 352216.514928378
-[*]----------------------------
-actual value: 5.0 estimated value: 3.82597
-actual value: 0.0 estimated value: 3.82597
-actual value: 0.0 estimated value: 3.82597
-actual value: 5.0 estimated value: 3.82597
-actual value: 0.0 estimated value: 3.82597
-actual value: 39.0 estimated value: 3.82597
-actual value: 0.0 estimated value: 3.82597
-actual value: 0.0 estimated value: 3.82597
-actual value: 0.0 estimated value: 3.82597
-actual value: 0.0 estimated value: 3.82597
-[*]----------------------------
-RMSE: 11.586351247472724
-MAPE: 45.7169493039
-[*]============================
-Epoch: 0044 cost = 353084.005138024
-[*]----------------------------
-actual value: 0.0 estimated value: 3.94299
-actual value: 0.0 estimated value: 3.94299
-actual value: 21.0 estimated value: 3.94299
-actual value: 0.0 estimated value: 3.94299
-actual value: 1.0 estimated value: 3.94299
-actual value: 0.0 estimated value: 3.94299
-actual value: 0.0 estimated value: 3.94299
-actual value: 0.0 estimated value: 3.94299
-actual value: 11.0 estimated value: 3.94299
-actual value: 1.0 estimated value: 3.94299
-[*]----------------------------
-RMSE: 6.718246499255627
-MAPE: 183.494080603
-[*]============================
-Epoch: 0045 cost = 353141.720680271
-[*]----------------------------
-actual value: 0.0 estimated value: 4.0505
-actual value: 0.0 estimated value: 4.0505
-actual value: 1.0 estimated value: 4.0505
-actual value: 6.0 estimated value: 4.0505
-actual value: 0.0 estimated value: 4.0505
-actual value: 0.0 estimated value: 4.0505
-actual value: 1.0 estimated value: 4.0505
-actual value: 0.0 estimated value: 4.0505
-actual value: 6.0 estimated value: 4.0505
-actual value: 3.0 estimated value: 4.0505
-[*]----------------------------
-RMSE: 3.30678539990006
-MAPE: 142.019825578
-[*]============================
-Epoch: 0046 cost = 343066.294443304
-[*]----------------------------
-actual value: 0.0 estimated value: 4.15072
-actual value: 0.0 estimated value: 4.15072
-actual value: 0.0 estimated value: 4.15072
-actual value: 0.0 estimated value: 4.15072
-actual value: 0.0 estimated value: 4.15072
-actual value: 3.0 estimated value: 4.15072
-actual value: 1.0 estimated value: 4.15072
-actual value: 0.0 estimated value: 4.15072
-actual value: 9.0 estimated value: 4.15072
-actual value: 2.0 estimated value: 4.15072
-[*]----------------------------
-RMSE: 3.7783997290101192
-MAPE: 128.711457551
-[*]============================
-Epoch: 0047 cost = 342898.485196585
-[*]----------------------------
-actual value: 1.0 estimated value: 4.23677
-actual value: 0.0 estimated value: 4.23677
-actual value: 0.0 estimated value: 4.23677
-actual value: 0.0 estimated value: 4.23677
-actual value: 2.0 estimated value: 4.23677
-actual value: 17.0 estimated value: 4.23677
-actual value: 0.0 estimated value: 4.23677
-actual value: 0.0 estimated value: 4.23677
-actual value: 0.0 estimated value: 4.23677
-actual value: 0.0 estimated value: 4.23677
-[*]----------------------------
-RMSE: 5.513904114545869
-MAPE: 170.197759072
-[*]============================
-Epoch: 0048 cost = 27751.109077100
-[*]----------------------------
-actual value: 0.0 estimated value: 4.31517
-actual value: 0.0 estimated value: 4.31517
-actual value: 0.0 estimated value: 4.31517
-actual value: 0.0 estimated value: 4.31517
-actual value: 14.0 estimated value: 4.31517
-actual value: 31.0 estimated value: 4.31517
-actual value: 0.0 estimated value: 4.31517
-actual value: 2.0 estimated value: 4.31517
-actual value: 0.0 estimated value: 4.31517
-actual value: 2.0 estimated value: 4.31517
-[*]----------------------------
-RMSE: 9.634938034758298
-MAPE: 96.6935902834
-[*]============================
-Epoch: 0049 cost = 351418.119354843
-[*]----------------------------
-actual value: 0.0 estimated value: 4.42745
-actual value: 0.0 estimated value: 4.42745
-actual value: 0.0 estimated value: 4.42745
-actual value: 42.0 estimated value: 4.42745
-actual value: 1.0 estimated value: 4.42745
-actual value: 1.0 estimated value: 4.42745
-actual value: 0.0 estimated value: 4.42745
-actual value: 23.0 estimated value: 4.42745
-actual value: 4.0 estimated value: 4.42745
-actual value: 0.0 estimated value: 4.42745
-[*]----------------------------
-RMSE: 13.70520093742033
-MAPE: 173.276908398
-[*]============================
-Epoch: 0050 cost = 352970.988841640
-[*]----------------------------
-actual value: 1.0 estimated value: 4.54181
-actual value: 0.0 estimated value: 4.54181
-actual value: 0.0 estimated value: 4.54181
-actual value: 2.0 estimated value: 4.54181
-actual value: 0.0 estimated value: 4.54181
-actual value: 0.0 estimated value: 4.54181
-actual value: 1.0 estimated value: 4.54181
-actual value: 0.0 estimated value: 4.54181
-actual value: 0.0 estimated value: 4.54181
-actual value: 20.0 estimated value: 4.54181
-[*]----------------------------
-RMSE: 6.2791201795354326
-MAPE: 228.185865283
-[*]============================
-Epoch: 0051 cost = 352887.721101077
-[*]----------------------------
-actual value: 0.0 estimated value: 4.65422
-actual value: 8.0 estimated value: 4.65422
-actual value: 2.0 estimated value: 4.65422
-actual value: 0.0 estimated value: 4.65422
-actual value: 0.0 estimated value: 4.65422
-actual value: 1.0 estimated value: 4.65422
-actual value: 0.0 estimated value: 4.65422
-actual value: 0.0 estimated value: 4.65422
-actual value: 0.0 estimated value: 4.65422
-actual value: 0.0 estimated value: 4.65422
-[*]----------------------------
-RMSE: 4.280479444666708
-MAPE: 179.985241095
-[*]============================
-Epoch: 0052 cost = 348799.743230836
-[*]----------------------------
-actual value: 0.0 estimated value: 4.76278
-actual value: 0.0 estimated value: 4.76278
-actual value: 0.0 estimated value: 4.76278
-actual value: 0.0 estimated value: 4.76278
-actual value: 0.0 estimated value: 4.76278
-actual value: 2.0 estimated value: 4.76278
-actual value: 0.0 estimated value: 4.76278
-actual value: 0.0 estimated value: 4.76278
-actual value: 1.0 estimated value: 4.76278
-actual value: 0.0 estimated value: 4.76278
-[*]----------------------------
-RMSE: 4.508479315659716
-MAPE: 257.2083354
-[*]============================
-Epoch: 0053 cost = 352088.431977872
-[*]----------------------------
-actual value: 0.0 estimated value: 4.87489
-actual value: 0.0 estimated value: 4.87489
-actual value: 0.0 estimated value: 4.87489
-actual value: 2.0 estimated value: 4.87489
-actual value: 5.0 estimated value: 4.87489
-actual value: 0.0 estimated value: 4.87489
-actual value: 0.0 estimated value: 4.87489
-actual value: 0.0 estimated value: 4.87489
-actual value: 0.0 estimated value: 4.87489
-actual value: 1.0 estimated value: 4.87489
-[*]----------------------------
-RMSE: 4.354852791901444
-MAPE: 177.911976166
-[*]============================
-Epoch: 0054 cost = 353080.365102975
-[*]----------------------------
-actual value: 0.0 estimated value: 4.98744
-actual value: 5.0 estimated value: 4.98744
-actual value: 3.0 estimated value: 4.98744
-actual value: 0.0 estimated value: 4.98744
-actual value: 0.0 estimated value: 4.98744
-actual value: 0.0 estimated value: 4.98744
-actual value: 0.0 estimated value: 4.98744
-actual value: 0.0 estimated value: 4.98744
-actual value: 0.0 estimated value: 4.98744
-actual value: 0.0 estimated value: 4.98744
-[*]----------------------------
-RMSE: 4.504955794945467
-MAPE: 33.2495784736
-[*]============================
-Epoch: 0055 cost = 344541.552716188
-[*]----------------------------
-actual value: 0.0 estimated value: 5.08806
-actual value: 0.0 estimated value: 5.08806
-actual value: 0.0 estimated value: 5.08806
-actual value: 0.0 estimated value: 5.08806
-actual value: 0.0 estimated value: 5.08806
-actual value: 1.0 estimated value: 5.08806
-actual value: 0.0 estimated value: 5.08806
-actual value: 0.0 estimated value: 5.08806
-actual value: 1.0 estimated value: 5.08806
-actual value: 0.0 estimated value: 5.08806
-[*]----------------------------
-RMSE: 4.904395203741858
-MAPE: 408.805608749
-[*]============================
-Epoch: 0056 cost = 342027.705137421
-[*]----------------------------
-actual value: 0.0 estimated value: 5.18288
-actual value: 0.0 estimated value: 5.18288
-actual value: 1.0 estimated value: 5.18288
-actual value: 0.0 estimated value: 5.18288
-actual value: 6.0 estimated value: 5.18288
-actual value: 0.0 estimated value: 5.18288
-actual value: 635.0 estimated value: 5.18288
-actual value: 0.0 estimated value: 5.18288
-actual value: 0.0 estimated value: 5.18288
-actual value: 0.0 estimated value: 5.18288
-[*]----------------------------
-RMSE: 199.21742598431004
-MAPE: 177.030194302
-[*]============================
-Epoch: 0057 cost = 311835.500060429
-[*]----------------------------
-actual value: 6.0 estimated value: 5.2612
-actual value: 0.0 estimated value: 5.2612
-actual value: 0.0 estimated value: 5.2612
-actual value: 0.0 estimated value: 5.2612
-actual value: 0.0 estimated value: 5.2612
-actual value: 1.0 estimated value: 5.2612
-actual value: 4.0 estimated value: 5.2612
-actual value: 6.0 estimated value: 5.2612
-actual value: 0.0 estimated value: 5.2612
-actual value: 0.0 estimated value: 5.2612
-[*]----------------------------
-RMSE: 4.323443704916756
-MAPE: 120.569230989
-[*]============================
-Epoch: 0058 cost = 68207.773851496
-[*]----------------------------
-actual value: 0.0 estimated value: 5.34415
-actual value: 0.0 estimated value: 5.34415
-actual value: 0.0 estimated value: 5.34415
-actual value: 0.0 estimated value: 5.34415
-actual value: 3.0 estimated value: 5.34415
-actual value: 0.0 estimated value: 5.34415
-actual value: 0.0 estimated value: 5.34415
-actual value: 0.0 estimated value: 5.34415
-actual value: 0.0 estimated value: 5.34415
-actual value: 9.0 estimated value: 5.34415
-[*]----------------------------
-RMSE: 4.973330407502174
-MAPE: 59.37949121
-[*]============================
-Epoch: 0059 cost = 351399.878690888
-[*]----------------------------
-actual value: 0.0 estimated value: 5.45321
-actual value: 43.0 estimated value: 5.45321
-actual value: 0.0 estimated value: 5.45321
-actual value: 0.0 estimated value: 5.45321
-actual value: 0.0 estimated value: 5.45321
-actual value: 41.0 estimated value: 5.45321
-actual value: 31.0 estimated value: 5.45321
-actual value: 0.0 estimated value: 5.45321
-actual value: 0.0 estimated value: 5.45321
-actual value: 0.0 estimated value: 5.45321
-[*]----------------------------
-RMSE: 18.799300242445113
-MAPE: 85.4755381743
-[*]============================
-Epoch: 0060 cost = 352909.452767827
-[*]----------------------------
-actual value: 0.0 estimated value: 5.56387
-actual value: 0.0 estimated value: 5.56387
-actual value: 0.0 estimated value: 5.56387
-actual value: 5.0 estimated value: 5.56387
-actual value: 8.0 estimated value: 5.56387
-actual value: 4.0 estimated value: 5.56387
-actual value: 7.0 estimated value: 5.56387
-actual value: 0.0 estimated value: 5.56387
-actual value: 1.0 estimated value: 5.56387
-actual value: 416.0 estimated value: 5.56387
-[*]----------------------------
-RMSE: 129.85115719877535
-MAPE: 109.398498634
-[*]============================
-Epoch: 0061 cost = 352823.930385505
-[*]----------------------------
-actual value: 0.0 estimated value: 5.67154
-actual value: 0.0 estimated value: 5.67154
-actual value: 1.0 estimated value: 5.67154
-actual value: 2.0 estimated value: 5.67154
-actual value: 10.0 estimated value: 5.67154
-actual value: 6.0 estimated value: 5.67154
-actual value: 3.0 estimated value: 5.67154
-actual value: 0.0 estimated value: 5.67154
-actual value: 1.0 estimated value: 5.67154
-actual value: 0.0 estimated value: 5.67154
-[*]----------------------------
-RMSE: 4.601881077315006
-MAPE: 209.282718413
-[*]============================
-Epoch: 0062 cost = 348626.127760848
-[*]----------------------------
-actual value: 0.0 estimated value: 5.77693
-actual value: 0.0 estimated value: 5.77693
-actual value: 0.0 estimated value: 5.77693
-actual value: 0.0 estimated value: 5.77693
-actual value: 2.0 estimated value: 5.77693
-actual value: 0.0 estimated value: 5.77693
-actual value: 1.0 estimated value: 5.77693
-actual value: 0.0 estimated value: 5.77693
-actual value: 0.0 estimated value: 5.77693
-actual value: 2.0 estimated value: 5.77693
-[*]----------------------------
-RMSE: 5.338167190903959
-MAPE: 285.128911336
-[*]============================
-Epoch: 0063 cost = 352146.584812119
-[*]----------------------------
-actual value: 0.0 estimated value: 5.88589
-actual value: 0.0 estimated value: 5.88589
-actual value: 0.0 estimated value: 5.88589
-actual value: 0.0 estimated value: 5.88589
-actual value: 0.0 estimated value: 5.88589
-actual value: 3.0 estimated value: 5.88589
-actual value: 0.0 estimated value: 5.88589
-actual value: 5.0 estimated value: 5.88589
-actual value: 23.0 estimated value: 5.88589
-actual value: 0.0 estimated value: 5.88589
-[*]----------------------------
-RMSE: 7.379104563286245
-MAPE: 62.7744421363
-[*]============================
-Epoch: 0064 cost = 353019.174609667
-[*]----------------------------
-actual value: 24.0 estimated value: 5.99362
-actual value: 0.0 estimated value: 5.99362
-actual value: 10.0 estimated value: 5.99362
-actual value: 12.0 estimated value: 5.99362
-actual value: 1.0 estimated value: 5.99362
-actual value: 0.0 estimated value: 5.99362
-actual value: 1.0 estimated value: 5.99362
-actual value: 0.0 estimated value: 5.99362
-actual value: 2.0 estimated value: 5.99362
-actual value: 0.0 estimated value: 5.99362
-[*]----------------------------
-RMSE: 7.6542333465746415
-MAPE: 227.258233229
-[*]============================
-Epoch: 0065 cost = 342970.223654253
-[*]----------------------------
-actual value: 0.0 estimated value: 6.08956
-actual value: 0.0 estimated value: 6.08956
-actual value: 0.0 estimated value: 6.08956
-actual value: 22.0 estimated value: 6.08956
-actual value: 1.0 estimated value: 6.08956
-actual value: 0.0 estimated value: 6.08956
-actual value: 0.0 estimated value: 6.08956
-actual value: 0.0 estimated value: 6.08956
-actual value: 7.0 estimated value: 6.08956
-actual value: 0.0 estimated value: 6.08956
-[*]----------------------------
-RMSE: 7.344752951790377
-MAPE: 198.094220459
-[*]============================
-Epoch: 0066 cost = 343257.264108299
-[*]----------------------------
-actual value: 0.0 estimated value: 6.17975
-actual value: 9.0 estimated value: 6.17975
-actual value: 0.0 estimated value: 6.17975
-actual value: 0.0 estimated value: 6.17975
-actual value: 0.0 estimated value: 6.17975
-actual value: 129.0 estimated value: 6.17975
-actual value: 0.0 estimated value: 6.17975
-actual value: 0.0 estimated value: 6.17975
-actual value: 0.0 estimated value: 6.17975
-actual value: 6.0 estimated value: 6.17975
-[*]----------------------------
-RMSE: 39.191995940065304
-MAPE: 43.180480289
-[*]============================
-Epoch: 0067 cost = 311963.326470364
-[*]----------------------------
-actual value: 4.0 estimated value: 6.24618
-actual value: 0.0 estimated value: 6.24618
-actual value: 0.0 estimated value: 6.24618
-actual value: 122.0 estimated value: 6.24618
-actual value: 21.0 estimated value: 6.24618
-actual value: 2.0 estimated value: 6.24618
-actual value: 0.0 estimated value: 6.24618
-actual value: 9.0 estimated value: 6.24618
-actual value: 6.0 estimated value: 6.24618
-actual value: 1.0 estimated value: 6.24618
-[*]----------------------------
-RMSE: 37.13745911860475
-MAPE: 141.845483865
-[*]============================
-Epoch: 0068 cost = 68171.124874766
-[*]----------------------------
-actual value: 0.0 estimated value: 6.33573
-actual value: 0.0 estimated value: 6.33573
-actual value: 1.0 estimated value: 6.33573
-actual value: 11.0 estimated value: 6.33573
-actual value: 0.0 estimated value: 6.33573
-actual value: 2.0 estimated value: 6.33573
-actual value: 19.0 estimated value: 6.33573
-actual value: 1.0 estimated value: 6.33573
-actual value: 0.0 estimated value: 6.33573
-actual value: 0.0 estimated value: 6.33573
-[*]----------------------------
-RMSE: 6.771891454970296
-MAPE: 278.597827554
-[*]============================
-Epoch: 0069 cost = 351321.276439868
-[*]----------------------------
-actual value: 14.0 estimated value: 6.44176
-actual value: 0.0 estimated value: 6.44176
-actual value: 0.0 estimated value: 6.44176
-actual value: 0.0 estimated value: 6.44176
-actual value: 2.0 estimated value: 6.44176
-actual value: 4.0 estimated value: 6.44176
-actual value: 0.0 estimated value: 6.44176
-actual value: 3.0 estimated value: 6.44176
-actual value: 0.0 estimated value: 6.44176
-actual value: 5.0 estimated value: 6.44176
-[*]----------------------------
-RMSE: 5.51564879476589
-MAPE: 96.1358773708
-[*]============================
-Epoch: 0070 cost = 352836.925964636
-[*]----------------------------
-actual value: 4.0 estimated value: 6.54887
-actual value: 0.0 estimated value: 6.54887
-actual value: 1.0 estimated value: 6.54887
-actual value: 2.0 estimated value: 6.54887
-actual value: 0.0 estimated value: 6.54887
-actual value: 0.0 estimated value: 6.54887
-actual value: 5.0 estimated value: 6.54887
-actual value: 0.0 estimated value: 6.54887
-actual value: 0.0 estimated value: 6.54887
-actual value: 0.0 estimated value: 6.54887
-[*]----------------------------
-RMSE: 5.636524292770546
-MAPE: 219.257393479
-[*]============================
-Epoch: 0071 cost = 352855.608303755
-[*]----------------------------
-actual value: 0.0 estimated value: 6.65109
-actual value: 2.0 estimated value: 6.65109
-actual value: 0.0 estimated value: 6.65109
-actual value: 0.0 estimated value: 6.65109
-actual value: 0.0 estimated value: 6.65109
-actual value: 0.0 estimated value: 6.65109
-actual value: 2.0 estimated value: 6.65109
-actual value: 6.0 estimated value: 6.65109
-actual value: 0.0 estimated value: 6.65109
-actual value: 0.0 estimated value: 6.65109
-[*]----------------------------
-RMSE: 5.94430986979747
-MAPE: 158.653505643
-[*]============================
-Epoch: 0072 cost = 348572.756737608
-[*]----------------------------
-actual value: 0.0 estimated value: 6.75422
-actual value: 0.0 estimated value: 6.75422
-actual value: 7.0 estimated value: 6.75422
-actual value: 12.0 estimated value: 6.75422
-actual value: 0.0 estimated value: 6.75422
-actual value: 0.0 estimated value: 6.75422
-actual value: 0.0 estimated value: 6.75422
-actual value: 0.0 estimated value: 6.75422
-actual value: 0.0 estimated value: 6.75422
-actual value: 35.0 estimated value: 6.75422
-[*]----------------------------
-RMSE: 10.699248496999868
-MAPE: 42.6427236448
-[*]============================
-Epoch: 0073 cost = 352099.008125698
-[*]----------------------------
-actual value: 2.0 estimated value: 6.86
-actual value: 0.0 estimated value: 6.86
-actual value: 4.0 estimated value: 6.86
-actual value: 1.0 estimated value: 6.86
-actual value: 0.0 estimated value: 6.86
-actual value: 0.0 estimated value: 6.86
-actual value: 2.0 estimated value: 6.86
-actual value: 1.0 estimated value: 6.86
-actual value: 0.0 estimated value: 6.86
-actual value: 5.0 estimated value: 6.86
-[*]----------------------------
-RMSE: 5.619570790799578
-MAPE: 294.449870785
-[*]============================
-Epoch: 0074 cost = 352957.125689675
-[*]----------------------------
-actual value: 0.0 estimated value: 6.96294
-actual value: 8.0 estimated value: 6.96294
-actual value: 0.0 estimated value: 6.96294
-actual value: 2.0 estimated value: 6.96294
-actual value: 8.0 estimated value: 6.96294
-actual value: 0.0 estimated value: 6.96294
-actual value: 0.0 estimated value: 6.96294
-actual value: 0.0 estimated value: 6.96294
-actual value: 0.0 estimated value: 6.96294
-actual value: 0.0 estimated value: 6.96294
-[*]----------------------------
-RMSE: 6.051112013375672
-MAPE: 91.3578391075
-[*]============================
-Epoch: 0075 cost = 342917.319070906
-[*]----------------------------
-actual value: 0.0 estimated value: 7.05464
-actual value: 1.0 estimated value: 7.05464
-actual value: 0.0 estimated value: 7.05464
-actual value: 26.0 estimated value: 7.05464
-actual value: 2.0 estimated value: 7.05464
-actual value: 1.0 estimated value: 7.05464
-actual value: 48.0 estimated value: 7.05464
-actual value: 1.0 estimated value: 7.05464
-actual value: 0.0 estimated value: 7.05464
-actual value: 0.0 estimated value: 7.05464
-[*]----------------------------
-RMSE: 15.394955115558295
-MAPE: 371.215809385
-[*]============================
-Epoch: 0076 cost = 343200.369789471
-[*]----------------------------
-actual value: 3.0 estimated value: 7.1383
-actual value: 0.0 estimated value: 7.1383
-actual value: 0.0 estimated value: 7.1383
-actual value: 0.0 estimated value: 7.1383
-actual value: 9.0 estimated value: 7.1383
-actual value: 8.0 estimated value: 7.1383
-actual value: 0.0 estimated value: 7.1383
-actual value: 10.0 estimated value: 7.1383
-actual value: 9.0 estimated value: 7.1383
-actual value: 0.0 estimated value: 7.1383
-[*]----------------------------
-RMSE: 5.364383006849326
-MAPE: 43.7405312061
-[*]============================
-Epoch: 0077 cost = 311922.877594488
-[*]----------------------------
-actual value: 0.0 estimated value: 7.19402
-actual value: 0.0 estimated value: 7.19402
-actual value: 0.0 estimated value: 7.19402
-actual value: 0.0 estimated value: 7.19402
-actual value: 0.0 estimated value: 7.19402
-actual value: 11.0 estimated value: 7.19402
-actual value: 175.0 estimated value: 7.19402
-actual value: 3.0 estimated value: 7.19402
-actual value: 1.0 estimated value: 7.19402
-actual value: 0.0 estimated value: 7.19402
-[*]----------------------------
-RMSE: 53.42266643403074
-MAPE: 222.4228248
-[*]============================
-Epoch: 0078 cost = 68152.202932492
-[*]----------------------------
-actual value: 0.0 estimated value: 7.29103
-actual value: 0.0 estimated value: 7.29103
-actual value: 0.0 estimated value: 7.29103
-actual value: 0.0 estimated value: 7.29103
-actual value: 0.0 estimated value: 7.29103
-actual value: 2.0 estimated value: 7.29103
-actual value: 0.0 estimated value: 7.29103
-actual value: 0.0 estimated value: 7.29103
-actual value: 2.0 estimated value: 7.29103
-actual value: 7.0 estimated value: 7.29103
-[*]----------------------------
-RMSE: 6.5436133147126885
-MAPE: 177.753593773
-[*]============================
-Epoch: 0079 cost = 351270.436607675
-[*]----------------------------
-actual value: 15.0 estimated value: 7.39447
-actual value: 0.0 estimated value: 7.39447
-actual value: 0.0 estimated value: 7.39447
-actual value: 4.0 estimated value: 7.39447
-actual value: 13.0 estimated value: 7.39447
-actual value: 2.0 estimated value: 7.39447
-actual value: 0.0 estimated value: 7.39447
-actual value: 0.0 estimated value: 7.39447
-actual value: 0.0 estimated value: 7.39447
-actual value: 0.0 estimated value: 7.39447
-[*]----------------------------
-RMSE: 6.767258565168797
-MAPE: 112.102057785
-[*]============================
-Epoch: 0080 cost = 352782.359854822
-[*]----------------------------
-actual value: 2.0 estimated value: 7.49767
-actual value: 0.0 estimated value: 7.49767
-actual value: 0.0 estimated value: 7.49767
-actual value: 1.0 estimated value: 7.49767
-actual value: 0.0 estimated value: 7.49767
-actual value: 13.0 estimated value: 7.49767
-actual value: 4.0 estimated value: 7.49767
-actual value: 0.0 estimated value: 7.49767
-actual value: 0.0 estimated value: 7.49767
-actual value: 8.0 estimated value: 7.49767
-[*]----------------------------
-RMSE: 6.295088633271791
-MAPE: 212.139521837
-[*]============================
-Epoch: 0081 cost = 348608.125702061
-[*]----------------------------
-actual value: 387.0 estimated value: 7.59459
-actual value: 1.0 estimated value: 7.59459
-actual value: 0.0 estimated value: 7.59459
-actual value: 1.0 estimated value: 7.59459
-actual value: 33.0 estimated value: 7.59459
-actual value: 3.0 estimated value: 7.59459
-actual value: 0.0 estimated value: 7.59459
-actual value: 0.0 estimated value: 7.59459
-actual value: 55.0 estimated value: 7.59459
-actual value: 3.0 estimated value: 7.59459
-[*]----------------------------
-RMSE: 121.3026859566664
-MAPE: 269.491250174
-[*]============================
-Epoch: 0082 cost = 352711.634980819
-[*]----------------------------
-actual value: 28.0 estimated value: 7.69556
-actual value: 0.0 estimated value: 7.69556
-actual value: 0.0 estimated value: 7.69556
-actual value: 10.0 estimated value: 7.69556
-actual value: 0.0 estimated value: 7.69556
-actual value: 1180.0 estimated value: 7.69556
-actual value: 0.0 estimated value: 7.69556
-actual value: 2.0 estimated value: 7.69556
-actual value: 2.0 estimated value: 7.69556
-actual value: 19.0 estimated value: 7.69556
-[*]----------------------------
-RMSE: 370.82945465126807
-MAPE: 137.326837828
-[*]============================
-Epoch: 0083 cost = 352050.649580058
-[*]----------------------------
-actual value: 1.0 estimated value: 7.79844
-actual value: 0.0 estimated value: 7.79844
-actual value: 9.0 estimated value: 7.79844
-actual value: 0.0 estimated value: 7.79844
-actual value: 2.0 estimated value: 7.79844
-actual value: 0.0 estimated value: 7.79844
-actual value: 0.0 estimated value: 7.79844
-actual value: 2.0 estimated value: 7.79844
-actual value: 0.0 estimated value: 7.79844
-actual value: 104.0 estimated value: 7.79844
-[*]----------------------------
-RMSE: 31.10261192884567
-MAPE: 273.107925057
-[*]============================
-Epoch: 0084 cost = 352905.174919869
-[*]----------------------------
-actual value: 11.0 estimated value: 7.89564
-actual value: 2.0 estimated value: 7.89564
-actual value: 20.0 estimated value: 7.89564
-actual value: 0.0 estimated value: 7.89564
-actual value: 1.0 estimated value: 7.89564
-actual value: 0.0 estimated value: 7.89564
-actual value: 8.0 estimated value: 7.89564
-actual value: 0.0 estimated value: 7.89564
-actual value: 0.0 estimated value: 7.89564
-actual value: 0.0 estimated value: 7.89564
-[*]----------------------------
-RMSE: 7.4173937183328436
-MAPE: 214.878665805
-[*]============================
-Epoch: 0085 cost = 342870.101255372
-[*]----------------------------
-actual value: 0.0 estimated value: 7.98336
-actual value: 0.0 estimated value: 7.98336
-actual value: 0.0 estimated value: 7.98336
-actual value: 0.0 estimated value: 7.98336
-actual value: 0.0 estimated value: 7.98336
-actual value: 0.0 estimated value: 7.98336
-actual value: 4.0 estimated value: 7.98336
-actual value: 0.0 estimated value: 7.98336
-actual value: 0.0 estimated value: 7.98336
-actual value: 9.0 estimated value: 7.98336
-[*]----------------------------
-RMSE: 7.257915008320062
-MAPE: 55.4400153458
-[*]============================
-Epoch: 0086 cost = 342703.168315405
-[*]----------------------------
-actual value: 0.0 estimated value: 8.06045
-actual value: 0.0 estimated value: 8.06045
-actual value: 0.0 estimated value: 8.06045
-actual value: 0.0 estimated value: 8.06045
-actual value: 0.0 estimated value: 8.06045
-actual value: 0.0 estimated value: 8.06045
-actual value: 5.0 estimated value: 8.06045
-actual value: 0.0 estimated value: 8.06045
-actual value: 2.0 estimated value: 8.06045
-actual value: 15.0 estimated value: 8.06045
-[*]----------------------------
-RMSE: 7.409779752662162
-MAPE: 136.831653118
-[*]============================
-Epoch: 0087 cost = 27688.535895662
-[*]----------------------------
-actual value: 2.0 estimated value: 8.11372
-actual value: 0.0 estimated value: 8.11372
-actual value: 1.0 estimated value: 8.11372
-actual value: 0.0 estimated value: 8.11372
-actual value: 0.0 estimated value: 8.11372
-actual value: 0.0 estimated value: 8.11372
-actual value: 0.0 estimated value: 8.11372
-actual value: 0.0 estimated value: 8.11372
-actual value: 0.0 estimated value: 8.11372
-actual value: 0.0 estimated value: 8.11372
-[*]----------------------------
-RMSE: 7.839909093426867
-MAPE: 508.528780937
-[*]============================
-Epoch: 0088 cost = 351180.240439852
-[*]----------------------------
-actual value: 3.0 estimated value: 8.21162
-actual value: 0.0 estimated value: 8.21162
-actual value: 0.0 estimated value: 8.21162
-actual value: 0.0 estimated value: 8.21162
-actual value: 8.0 estimated value: 8.21162
-actual value: 0.0 estimated value: 8.21162
-actual value: 0.0 estimated value: 8.21162
-actual value: 0.0 estimated value: 8.21162
-actual value: 0.0 estimated value: 8.21162
-actual value: 0.0 estimated value: 8.21162
-[*]----------------------------
-RMSE: 7.527622668318873
-MAPE: 88.1829023361
-[*]============================
-Epoch: 0089 cost = 352808.855676067
-[*]----------------------------
-actual value: 0.0 estimated value: 8.31233
-actual value: 0.0 estimated value: 8.31233
-actual value: 0.0 estimated value: 8.31233
-actual value: 1.0 estimated value: 8.31233
-actual value: 0.0 estimated value: 8.31233
-actual value: 3.0 estimated value: 8.31233
-actual value: 2.0 estimated value: 8.31233
-actual value: 0.0 estimated value: 8.31233
-actual value: 0.0 estimated value: 8.31233
-actual value: 5.0 estimated value: 8.31233
-[*]----------------------------
-RMSE: 7.396466814188181
-MAPE: 322.543503344
-[*]============================
-Epoch: 0090 cost = 352734.708151111
-[*]----------------------------
-actual value: 0.0 estimated value: 8.4115
-actual value: 0.0 estimated value: 8.4115
-actual value: 0.0 estimated value: 8.4115
-actual value: 0.0 estimated value: 8.4115
-actual value: 0.0 estimated value: 8.4115
-actual value: 0.0 estimated value: 8.4115
-actual value: 0.0 estimated value: 8.4115
-actual value: 0.0 estimated value: 8.4115
-actual value: 0.0 estimated value: 8.4115
-actual value: 0.0 estimated value: 8.4115
-[*]----------------------------
-RMSE: 8.411502838134766
+Learning rate: 0.008
+Number of epoch: 300
+Batch size: 5
+Epoch: 0001 cost = 317814.327980922
+[*]----------------------------
+actual value: 11.0 estimated value: 1.28452
+actual value: 0.0 estimated value: 1.28452
+actual value: 0.0 estimated value: 1.28452
+actual value: 0.0 estimated value: 1.28452
+actual value: 0.0 estimated value: 1.28452
+[*]----------------------------
+RMSE: 4.494230698973865
+MAPE: 88.3225679398
+[*]============================
+Epoch: 0002 cost = 317810.076713634
+[*]----------------------------
+actual value: 0.0 estimated value: 1.36409
+actual value: 0.0 estimated value: 1.36409
+actual value: 0.0 estimated value: 1.36409
+actual value: 11.0 estimated value: 1.36409
+actual value: 0.0 estimated value: 1.36409
+[*]----------------------------
+RMSE: 4.4786990951884995
+MAPE: 87.5991821289
+[*]============================
+Epoch: 0003 cost = 317804.989916842
+[*]----------------------------
+actual value: 1.0 estimated value: 1.44859
+actual value: 2.0 estimated value: 1.44859
+actual value: 1.0 estimated value: 1.44859
+actual value: 0.0 estimated value: 1.44859
+actual value: 0.0 estimated value: 1.44859
+[*]----------------------------
+RMSE: 0.9902871962132124
+MAPE: 39.0961567561
+[*]============================
+Epoch: 0004 cost = 317799.682546070
+[*]----------------------------
+actual value: 3.0 estimated value: 1.53516
+actual value: 2.0 estimated value: 1.53516
+actual value: 10.0 estimated value: 1.53516
+actual value: 1.0 estimated value: 1.53516
+actual value: 2.0 estimated value: 1.53516
+[*]----------------------------
+RMSE: 3.860514962221759
+MAPE: 46.695304513
+[*]============================
+Epoch: 0005 cost = 317794.253897386
+[*]----------------------------
+actual value: 1.0 estimated value: 1.62257
+actual value: 5.0 estimated value: 1.62257
+actual value: 2.0 estimated value: 1.62257
+actual value: 3.0 estimated value: 1.62257
+actual value: 2.0 estimated value: 1.62257
+[*]----------------------------
+RMSE: 1.6719360822336076
+MAPE: 42.692591548
+[*]============================
+Epoch: 0006 cost = 317788.836400348
+[*]----------------------------
+actual value: 1.0 estimated value: 1.71046
+actual value: 0.0 estimated value: 1.71046
+actual value: 7.0 estimated value: 1.71046
+actual value: 1.0 estimated value: 1.71046
+actual value: 5.0 estimated value: 1.71046
+[*]----------------------------
+RMSE: 2.923540793608396
+MAPE: 70.8620399237
+[*]============================
+Epoch: 0007 cost = 317783.393219749
+[*]----------------------------
+actual value: 0.0 estimated value: 1.79855
+actual value: 0.0 estimated value: 1.79855
+actual value: 2.0 estimated value: 1.79855
+actual value: 1.0 estimated value: 1.79855
+actual value: 0.0 estimated value: 1.79855
+[*]----------------------------
+RMSE: 1.4410119893407127
+MAPE: 44.9636816978
+[*]============================
+Epoch: 0008 cost = 317777.971894394
+[*]----------------------------
+actual value: 1.0 estimated value: 1.88658
+actual value: 1.0 estimated value: 1.88658
+actual value: 3.0 estimated value: 1.88658
+actual value: 0.0 estimated value: 1.88658
+actual value: 0.0 estimated value: 1.88658
+[*]----------------------------
+RMSE: 1.4092666654905832
+MAPE: 71.4769313733
+[*]============================
+Epoch: 0009 cost = 317772.580849410
+[*]----------------------------
+actual value: 0.0 estimated value: 1.97462
+actual value: 0.0 estimated value: 1.97462
+actual value: 0.0 estimated value: 1.97462
+actual value: 1.0 estimated value: 1.97462
+actual value: 1.0 estimated value: 1.97462
+[*]----------------------------
+RMSE: 1.6490713614648074
+MAPE: 97.4622607231
+[*]============================
+Epoch: 0010 cost = 317767.187065037
+[*]----------------------------
+actual value: 0.0 estimated value: 2.06241
+actual value: 41.0 estimated value: 2.06241
+actual value: 31.0 estimated value: 2.06241
+actual value: 0.0 estimated value: 2.06241
+actual value: 0.0 estimated value: 2.06241
+[*]----------------------------
+RMSE: 21.754451593684983
+MAPE: 94.1584020853
+[*]============================
+Epoch: 0011 cost = 317761.356852342
+[*]----------------------------
+actual value: 43.0 estimated value: 2.15007
+actual value: 0.0 estimated value: 2.15007
+actual value: 0.0 estimated value: 2.15007
+actual value: 0.0 estimated value: 2.15007
+actual value: 41.0 estimated value: 2.15007
+[*]----------------------------
+RMSE: 25.26618953266758
+MAPE: 94.877871871
+[*]============================
+Epoch: 0012 cost = 317755.658013769
+[*]----------------------------
+actual value: 1.0 estimated value: 2.23755
+actual value: 0.0 estimated value: 2.23755
+actual value: 0.0 estimated value: 2.23755
+actual value: 43.0 estimated value: 2.23755
+actual value: 0.0 estimated value: 2.23755
+[*]----------------------------
+RMSE: 18.320088951277107
+MAPE: 109.275916219
+[*]============================
+Epoch: 0013 cost = 317750.333714559
+[*]----------------------------
+actual value: 0.0 estimated value: 2.32476
+actual value: 4.0 estimated value: 2.32476
+actual value: 0.0 estimated value: 2.32476
+actual value: 1.0 estimated value: 2.32476
+actual value: 0.0 estimated value: 2.32476
+[*]----------------------------
+RMSE: 2.0383765218869305
+MAPE: 87.1783554554
+[*]============================
+Epoch: 0014 cost = 317745.939909930
+[*]----------------------------
+actual value: 10.0 estimated value: 2.4118
+actual value: 0.0 estimated value: 2.4118
+actual value: 1.0 estimated value: 2.4118
+actual value: 0.0 estimated value: 2.4118
+actual value: 4.0 estimated value: 2.4118
+[*]----------------------------
+RMSE: 3.8400488097163756
+MAPE: 85.589081049
+[*]============================
+Epoch: 0015 cost = 317740.660082647
+[*]----------------------------
+actual value: 0.0 estimated value: 2.4985
+actual value: 10.0 estimated value: 2.4985
+actual value: 291.0 estimated value: 2.4985
+actual value: 10.0 estimated value: 2.4985
+actual value: 0.0 estimated value: 2.4985
+[*]----------------------------
+RMSE: 129.11866081556155
+MAPE: 83.057141304
+[*]============================
+Epoch: 0016 cost = 317691.407394213
+[*]----------------------------
+actual value: 0.0 estimated value: 2.58506
+actual value: 0.0 estimated value: 2.58506
+actual value: 1.0 estimated value: 2.58506
+actual value: 0.0 estimated value: 2.58506
+actual value: 10.0 estimated value: 2.58506
+[*]----------------------------
+RMSE: 3.938054458857646
+MAPE: 116.327759624
+[*]============================
+Epoch: 0017 cost = 317730.246792573
+[*]----------------------------
+actual value: 0.0 estimated value: 2.67133
+actual value: 1.0 estimated value: 2.67133
+actual value: 249.0 estimated value: 2.67133
+actual value: 0.0 estimated value: 2.67133
+actual value: 0.0 estimated value: 2.67133
+[*]----------------------------
+RMSE: 110.18349893886578
+MAPE: 133.030205965
+[*]============================
+Epoch: 0018 cost = 317692.991801162
+[*]----------------------------
+actual value: 0.0 estimated value: 2.75739
+actual value: 0.0 estimated value: 2.75739
+actual value: 0.0 estimated value: 2.75739
+actual value: 0.0 estimated value: 2.75739
+actual value: 1.0 estimated value: 2.75739
+[*]----------------------------
+RMSE: 2.58848572713034
+MAPE: 175.73928833
+[*]============================
+Epoch: 0019 cost = 317719.978184761
+[*]----------------------------
+actual value: 1.0 estimated value: 2.8432
+actual value: 3.0 estimated value: 2.8432
+actual value: 1.0 estimated value: 2.8432
+actual value: 0.0 estimated value: 2.8432
+actual value: 0.0 estimated value: 2.8432
+[*]----------------------------
+RMSE: 2.1441520191194345
+MAPE: 124.622246996
+[*]============================
+Epoch: 0020 cost = 317714.945337563
+[*]----------------------------
+actual value: 5.0 estimated value: 2.92873
+actual value: 0.0 estimated value: 2.92873
+actual value: 0.0 estimated value: 2.92873
+actual value: 1.0 estimated value: 2.92873
+actual value: 3.0 estimated value: 2.92873
+[*]----------------------------
+RMSE: 2.243664973685297
+MAPE: 78.8913627466
+[*]============================
+Epoch: 0021 cost = 317709.826693152
+[*]----------------------------
+actual value: 0.0 estimated value: 3.01403
+actual value: 5.0 estimated value: 3.01403
+actual value: 18.0 estimated value: 3.01403
+actual value: 5.0 estimated value: 3.01403
+actual value: 0.0 estimated value: 3.01403
+[*]----------------------------
+RMSE: 7.080057834962125
+MAPE: 54.2313277721
+[*]============================
+Epoch: 0022 cost = 317704.660031823
+[*]----------------------------
+actual value: 4.0 estimated value: 3.09909
+actual value: 0.0 estimated value: 3.09909
+actual value: 3.0 estimated value: 3.09909
+actual value: 0.0 estimated value: 3.09909
+actual value: 5.0 estimated value: 3.09909
+[*]----------------------------
+RMSE: 2.174562630374131
+MAPE: 21.2813281765
+[*]============================
+Epoch: 0023 cost = 317699.780131679
+[*]----------------------------
+actual value: 0.0 estimated value: 3.18389
+actual value: 0.0 estimated value: 3.18389
+actual value: 2.0 estimated value: 3.18389
+actual value: 4.0 estimated value: 3.18389
+actual value: 0.0 estimated value: 3.18389
+[*]----------------------------
+RMSE: 2.5486866939776167
+MAPE: 39.7985756397
+[*]============================
+Epoch: 0024 cost = 317694.795574433
+[*]----------------------------
+actual value: 5.0 estimated value: 3.26843
+actual value: 14.0 estimated value: 3.26843
+actual value: 0.0 estimated value: 3.26843
+actual value: 0.0 estimated value: 3.26843
+actual value: 0.0 estimated value: 3.26843
+[*]----------------------------
+RMSE: 5.481109475711419
+MAPE: 55.6426778436
+[*]============================
+Epoch: 0025 cost = 317689.817646529
+[*]----------------------------
+actual value: 7.0 estimated value: 3.3527
+actual value: 1.0 estimated value: 3.3527
+actual value: 3.0 estimated value: 3.3527
+actual value: 5.0 estimated value: 3.3527
+actual value: 14.0 estimated value: 3.3527
+[*]----------------------------
+RMSE: 5.196940518966712
+MAPE: 81.6258458793
+[*]============================
+Epoch: 0026 cost = 317684.857544067
+[*]----------------------------
+actual value: 0.0 estimated value: 3.43675
+actual value: 0.0 estimated value: 3.43675
+actual value: 2.0 estimated value: 3.43675
+actual value: 7.0 estimated value: 3.43675
+actual value: 1.0 estimated value: 3.43675
+[*]----------------------------
+RMSE: 2.9772912845393273
+MAPE: 122.138891617
+[*]============================
+Epoch: 0027 cost = 317680.025732220
+[*]----------------------------
+actual value: 0.0 estimated value: 3.52056
+actual value: 2.0 estimated value: 3.52056
+actual value: 1.0 estimated value: 3.52056
+actual value: 0.0 estimated value: 3.52056
+actual value: 0.0 estimated value: 3.52056
+[*]----------------------------
+RMSE: 3.0281416118170394
+MAPE: 164.041626453
+[*]============================
+Epoch: 0028 cost = 317675.140772998
+[*]----------------------------
+actual value: 4.0 estimated value: 3.6041
+actual value: 1.0 estimated value: 3.6041
+actual value: 1.0 estimated value: 3.6041
+actual value: 0.0 estimated value: 3.6041
+actual value: 2.0 estimated value: 3.6041
+[*]----------------------------
+RMSE: 2.420006030746591
+MAPE: 152.730798721
+[*]============================
+Epoch: 0029 cost = 317670.284829485
+[*]----------------------------
+actual value: 0.0 estimated value: 3.6874
+actual value: 0.0 estimated value: 3.6874
+actual value: 0.0 estimated value: 3.6874
+actual value: 4.0 estimated value: 3.6874
+actual value: 1.0 estimated value: 3.6874
+[*]----------------------------
+RMSE: 3.101957003551042
+MAPE: 138.277629018
+[*]============================
+Epoch: 0030 cost = 317665.499477021
+[*]----------------------------
+actual value: 1.0 estimated value: 3.77042
+actual value: 0.0 estimated value: 3.77042
+actual value: 0.0 estimated value: 3.77042
+actual value: 0.0 estimated value: 3.77042
+actual value: 0.0 estimated value: 3.77042
+[*]----------------------------
+RMSE: 3.5927567703139345
+MAPE: 277.042031288
+[*]============================
+Epoch: 0031 cost = 317660.694598908
+[*]----------------------------
+actual value: 10.0 estimated value: 3.85323
+actual value: 0.0 estimated value: 3.85323
+actual value: 0.0 estimated value: 3.85323
+actual value: 1.0 estimated value: 3.85323
+actual value: 0.0 estimated value: 3.85323
+[*]----------------------------
+RMSE: 4.2536084676091885
+MAPE: 173.395556211
+[*]============================
+Epoch: 0032 cost = 317655.929329997
+[*]----------------------------
+actual value: 0.0 estimated value: 3.93579
+actual value: 0.0 estimated value: 3.93579
+actual value: 0.0 estimated value: 3.93579
+actual value: 10.0 estimated value: 3.93579
+actual value: 0.0 estimated value: 3.93579
+[*]----------------------------
+RMSE: 4.443792607587465
+MAPE: 60.6420695782
+[*]============================
+Epoch: 0033 cost = 317651.165314185
+[*]----------------------------
+actual value: 0.0 estimated value: 4.01811
+actual value: 0.0 estimated value: 4.01811
+actual value: 1.0 estimated value: 4.01811
+actual value: 0.0 estimated value: 4.01811
+actual value: 0.0 estimated value: 4.01811
+[*]----------------------------
+RMSE: 3.839006819032709
+MAPE: 301.811122894
+[*]============================
+Epoch: 0034 cost = 317646.516890116
+[*]----------------------------
+actual value: 0.0 estimated value: 4.10018
+actual value: 0.0 estimated value: 4.10018
+actual value: 0.0 estimated value: 4.10018
+actual value: 0.0 estimated value: 4.10018
+actual value: 0.0 estimated value: 4.10018
+[*]----------------------------
+RMSE: 4.100175380706787
 MAPE: 404
 [*]============================
-Epoch: 0091 cost = 348475.596290700
+Epoch: 0035 cost = 317641.829900235
 [*]----------------------------
-actual value: 1.0 estimated value: 8.50551
-actual value: 0.0 estimated value: 8.50551
-actual value: 0.0 estimated value: 8.50551
-actual value: 62.0 estimated value: 8.50551
-actual value: 0.0 estimated value: 8.50551
-actual value: 0.0 estimated value: 8.50551
-actual value: 0.0 estimated value: 8.50551
-actual value: 0.0 estimated value: 8.50551
-actual value: 0.0 estimated value: 8.50551
-actual value: 1.0 estimated value: 8.50551
+actual value: 4.0 estimated value: 4.18196
+actual value: 13.0 estimated value: 4.18196
+actual value: 2.0 estimated value: 4.18196
+actual value: 0.0 estimated value: 4.18196
+actual value: 0.0 estimated value: 4.18196
 [*]----------------------------
-RMSE: 18.656719000782438
-MAPE: 529.127518336
+RMSE: 4.848287464343571
+MAPE: 60.4926307996
 [*]============================
-Epoch: 0092 cost = 351940.674634799
+Epoch: 0036 cost = 317637.173347582
 [*]----------------------------
-actual value: 0.0 estimated value: 8.60339
-actual value: 0.0 estimated value: 8.60339
-actual value: 0.0 estimated value: 8.60339
-actual value: 0.0 estimated value: 8.60339
-actual value: 19.0 estimated value: 8.60339
-actual value: 9.0 estimated value: 8.60339
-actual value: 0.0 estimated value: 8.60339
-actual value: 0.0 estimated value: 8.60339
-actual value: 0.0 estimated value: 8.60339
-actual value: 2.0 estimated value: 8.60339
+actual value: 15.0 estimated value: 4.26355
+actual value: 0.0 estimated value: 4.26355
+actual value: 0.0 estimated value: 4.26355
+actual value: 4.0 estimated value: 4.26355
+actual value: 13.0 estimated value: 4.26355
 [*]----------------------------
-RMSE: 8.185228517922452
-MAPE: 129.76507917
+RMSE: 6.753105636437713
+MAPE: 48.4561681747
 [*]============================
-Epoch: 0093 cost = 352804.168413230
+Epoch: 0037 cost = 317632.581152437
 [*]----------------------------
-actual value: 11.0 estimated value: 8.70265
-actual value: 1.0 estimated value: 8.70265
-actual value: 4.0 estimated value: 8.70265
-actual value: 0.0 estimated value: 8.70265
-actual value: 0.0 estimated value: 8.70265
-actual value: 33.0 estimated value: 8.70265
-actual value: 0.0 estimated value: 8.70265
-actual value: 0.0 estimated value: 8.70265
-actual value: 1.0 estimated value: 8.70265
-actual value: 7.0 estimated value: 8.70265
+actual value: 0.0 estimated value: 4.34487
+actual value: 19.0 estimated value: 4.34487
+actual value: 1.0 estimated value: 4.34487
+actual value: 15.0 estimated value: 4.34487
+actual value: 0.0 estimated value: 4.34487
 [*]----------------------------
-RMSE: 10.209110164575126
-MAPE: 296.155673514
+RMSE: 8.686178218713842
+MAPE: 160.884616772
 [*]============================
-Epoch: 0094 cost = 352860.881074681
+Epoch: 0038 cost = 317627.926047084
 [*]----------------------------
-actual value: 6.0 estimated value: 8.79282
-actual value: 3.0 estimated value: 8.79282
-actual value: 3.0 estimated value: 8.79282
-actual value: 12.0 estimated value: 8.79282
-actual value: 1.0 estimated value: 8.79282
-actual value: 0.0 estimated value: 8.79282
-actual value: 4.0 estimated value: 8.79282
-actual value: 0.0 estimated value: 8.79282
-actual value: 0.0 estimated value: 8.79282
-actual value: 0.0 estimated value: 8.79282
+actual value: 4.0 estimated value: 4.42597
+actual value: 0.0 estimated value: 4.42597
+actual value: 1.0 estimated value: 4.42597
+actual value: 0.0 estimated value: 4.42597
+actual value: 19.0 estimated value: 4.42597
 [*]----------------------------
-RMSE: 6.914858717339316
-MAPE: 226.427172621
+RMSE: 7.259469536569671
+MAPE: 143.317399422
 [*]============================
-Epoch: 0095 cost = 342824.642470191
+Epoch: 0039 cost = 317623.356797839
 [*]----------------------------
-actual value: 9.0 estimated value: 8.87636
-actual value: 2.0 estimated value: 8.87636
-actual value: 0.0 estimated value: 8.87636
-actual value: 11.0 estimated value: 8.87636
-actual value: 1.0 estimated value: 8.87636
-actual value: 1.0 estimated value: 8.87636
-actual value: 1.0 estimated value: 8.87636
-actual value: 2.0 estimated value: 8.87636
-actual value: 0.0 estimated value: 8.87636
-actual value: 1.0 estimated value: 8.87636
+actual value: 2.0 estimated value: 4.50682
+actual value: 1.0 estimated value: 4.50682
+actual value: 80.0 estimated value: 4.50682
+actual value: 4.0 estimated value: 4.50682
+actual value: 0.0 estimated value: 4.50682
 [*]----------------------------
-RMSE: 7.105077546079582
-MAPE: 482.357331424
+RMSE: 33.87733860425917
+MAPE: 145.765002072
 [*]============================
-Epoch: 0096 cost = 342665.233631269
+Epoch: 0040 cost = 317615.889667053
 [*]----------------------------
-actual value: 0.0 estimated value: 8.94501
-actual value: 0.0 estimated value: 8.94501
-actual value: 28.0 estimated value: 8.94501
-actual value: 2.0 estimated value: 8.94501
-actual value: 0.0 estimated value: 8.94501
-actual value: 0.0 estimated value: 8.94501
-actual value: 0.0 estimated value: 8.94501
-actual value: 1.0 estimated value: 8.94501
-actual value: 0.0 estimated value: 8.94501
-actual value: 3.0 estimated value: 8.94501
+actual value: 0.0 estimated value: 4.5874
+actual value: 4.0 estimated value: 4.5874
+actual value: 0.0 estimated value: 4.5874
+actual value: 2.0 estimated value: 4.5874
+actual value: 1.0 estimated value: 4.5874
 [*]----------------------------
-RMSE: 9.949229602499138
-MAPE: 351.993145049
+RMSE: 3.521297161692406
+MAPE: 167.598470052
 [*]============================
-Epoch: 0097 cost = 27648.675481729
+Epoch: 0041 cost = 317614.390760058
 [*]----------------------------
-actual value: 0.0 estimated value: 9.00421
-actual value: 2.0 estimated value: 9.00421
-actual value: 3.0 estimated value: 9.00421
-actual value: 0.0 estimated value: 9.00421
-actual value: 0.0 estimated value: 9.00421
-actual value: 2.0 estimated value: 9.00421
-actual value: 1.0 estimated value: 9.00421
-actual value: 0.0 estimated value: 9.00421
-actual value: 0.0 estimated value: 9.00421
-actual value: 0.0 estimated value: 9.00421
+actual value: 0.0 estimated value: 4.66779
+actual value: 0.0 estimated value: 4.66779
+actual value: 0.0 estimated value: 4.66779
+actual value: 0.0 estimated value: 4.66779
+actual value: 4.0 estimated value: 4.66779
 [*]----------------------------
-RMSE: 8.274599158219308
-MAPE: 425.245332718
+RMSE: 4.185665454968805
+MAPE: 16.6947364807
 [*]============================
-Epoch: 0098 cost = 351158.157566182
+Epoch: 0042 cost = 317609.922176332
 [*]----------------------------
-actual value: 4.0 estimated value: 9.09919
-actual value: 0.0 estimated value: 9.09919
-actual value: 0.0 estimated value: 9.09919
-actual value: 7.0 estimated value: 9.09919
-actual value: 0.0 estimated value: 9.09919
-actual value: 1.0 estimated value: 9.09919
-actual value: 0.0 estimated value: 9.09919
-actual value: 0.0 estimated value: 9.09919
-actual value: 4.0 estimated value: 9.09919
-actual value: 0.0 estimated value: 9.09919
+actual value: 0.0 estimated value: 4.74792
+actual value: 0.0 estimated value: 4.74792
+actual value: 1.0 estimated value: 4.74792
+actual value: 0.0 estimated value: 4.74792
+actual value: 0.0 estimated value: 4.74792
 [*]----------------------------
-RMSE: 7.866250965059226
-MAPE: 273.716878891
+RMSE: 4.5654789828562485
+MAPE: 374.79224205
 [*]============================
-Epoch: 0099 cost = 352704.542091123
+Epoch: 0043 cost = 317605.425393528
 [*]----------------------------
-actual value: 0.0 estimated value: 9.19639
-actual value: 20.0 estimated value: 9.19639
-actual value: 5.0 estimated value: 9.19639
-actual value: 0.0 estimated value: 9.19639
-actual value: 2.0 estimated value: 9.19639
-actual value: 2.0 estimated value: 9.19639
-actual value: 0.0 estimated value: 9.19639
-actual value: 0.0 estimated value: 9.19639
-actual value: 1.0 estimated value: 9.19639
-actual value: 0.0 estimated value: 9.19639
+actual value: 0.0 estimated value: 4.82782
+actual value: 0.0 estimated value: 4.82782
+actual value: 0.0 estimated value: 4.82782
+actual value: 0.0 estimated value: 4.82782
+actual value: 0.0 estimated value: 4.82782
 [*]----------------------------
-RMSE: 8.532014683114443
-MAPE: 335.444858074
+RMSE: 4.827819347381592
+MAPE: 404
 [*]============================
-Epoch: 0100 cost = 352624.460913400
+Epoch: 0044 cost = 317600.976247934
 [*]----------------------------
-actual value: 0.0 estimated value: 9.29178
-actual value: 0.0 estimated value: 9.29178
-actual value: 65.0 estimated value: 9.29178
-actual value: 0.0 estimated value: 9.29178
-actual value: 0.0 estimated value: 9.29178
-actual value: 0.0 estimated value: 9.29178
-actual value: 0.0 estimated value: 9.29178
-actual value: 1.0 estimated value: 9.29178
-actual value: 0.0 estimated value: 9.29178
-actual value: 1.0 estimated value: 9.29178
+actual value: 0.0 estimated value: 4.90748
+actual value: 1.0 estimated value: 4.90748
+actual value: 0.0 estimated value: 4.90748
+actual value: 0.0 estimated value: 4.90748
+actual value: 0.0 estimated value: 4.90748
 [*]----------------------------
-RMSE: 19.60936828499954
-MAPE: 581.353934606
+RMSE: 4.72443915345959
+MAPE: 390.74754715
 [*]============================
-Accuracy: 41.9475463995
-RMSE: 64.36422840830541
+Epoch: 0045 cost = 317596.583261748
+[*]----------------------------
+actual value: 1.0 estimated value: 4.98686
+actual value: 25.0 estimated value: 4.98686
+actual value: 0.0 estimated value: 4.98686
+actual value: 0.0 estimated value: 4.98686
+actual value: 1.0 estimated value: 4.98686
+[*]----------------------------
+RMSE: 9.81889484649827
+MAPE: 292.47456193
+[*]============================
+Epoch: 0046 cost = 317592.192633121
+[*]----------------------------
+actual value: 0.0 estimated value: 5.06605
+actual value: 0.0 estimated value: 5.06605
+actual value: 5.0 estimated value: 5.06605
+actual value: 1.0 estimated value: 5.06605
+actual value: 25.0 estimated value: 5.06605
+[*]----------------------------
+RMSE: 9.646027288415452
+MAPE: 162.553805113
+[*]============================
+Epoch: 0047 cost = 317587.663229801
+[*]----------------------------
+actual value: 0.0 estimated value: 5.14499
+actual value: 3.0 estimated value: 5.14499
+actual value: 2.0 estimated value: 5.14499
+actual value: 0.0 estimated value: 5.14499
+actual value: 0.0 estimated value: 5.14499
+[*]----------------------------
+RMSE: 4.333697488687984
+MAPE: 114.374542236
+[*]============================
+Epoch: 0048 cost = 317583.543543813
+[*]----------------------------
+actual value: 0.0 estimated value: 5.2237
+actual value: 0.0 estimated value: 5.2237
+actual value: 1.0 estimated value: 5.2237
+actual value: 0.0 estimated value: 5.2237
+actual value: 3.0 estimated value: 5.2237
+[*]----------------------------
+RMSE: 4.574839895634856
+MAPE: 248.246955872
+[*]============================
+Epoch: 0049 cost = 317579.176019328
+[*]----------------------------
+actual value: 3.0 estimated value: 5.30218
+actual value: 3.0 estimated value: 5.30218
+actual value: 0.0 estimated value: 5.30218
+actual value: 0.0 estimated value: 5.30218
+actual value: 0.0 estimated value: 5.30218
+[*]----------------------------
+RMSE: 4.357503884098202
+MAPE: 76.7391681671
+[*]============================
+Epoch: 0050 cost = 317574.901165698
+[*]----------------------------
+actual value: 0.0 estimated value: 5.38037
+actual value: 0.0 estimated value: 5.38037
+actual value: 0.0 estimated value: 5.38037
+actual value: 3.0 estimated value: 5.38037
+actual value: 3.0 estimated value: 5.38037
+[*]----------------------------
+RMSE: 4.431192907984797
+MAPE: 79.3455779552
+[*]============================
+Epoch: 0051 cost = 317570.677586714
+[*]----------------------------
+actual value: 0.0 estimated value: 5.45838
+actual value: 14.0 estimated value: 5.45838
+actual value: 2.0 estimated value: 5.45838
+actual value: 0.0 estimated value: 5.45838
+actual value: 0.0 estimated value: 5.45838
+[*]----------------------------
+RMSE: 5.904260539809201
+MAPE: 116.965350509
+[*]============================
+Epoch: 0052 cost = 317566.427316908
+[*]----------------------------
+actual value: 0.0 estimated value: 5.53614
+actual value: 0.0 estimated value: 5.53614
+actual value: 1.0 estimated value: 5.53614
+actual value: 0.0 estimated value: 5.53614
+actual value: 14.0 estimated value: 5.53614
+[*]----------------------------
+RMSE: 6.068938455991976
+MAPE: 257.035157084
+[*]============================
+Epoch: 0053 cost = 317562.166646822
+[*]----------------------------
+actual value: 1.0 estimated value: 5.61368
+actual value: 3.0 estimated value: 5.61368
+actual value: 0.0 estimated value: 5.61368
+actual value: 0.0 estimated value: 5.61368
+actual value: 0.0 estimated value: 5.61368
+[*]----------------------------
+RMSE: 4.952933551851032
+MAPE: 274.245581031
+[*]============================
+Epoch: 0054 cost = 317558.028982471
+[*]----------------------------
+actual value: 5.0 estimated value: 5.69098
+actual value: 0.0 estimated value: 5.69098
+actual value: 320.0 estimated value: 5.69098
+actual value: 1.0 estimated value: 5.69098
+actual value: 3.0 estimated value: 5.69098
+[*]----------------------------
+RMSE: 140.60744793790218
+MAPE: 167.709660903
+[*]============================
+Epoch: 0055 cost = 317501.659425455
+[*]----------------------------
+actual value: 0.0 estimated value: 5.76805
+actual value: 0.0 estimated value: 5.76805
+actual value: 1.0 estimated value: 5.76805
+actual value: 5.0 estimated value: 5.76805
+actual value: 0.0 estimated value: 5.76805
+[*]----------------------------
+RMSE: 4.96257033754892
+MAPE: 246.083154529
+[*]============================
+Epoch: 0056 cost = 317549.797253970
+[*]----------------------------
+actual value: 7.0 estimated value: 5.8449
+actual value: 1.0 estimated value: 5.8449
+actual value: 2.0 estimated value: 5.8449
+actual value: 0.0 estimated value: 5.8449
+actual value: 0.0 estimated value: 5.8449
+[*]----------------------------
+RMSE: 4.645781960032076
+MAPE: 231.079009672
+[*]============================
+Epoch: 0057 cost = 317545.616020192
+[*]----------------------------
+actual value: 11.0 estimated value: 5.92156
+actual value: 0.0 estimated value: 5.92156
+actual value: 20.0 estimated value: 5.92156
+actual value: 7.0 estimated value: 5.92156
+actual value: 1.0 estimated value: 5.92156
+[*]----------------------------
+RMSE: 7.542448388559432
+MAPE: 156.030561402
+[*]============================
+Epoch: 0058 cost = 317541.475742632
+[*]----------------------------
+actual value: 1.0 estimated value: 5.99796
+actual value: 0.0 estimated value: 5.99796
+actual value: 1.0 estimated value: 5.99796
+actual value: 11.0 estimated value: 5.99796
+actual value: 0.0 estimated value: 5.99796
+[*]----------------------------
+RMSE: 5.420897783353161
+MAPE: 348.355035981
+[*]============================
+Epoch: 0059 cost = 317537.503590501
+[*]----------------------------
+actual value: 2.0 estimated value: 6.07417
+actual value: 0.0 estimated value: 6.07417
+actual value: 0.0 estimated value: 6.07417
+actual value: 1.0 estimated value: 6.07417
+actual value: 0.0 estimated value: 6.07417
+[*]----------------------------
+RMSE: 5.532313861053268
+MAPE: 355.562472343
+[*]============================
+Epoch: 0060 cost = 317533.466998287
+[*]----------------------------
+actual value: 5.0 estimated value: 6.15009
+actual value: 0.0 estimated value: 6.15009
+actual value: 2.0 estimated value: 6.15009
+actual value: 2.0 estimated value: 6.15009
+actual value: 0.0 estimated value: 6.15009
+[*]----------------------------
+RMSE: 4.720520955333656
+MAPE: 146.003761391
+[*]============================
+Epoch: 0061 cost = 317529.455426451
+[*]----------------------------
+actual value: 0.0 estimated value: 6.2258
+actual value: 0.0 estimated value: 6.2258
+actual value: 20.0 estimated value: 6.2258
+actual value: 5.0 estimated value: 6.2258
+actual value: 0.0 estimated value: 6.2258
+[*]----------------------------
+RMSE: 7.842357814481188
+MAPE: 46.6934762895
+[*]============================
+Epoch: 0062 cost = 317525.408807538
+[*]----------------------------
+actual value: 0.0 estimated value: 6.30132
+actual value: 0.0 estimated value: 6.30132
+actual value: 1.0 estimated value: 6.30132
+actual value: 0.0 estimated value: 6.30132
+actual value: 0.0 estimated value: 6.30132
+[*]----------------------------
+RMSE: 6.11441793383995
+MAPE: 530.132007599
+[*]============================
+Epoch: 0063 cost = 317521.492095205
+[*]----------------------------
+actual value: 0.0 estimated value: 6.37657
+actual value: 0.0 estimated value: 6.37657
+actual value: 2.0 estimated value: 6.37657
+actual value: 0.0 estimated value: 6.37657
+actual value: 0.0 estimated value: 6.37657
+[*]----------------------------
+RMSE: 6.029878236700395
+MAPE: 218.828678131
+[*]============================
+Epoch: 0064 cost = 317517.507073604
+[*]----------------------------
+actual value: 4.0 estimated value: 6.45165
+actual value: 15.0 estimated value: 6.45165
+actual value: 1.0 estimated value: 6.45165
+actual value: 0.0 estimated value: 6.45165
+actual value: 0.0 estimated value: 6.45165
+[*]----------------------------
+RMSE: 6.197627078796124
+MAPE: 221.148365736
+[*]============================
+Epoch: 0065 cost = 317513.640004730
+[*]----------------------------
+actual value: 0.0 estimated value: 6.52644
+actual value: 0.0 estimated value: 6.52644
+actual value: 0.0 estimated value: 6.52644
+actual value: 4.0 estimated value: 6.52644
+actual value: 15.0 estimated value: 6.52644
+[*]----------------------------
+RMSE: 6.418212964339254
+MAPE: 59.8256707191
+[*]============================
+Epoch: 0066 cost = 317509.688595601
+[*]----------------------------
+actual value: 0.0 estimated value: 6.60101
+actual value: 0.0 estimated value: 6.60101
+actual value: 0.0 estimated value: 6.60101
+actual value: 0.0 estimated value: 6.60101
+actual value: 0.0 estimated value: 6.60101
+[*]----------------------------
+RMSE: 6.60101318359375
+MAPE: 404
+[*]============================
+Epoch: 0067 cost = 317505.860305176
+[*]----------------------------
+actual value: 0.0 estimated value: 6.67543
+actual value: 10.0 estimated value: 6.67543
+actual value: 3.0 estimated value: 6.67543
+actual value: 0.0 estimated value: 6.67543
+actual value: 0.0 estimated value: 6.67543
+[*]----------------------------
+RMSE: 5.625753373513222
+MAPE: 77.879974246
+[*]============================
+Epoch: 0068 cost = 317502.018860847
+[*]----------------------------
+actual value: 0.0 estimated value: 6.74955
+actual value: 2.0 estimated value: 6.74955
+actual value: 1.0 estimated value: 6.74955
+actual value: 0.0 estimated value: 6.74955
+actual value: 10.0 estimated value: 6.74955
+[*]----------------------------
+RMSE: 5.608814112331279
+MAPE: 281.64583842
+[*]============================
+Epoch: 0069 cost = 317498.194251268
+[*]----------------------------
+actual value: 0.0 estimated value: 6.82352
+actual value: 2.0 estimated value: 6.82352
+actual value: 0.0 estimated value: 6.82352
+actual value: 0.0 estimated value: 6.82352
+actual value: 2.0 estimated value: 6.82352
+[*]----------------------------
+RMSE: 6.102685202385656
+MAPE: 241.175889969
+[*]============================
+Epoch: 0070 cost = 317494.359681281
+[*]----------------------------
+actual value: 9.0 estimated value: 6.89718
+actual value: 0.0 estimated value: 6.89718
+actual value: 2.0 estimated value: 6.89718
+actual value: 0.0 estimated value: 6.89718
+actual value: 2.0 estimated value: 6.89718
+[*]----------------------------
+RMSE: 5.4319231795379865
+MAPE: 171.027670801
+[*]============================
+Epoch: 0071 cost = 317490.558785128
+[*]----------------------------
+actual value: 2.0 estimated value: 6.97064
+actual value: 0.0 estimated value: 6.97064
+actual value: 0.0 estimated value: 6.97064
+actual value: 9.0 estimated value: 6.97064
+actual value: 0.0 estimated value: 6.97064
+[*]----------------------------
+RMSE: 5.9092287993153265
+MAPE: 135.540179163
+[*]============================
+Epoch: 0072 cost = 317486.801445923
+[*]----------------------------
+actual value: 1.0 estimated value: 7.04395
+actual value: 2.0 estimated value: 7.04395
+actual value: 2.0 estimated value: 7.04395
+actual value: 2.0 estimated value: 7.04395
+actual value: 0.0 estimated value: 7.04395
+[*]----------------------------
+RMSE: 5.700370247431378
+MAPE: 340.247148275
+[*]============================
+Epoch: 0073 cost = 317483.060568993
+[*]----------------------------
+actual value: 1.0 estimated value: 7.11696
+actual value: 416.0 estimated value: 7.11696
+actual value: 0.0 estimated value: 7.11696
+actual value: 1.0 estimated value: 7.11696
+actual value: 2.0 estimated value: 7.11696
+[*]----------------------------
+RMSE: 182.94097292614518
+MAPE: 394.382330775
+[*]============================
+Epoch: 0074 cost = 317479.368722116
+[*]----------------------------
+actual value: 4.0 estimated value: 7.18983
+actual value: 7.0 estimated value: 7.18983
+actual value: 0.0 estimated value: 7.18983
+actual value: 1.0 estimated value: 7.18983
+actual value: 416.0 estimated value: 7.18983
+[*]----------------------------
+RMSE: 182.8802790803947
+MAPE: 199.927932862
+[*]============================
+Epoch: 0075 cost = 317387.241657459
+[*]----------------------------
+actual value: 0.0 estimated value: 7.26246
+actual value: 5.0 estimated value: 7.26246
+actual value: 8.0 estimated value: 7.26246
+actual value: 4.0 estimated value: 7.26246
+actual value: 7.0 estimated value: 7.26246
+[*]----------------------------
+RMSE: 3.718022855553548
+MAPE: 34.9448082037
+[*]============================
+Epoch: 0076 cost = 317472.080071958
+[*]----------------------------
+actual value: 5.0 estimated value: 7.33488
+actual value: 0.0 estimated value: 7.33488
+actual value: 0.0 estimated value: 7.33488
+actual value: 0.0 estimated value: 7.33488
+actual value: 5.0 estimated value: 7.33488
+[*]----------------------------
+RMSE: 5.870347858905093
+MAPE: 46.6976732016
+[*]============================
+Epoch: 0077 cost = 317468.370017818
+[*]----------------------------
+actual value: 0.0 estimated value: 7.40711
+actual value: 0.0 estimated value: 7.40711
+actual value: 0.0 estimated value: 7.40711
+actual value: 5.0 estimated value: 7.40711
+actual value: 0.0 estimated value: 7.40711
+[*]----------------------------
+RMSE: 6.712013289641285
+MAPE: 48.1422990561
+[*]============================
+Epoch: 0078 cost = 317464.695707241
+[*]----------------------------
+actual value: 6.0 estimated value: 7.47911
+actual value: 10.0 estimated value: 7.47911
+actual value: 0.0 estimated value: 7.47911
+actual value: 0.0 estimated value: 7.47911
+actual value: 0.0 estimated value: 7.47911
+[*]----------------------------
+RMSE: 5.93891806023676
+MAPE: 24.9303534627
+[*]============================
+Epoch: 0079 cost = 317461.079908588
+[*]----------------------------
+actual value: 0.0 estimated value: 7.55089
+actual value: 2.0 estimated value: 7.55089
+actual value: 4.0 estimated value: 7.55089
+actual value: 6.0 estimated value: 7.55089
+actual value: 10.0 estimated value: 7.55089
+[*]----------------------------
+RMSE: 4.665632392879217
+MAPE: 104.164061695
+[*]============================
+Epoch: 0080 cost = 317457.582449464
+[*]----------------------------
+actual value: 4.0 estimated value: 7.62245
+actual value: 0.0 estimated value: 7.62245
+actual value: 0.0 estimated value: 7.62245
+actual value: 0.0 estimated value: 7.62245
+actual value: 2.0 estimated value: 7.62245
+[*]----------------------------
+RMSE: 6.618748042173441
+MAPE: 185.84176302
+[*]============================
+Epoch: 0081 cost = 317453.891607648
+[*]----------------------------
+actual value: 0.0 estimated value: 7.69379
+actual value: 0.0 estimated value: 7.69379
+actual value: 0.0 estimated value: 7.69379
+actual value: 4.0 estimated value: 7.69379
+actual value: 0.0 estimated value: 7.69379
+[*]----------------------------
+RMSE: 7.077033217956892
+MAPE: 92.3448562622
+[*]============================
+Epoch: 0082 cost = 317450.413445907
+[*]----------------------------
+actual value: 1.0 estimated value: 7.76495
+actual value: 2.0 estimated value: 7.76495
+actual value: 0.0 estimated value: 7.76495
+actual value: 0.0 estimated value: 7.76495
+actual value: 0.0 estimated value: 7.76495
+[*]----------------------------
+RMSE: 7.2094733244689015
+MAPE: 482.371234894
+[*]============================
+Epoch: 0083 cost = 317446.823487635
+[*]----------------------------
+actual value: 0.0 estimated value: 7.83588
+actual value: 0.0 estimated value: 7.83588
+actual value: 0.0 estimated value: 7.83588
+actual value: 1.0 estimated value: 7.83588
+actual value: 2.0 estimated value: 7.83588
+[*]----------------------------
+RMSE: 7.2799652755450355
+MAPE: 487.690663338
+[*]============================
+Epoch: 0084 cost = 317443.341578716
+[*]----------------------------
+actual value: 2.0 estimated value: 7.9066
+actual value: 1.0 estimated value: 7.9066
+actual value: 3.0 estimated value: 7.9066
+actual value: 0.0 estimated value: 7.9066
+actual value: 0.0 estimated value: 7.9066
+[*]----------------------------
+RMSE: 6.807235236127654
+MAPE: 383.180963993
+[*]============================
+Epoch: 0085 cost = 317439.855571414
+[*]----------------------------
+actual value: 0.0 estimated value: 7.97709
+actual value: 2.0 estimated value: 7.97709
+actual value: 2.0 estimated value: 7.97709
+actual value: 2.0 estimated value: 7.97709
+actual value: 1.0 estimated value: 7.97709
+[*]----------------------------
+RMSE: 6.625564980781
+MAPE: 398.568117619
+[*]============================
+Epoch: 0086 cost = 317436.386963403
+[*]----------------------------
+actual value: 5.0 estimated value: 8.04738
+actual value: 0.0 estimated value: 8.04738
+actual value: 0.0 estimated value: 8.04738
+actual value: 0.0 estimated value: 8.04738
+actual value: 2.0 estimated value: 8.04738
+[*]----------------------------
+RMSE: 6.930195963812189
+MAPE: 181.658181548
+[*]============================
+Epoch: 0087 cost = 317432.931104453
+[*]----------------------------
+actual value: 2.0 estimated value: 8.11748
+actual value: 0.0 estimated value: 8.11748
+actual value: 0.0 estimated value: 8.11748
+actual value: 5.0 estimated value: 8.11748
+actual value: 0.0 estimated value: 8.11748
+[*]----------------------------
+RMSE: 6.997462198730403
+MAPE: 184.111642838
+[*]============================
+Epoch: 0088 cost = 317429.506071752
+[*]----------------------------
+actual value: 4.0 estimated value: 8.18734
+actual value: 0.0 estimated value: 8.18734
+actual value: 1.0 estimated value: 8.18734
+actual value: 2.0 estimated value: 8.18734
+actual value: 0.0 estimated value: 8.18734
+[*]----------------------------
+RMSE: 6.950392466212301
+MAPE: 377.594709396
+[*]============================
+Epoch: 0089 cost = 317426.072189372
+[*]----------------------------
+actual value: 0.0 estimated value: 8.25701
+actual value: 0.0 estimated value: 8.25701
+actual value: 0.0 estimated value: 8.25701
+actual value: 4.0 estimated value: 8.25701
+actual value: 0.0 estimated value: 8.25701
+[*]----------------------------
+RMSE: 7.626727774925678
+MAPE: 106.425213814
+[*]============================
+Epoch: 0090 cost = 317422.731066119
+[*]----------------------------
+actual value: 0.0 estimated value: 8.32645
+actual value: 0.0 estimated value: 8.32645
+actual value: 3.0 estimated value: 8.32645
+actual value: 0.0 estimated value: 8.32645
+actual value: 0.0 estimated value: 8.32645
+[*]----------------------------
+RMSE: 7.8190814664236665
+MAPE: 177.548348904
+[*]============================
+Epoch: 0091 cost = 317419.313860684
+[*]----------------------------
+actual value: 1.0 estimated value: 8.39568
+actual value: 0.0 estimated value: 8.39568
+actual value: 0.0 estimated value: 8.39568
+actual value: 0.0 estimated value: 8.39568
+actual value: 0.0 estimated value: 8.39568
+[*]----------------------------
+RMSE: 8.205438718716673
+MAPE: 739.568328857
+[*]============================
+Epoch: 0092 cost = 317415.952742329
+[*]----------------------------
+actual value: 0.0 estimated value: 8.46474
+actual value: 11.0 estimated value: 8.46474
+actual value: 0.0 estimated value: 8.46474
+actual value: 1.0 estimated value: 8.46474
+actual value: 0.0 estimated value: 8.46474
+[*]----------------------------
+RMSE: 7.4445366997229545
+MAPE: 384.761116654
+[*]============================
+Epoch: 0093 cost = 317412.612291745
+[*]----------------------------
+actual value: 0.0 estimated value: 8.53356
+actual value: 0.0 estimated value: 8.53356
+actual value: 0.0 estimated value: 8.53356
+actual value: 0.0 estimated value: 8.53356
+actual value: 11.0 estimated value: 8.53356
+[*]----------------------------
+RMSE: 7.711939831903427
+MAPE: 22.422157228
+[*]============================
+Epoch: 0094 cost = 317409.352428688
+[*]----------------------------
+actual value: 0.0 estimated value: 8.60219
+actual value: 0.0 estimated value: 8.60219
+actual value: 0.0 estimated value: 8.60219
+actual value: 0.0 estimated value: 8.60219
+actual value: 0.0 estimated value: 8.60219
+[*]----------------------------
+RMSE: 8.602190017700195
+MAPE: 404
+[*]============================
+Epoch: 0095 cost = 317406.023320738
+[*]----------------------------
+actual value: 1.0 estimated value: 8.67059
+actual value: 0.0 estimated value: 8.67059
+actual value: 0.0 estimated value: 8.67059
+actual value: 0.0 estimated value: 8.67059
+actual value: 0.0 estimated value: 8.67059
+[*]----------------------------
+RMSE: 8.480028630847407
+MAPE: 767.058944702
+[*]============================
+Epoch: 0096 cost = 317402.738680968
+[*]----------------------------
+actual value: 0.0 estimated value: 8.73878
+actual value: 17.0 estimated value: 8.73878
+actual value: 0.0 estimated value: 8.73878
+actual value: 1.0 estimated value: 8.73878
+actual value: 0.0 estimated value: 8.73878
+[*]----------------------------
+RMSE: 8.452636281722338
+MAPE: 411.236706376
+[*]============================
+Epoch: 0097 cost = 317399.465316404
+[*]----------------------------
+actual value: 1.0 estimated value: 8.80681
+actual value: 3.0 estimated value: 8.80681
+actual value: 0.0 estimated value: 8.80681
+actual value: 0.0 estimated value: 8.80681
+actual value: 17.0 estimated value: 8.80681
+[*]----------------------------
+RMSE: 7.961326487584444
+MAPE: 340.812286735
+[*]============================
+Epoch: 0098 cost = 317396.263263939
+[*]----------------------------
+actual value: 0.0 estimated value: 8.8746
+actual value: 0.0 estimated value: 8.8746
+actual value: 8.0 estimated value: 8.8746
+actual value: 1.0 estimated value: 8.8746
+actual value: 3.0 estimated value: 8.8746
+[*]----------------------------
+RMSE: 7.138657140983199
+MAPE: 331.404093901
+[*]============================
+Epoch: 0099 cost = 317393.100810076
+[*]----------------------------
+actual value: 0.0 estimated value: 8.94221
+actual value: 13.0 estimated value: 8.94221
+actual value: 4.0 estimated value: 8.94221
+actual value: 0.0 estimated value: 8.94221
+actual value: 0.0 estimated value: 8.94221
+[*]----------------------------
+RMSE: 7.493734155213346
+MAPE: 77.3844778538
+[*]============================
+Epoch: 0100 cost = 317389.862099956
+[*]----------------------------
+actual value: 0.0 estimated value: 9.00959
+actual value: 0.0 estimated value: 9.00959
+actual value: 1.0 estimated value: 9.00959
+actual value: 0.0 estimated value: 9.00959
+actual value: 13.0 estimated value: 9.00959
+[*]----------------------------
+RMSE: 8.044812603015442
+MAPE: 415.82723707
+[*]============================
+Epoch: 0101 cost = 317386.745106692
+[*]----------------------------
+actual value: 0.0 estimated value: 9.07676
+actual value: 27.0 estimated value: 9.07676
+actual value: 2.0 estimated value: 9.07676
+actual value: 0.0 estimated value: 9.07676
+actual value: 0.0 estimated value: 9.07676
+[*]----------------------------
+RMSE: 11.121923249211788
+MAPE: 210.110259056
+[*]============================
+Epoch: 0102 cost = 317383.546359733
+[*]----------------------------
+actual value: 3.0 estimated value: 9.14378
+actual value: 0.0 estimated value: 9.14378
+actual value: 0.0 estimated value: 9.14378
+actual value: 0.0 estimated value: 9.14378
+actual value: 27.0 estimated value: 9.14378
+[*]----------------------------
+RMSE: 11.021949697346047
+MAPE: 135.46346128
+[*]============================
+Epoch: 0103 cost = 317380.265402517
+[*]----------------------------
+actual value: 2.0 estimated value: 9.21056
+actual value: 0.0 estimated value: 9.21056
+actual value: 2.0 estimated value: 9.21056
+actual value: 3.0 estimated value: 9.21056
+actual value: 0.0 estimated value: 9.21056
+[*]----------------------------
+RMSE: 7.9022022499740565
+MAPE: 309.358088175
+[*]============================
+Epoch: 0104 cost = 317377.295884052
+[*]----------------------------
+actual value: 0.0 estimated value: 9.27716
+actual value: 11.0 estimated value: 9.27716
+actual value: 0.0 estimated value: 9.27716
+actual value: 2.0 estimated value: 9.27716
+actual value: 0.0 estimated value: 9.27716
+[*]----------------------------
+RMSE: 7.926185925790451
+MAPE: 189.760026336
+[*]============================
+Epoch: 0105 cost = 317374.184683603
+[*]----------------------------
+actual value: 0.0 estimated value: 9.34352
+actual value: 18.0 estimated value: 9.34352
+actual value: 2.0 estimated value: 9.34352
+actual value: 0.0 estimated value: 9.34352
+actual value: 11.0 estimated value: 9.34352
+[*]----------------------------
+RMSE: 7.825709234334192
+MAPE: 143.442167838
+[*]============================
+Epoch: 0106 cost = 317371.118044787
+[*]----------------------------
+actual value: 0.0 estimated value: 9.40969
+actual value: 0.0 estimated value: 9.40969
+actual value: 0.0 estimated value: 9.40969
+actual value: 0.0 estimated value: 9.40969
+actual value: 18.0 estimated value: 9.40969
+[*]----------------------------
+RMSE: 9.251620706175194
+MAPE: 47.7239489555
+[*]============================
+Epoch: 0107 cost = 317368.023072712
+[*]----------------------------
+actual value: 0.0 estimated value: 9.47572
+actual value: 5.0 estimated value: 9.47572
+actual value: 0.0 estimated value: 9.47572
+actual value: 0.0 estimated value: 9.47572
+actual value: 0.0 estimated value: 9.47572
+[*]----------------------------
+RMSE: 8.708489415225163
+MAPE: 89.5143508911
+[*]============================
+Epoch: 0108 cost = 317364.909799152
+[*]----------------------------
+actual value: 0.0 estimated value: 9.54148
+actual value: 0.0 estimated value: 9.54148
+actual value: 25.0 estimated value: 9.54148
+actual value: 0.0 estimated value: 9.54148
+actual value: 5.0 estimated value: 9.54148
+[*]----------------------------
+RMSE: 10.321921697863045
+MAPE: 76.3318240643
+[*]============================
+Epoch: 0109 cost = 317361.879378965
+[*]----------------------------
+actual value: 0.0 estimated value: 9.60709
+actual value: 0.0 estimated value: 9.60709
+actual value: 9.0 estimated value: 9.60709
+actual value: 0.0 estimated value: 9.60709
+actual value: 0.0 estimated value: 9.60709
+[*]----------------------------
+RMSE: 8.5971305800784
+MAPE: 6.74544423819
+[*]============================
+Epoch: 0110 cost = 317358.942197820
+[*]----------------------------
+actual value: 0.0 estimated value: 9.67246
+actual value: 0.0 estimated value: 9.67246
+actual value: 0.0 estimated value: 9.67246
+actual value: 0.0 estimated value: 9.67246
+actual value: 0.0 estimated value: 9.67246
+[*]----------------------------
+RMSE: 9.672456741333008
+MAPE: 404
+[*]============================
+Epoch: 0111 cost = 317355.888395784
+[*]----------------------------
+actual value: 0.0 estimated value: 9.73762
+actual value: 0.0 estimated value: 9.73762
+actual value: 0.0 estimated value: 9.73762
+actual value: 0.0 estimated value: 9.73762
+actual value: 0.0 estimated value: 9.73762
+[*]----------------------------
+RMSE: 9.737618446350098
+MAPE: 404
+[*]============================
+Epoch: 0112 cost = 317352.906809681
+[*]----------------------------
+actual value: 0.0 estimated value: 9.80266
+actual value: 0.0 estimated value: 9.80266
+actual value: 0.0 estimated value: 9.80266
+actual value: 0.0 estimated value: 9.80266
+actual value: 0.0 estimated value: 9.80266
+[*]----------------------------
+RMSE: 9.802663803100586
+MAPE: 404
+[*]============================
+Epoch: 0113 cost = 317349.941105535
+[*]----------------------------
+actual value: 0.0 estimated value: 9.86743
+actual value: 0.0 estimated value: 9.86743
+actual value: 0.0 estimated value: 9.86743
+actual value: 0.0 estimated value: 9.86743
+actual value: 0.0 estimated value: 9.86743
+[*]----------------------------
+RMSE: 9.867427825927734
+MAPE: 404
+[*]============================
+Epoch: 0114 cost = 317346.969648124
+[*]----------------------------
+actual value: 2.0 estimated value: 9.93205
+actual value: 0.0 estimated value: 9.93205
+actual value: 0.0 estimated value: 9.93205
+actual value: 0.0 estimated value: 9.93205
+actual value: 0.0 estimated value: 9.93205
+[*]----------------------------
+RMSE: 9.565562745696315
+MAPE: 396.602535248
+[*]============================
+Epoch: 0115 cost = 317344.089217383
+[*]----------------------------
+actual value: 2.0 estimated value: 9.99642
+actual value: 0.0 estimated value: 9.99642
+actual value: 0.0 estimated value: 9.99642
+actual value: 2.0 estimated value: 9.99642
+actual value: 0.0 estimated value: 9.99642
+[*]----------------------------
+RMSE: 9.248471592794365
+MAPE: 399.821233749
+[*]============================
+Epoch: 0116 cost = 317341.187478863
+[*]----------------------------
+actual value: 458.0 estimated value: 10.0606
+actual value: 0.0 estimated value: 10.0606
+actual value: 4.0 estimated value: 10.0606
+actual value: 2.0 estimated value: 10.0606
+actual value: 0.0 estimated value: 10.0606
+[*]----------------------------
+RMSE: 200.47636289481702
+MAPE: 217.448937893
+[*]============================
+Epoch: 0117 cost = 317338.314857614
+[*]----------------------------
+actual value: 0.0 estimated value: 10.1246
+actual value: 0.0 estimated value: 10.1246
+actual value: 0.0 estimated value: 10.1246
+actual value: 458.0 estimated value: 10.1246
+actual value: 0.0 estimated value: 10.1246
+[*]----------------------------
+RMSE: 200.50056226640632
+MAPE: 97.7893829346
+[*]============================
+Epoch: 0118 cost = 317229.322796837
+[*]----------------------------
+actual value: 1.0 estimated value: 10.1885
+actual value: 0.0 estimated value: 10.1885
+actual value: 0.0 estimated value: 10.1885
+actual value: 0.0 estimated value: 10.1885
+actual value: 0.0 estimated value: 10.1885
+[*]----------------------------
+RMSE: 9.996497829938168
+MAPE: 918.849182129
+[*]============================
+Epoch: 0119 cost = 317332.575488791
+[*]----------------------------
+actual value: 8.0 estimated value: 10.2521
+actual value: 0.0 estimated value: 10.2521
+actual value: 55.0 estimated value: 10.2521
+actual value: 1.0 estimated value: 10.2521
+actual value: 0.0 estimated value: 10.2521
+[*]----------------------------
+RMSE: 21.46279577687269
+MAPE: 344.90853548
+[*]============================
+Epoch: 0120 cost = 317328.680519376
+[*]----------------------------
+actual value: 0.0 estimated value: 10.3156
+actual value: 0.0 estimated value: 10.3156
+actual value: 3.0 estimated value: 10.3156
+actual value: 8.0 estimated value: 10.3156
+actual value: 0.0 estimated value: 10.3156
+[*]----------------------------
+RMSE: 8.696168195121382
+MAPE: 136.399704218
+[*]============================
+Epoch: 0121 cost = 317326.945067280
+[*]----------------------------
+actual value: 0.0 estimated value: 10.3789
+actual value: 0.0 estimated value: 10.3789
+actual value: 9.0 estimated value: 10.3789
+actual value: 0.0 estimated value: 10.3789
+actual value: 0.0 estimated value: 10.3789
+[*]----------------------------
+RMSE: 9.303610819675288
+MAPE: 15.3208836913
+[*]============================
+Epoch: 0122 cost = 317324.092018147
+[*]----------------------------
+actual value: 1.0 estimated value: 10.442
+actual value: 0.0 estimated value: 10.442
+actual value: 7.0 estimated value: 10.442
+actual value: 0.0 estimated value: 10.442
+actual value: 0.0 estimated value: 10.442
+[*]----------------------------
+RMSE: 9.253157314479482
+MAPE: 496.685573459
+[*]============================
+Epoch: 0123 cost = 317321.319789523
+[*]----------------------------
+actual value: 0.0 estimated value: 10.5049
+actual value: 1.0 estimated value: 10.5049
+actual value: 0.0 estimated value: 10.5049
+actual value: 1.0 estimated value: 10.5049
+actual value: 0.0 estimated value: 10.5049
+[*]----------------------------
+RMSE: 10.116745574204392
+MAPE: 950.487709045
+[*]============================
+Epoch: 0124 cost = 317318.513323194
+[*]----------------------------
+actual value: 0.0 estimated value: 10.5676
+actual value: 0.0 estimated value: 10.5676
+actual value: 0.0 estimated value: 10.5676
+actual value: 0.0 estimated value: 10.5676
+actual value: 1.0 estimated value: 10.5676
+[*]----------------------------
+RMSE: 10.37528609173793
+MAPE: 956.757259369
+[*]============================
+Epoch: 0125 cost = 317315.759212898
+[*]----------------------------
+actual value: 0.0 estimated value: 10.6301
+actual value: 0.0 estimated value: 10.6301
+actual value: 65.0 estimated value: 10.6301
+actual value: 0.0 estimated value: 10.6301
+actual value: 0.0 estimated value: 10.6301
+[*]----------------------------
+RMSE: 26.1077830951002
+MAPE: 83.6459815502
+[*]============================
+Epoch: 0126 cost = 317311.516292199
+[*]----------------------------
+actual value: 1.0 estimated value: 10.6924
+actual value: 0.0 estimated value: 10.6924
+actual value: 0.0 estimated value: 10.6924
+actual value: 0.0 estimated value: 10.6924
+actual value: 0.0 estimated value: 10.6924
+[*]----------------------------
+RMSE: 10.500038930402905
+MAPE: 969.241714478
+[*]============================
+Epoch: 0127 cost = 317310.278753654
+[*]----------------------------
+actual value: 2.0 estimated value: 10.7546
+actual value: 0.0 estimated value: 10.7546
+actual value: 0.0 estimated value: 10.7546
+actual value: 1.0 estimated value: 10.7546
+actual value: 0.0 estimated value: 10.7546
+[*]----------------------------
+RMSE: 10.1860512792464
+MAPE: 706.59403801
+[*]============================
+Epoch: 0128 cost = 317307.548266073
+[*]----------------------------
+actual value: 0.0 estimated value: 10.8165
+actual value: 0.0 estimated value: 10.8165
+actual value: 8.0 estimated value: 10.8165
+actual value: 2.0 estimated value: 10.8165
+actual value: 0.0 estimated value: 10.8165
+[*]----------------------------
+RMSE: 9.345109454990116
+MAPE: 238.016331196
+[*]============================
+Epoch: 0129 cost = 317304.900141580
+[*]----------------------------
+actual value: 2.0 estimated value: 10.8783
+actual value: 2.0 estimated value: 10.8783
+actual value: 2.0 estimated value: 10.8783
+actual value: 0.0 estimated value: 10.8783
+actual value: 0.0 estimated value: 10.8783
+[*]----------------------------
+RMSE: 9.72773082188496
+MAPE: 443.913078308
+[*]============================
+Epoch: 0130 cost = 317302.172325215
+[*]----------------------------
+actual value: 0.0 estimated value: 10.9399
+actual value: 0.0 estimated value: 10.9399
+actual value: 0.0 estimated value: 10.9399
+actual value: 2.0 estimated value: 10.9399
+actual value: 2.0 estimated value: 10.9399
+[*]----------------------------
+RMSE: 10.187101577884071
+MAPE: 446.993684769
+[*]============================
+Epoch: 0131 cost = 317299.516545826
+[*]----------------------------
+actual value: 1.0 estimated value: 11.0012
+actual value: 0.0 estimated value: 11.0012
+actual value: 1.0 estimated value: 11.0012
+actual value: 0.0 estimated value: 11.0012
+actual value: 0.0 estimated value: 11.0012
+[*]----------------------------
+RMSE: 10.612542691478518
+MAPE: 1000.12292862
+[*]============================
+Epoch: 0132 cost = 317296.840019327
+[*]----------------------------
+actual value: 0.0 estimated value: 11.0625
+actual value: 2.0 estimated value: 11.0625
+actual value: 1.0 estimated value: 11.0625
+actual value: 1.0 estimated value: 11.0625
+actual value: 0.0 estimated value: 11.0625
+[*]----------------------------
+RMSE: 10.289712435589605
+MAPE: 821.872059504
+[*]============================
+Epoch: 0133 cost = 317294.230705372
+[*]----------------------------
+actual value: 0.0 estimated value: 11.1235
+actual value: 28.0 estimated value: 11.1235
+actual value: 5.0 estimated value: 11.1235
+actual value: 0.0 estimated value: 11.1235
+actual value: 2.0 estimated value: 11.1235
+[*]----------------------------
+RMSE: 11.428161148097384
+MAPE: 212.971719106
+[*]============================
+Epoch: 0134 cost = 317291.644413408
+[*]----------------------------
+actual value: 0.0 estimated value: 11.1842
+actual value: 1.0 estimated value: 11.1842
+actual value: 0.0 estimated value: 11.1842
+actual value: 0.0 estimated value: 11.1842
+actual value: 28.0 estimated value: 11.1842
+[*]----------------------------
+RMSE: 12.343012831137912
+MAPE: 539.239835739
+[*]============================
+Epoch: 0135 cost = 317288.898725590
+[*]----------------------------
+actual value: 3.0 estimated value: 11.2449
+actual value: 1.0 estimated value: 11.2449
+actual value: 0.0 estimated value: 11.2449
+actual value: 0.0 estimated value: 11.2449
+actual value: 1.0 estimated value: 11.2449
+[*]----------------------------
+RMSE: 10.303326528873233
+MAPE: 774.605464935
+[*]============================
+Epoch: 0136 cost = 317286.398865780
+[*]----------------------------
+actual value: 2.0 estimated value: 11.3053
+actual value: 60.0 estimated value: 11.3053
+actual value: 1.0 estimated value: 11.3053
+actual value: 3.0 estimated value: 11.3053
+actual value: 1.0 estimated value: 11.3053
+[*]----------------------------
+RMSE: 23.40571761939874
+MAPE: 576.867259741
+[*]============================
+Epoch: 0137 cost = 317283.844250755
+[*]----------------------------
+actual value: 0.0 estimated value: 11.3656
+actual value: 1.0 estimated value: 11.3656
+actual value: 0.0 estimated value: 11.3656
+actual value: 2.0 estimated value: 11.3656
+actual value: 60.0 estimated value: 11.3656
+[*]----------------------------
+RMSE: 23.743706603800078
+MAPE: 528.634878
+[*]============================
+Epoch: 0138 cost = 317280.114735346
+[*]----------------------------
+actual value: 3.0 estimated value: 11.4257
+actual value: 0.0 estimated value: 11.4257
+actual value: 1.0 estimated value: 11.4257
+actual value: 0.0 estimated value: 11.4257
+actual value: 1.0 estimated value: 11.4257
+[*]----------------------------
+RMSE: 10.483101795651727
+MAPE: 788.6663119
+[*]============================
+Epoch: 0139 cost = 317278.774216758
+[*]----------------------------
+actual value: 2.0 estimated value: 11.4856
+actual value: 10.0 estimated value: 11.4856
+actual value: 6.0 estimated value: 11.4856
+actual value: 3.0 estimated value: 11.4856
+actual value: 0.0 estimated value: 11.4856
+[*]----------------------------
+RMSE: 8.077087037287093
+MAPE: 215.852806717
+[*]============================
+Epoch: 0140 cost = 317276.280757874
+[*]----------------------------
+actual value: 0.0 estimated value: 11.5453
+actual value: 0.0 estimated value: 11.5453
+actual value: 1.0 estimated value: 11.5453
+actual value: 2.0 estimated value: 11.5453
+actual value: 10.0 estimated value: 11.5453
+[*]----------------------------
+RMSE: 9.708716111149247
+MAPE: 515.751647949
+[*]============================
+Epoch: 0141 cost = 317273.770068073
+[*]----------------------------
+actual value: 1.0 estimated value: 11.6048
+actual value: 1.0 estimated value: 11.6048
+actual value: 1.0 estimated value: 11.6048
+actual value: 0.0 estimated value: 11.6048
+actual value: 0.0 estimated value: 11.6048
+[*]----------------------------
+RMSE: 11.015712497922832
+MAPE: 1060.48135757
+[*]============================
+Epoch: 0142 cost = 317271.156018343
+[*]----------------------------
+actual value: 130.0 estimated value: 11.6642
+actual value: 14.0 estimated value: 11.6642
+actual value: 0.0 estimated value: 11.6642
+actual value: 1.0 estimated value: 11.6642
+actual value: 1.0 estimated value: 11.6642
+[*]----------------------------
+RMSE: 53.61403037032158
+MAPE: 560.137810186
+[*]============================
+Epoch: 0143 cost = 317268.707957676
+[*]----------------------------
+actual value: 0.0 estimated value: 11.7233
+actual value: 1.0 estimated value: 11.7233
+actual value: 0.0 estimated value: 11.7233
+actual value: 130.0 estimated value: 11.7233
+actual value: 14.0 estimated value: 11.7233
+[*]----------------------------
+RMSE: 53.63658680832674
+MAPE: 393.192343414
+[*]============================
+Epoch: 0144 cost = 317258.981847440
+[*]----------------------------
+actual value: 8.0 estimated value: 11.7822
+actual value: 8.0 estimated value: 11.7822
+actual value: 1.0 estimated value: 11.7822
+actual value: 0.0 estimated value: 11.7822
+actual value: 1.0 estimated value: 11.7822
+[*]----------------------------
+RMSE: 8.943665000860515
+MAPE: 562.751317024
+[*]============================
+Epoch: 0145 cost = 317263.760064846
+[*]----------------------------
+actual value: 28.0 estimated value: 11.8411
+actual value: 11.0 estimated value: 11.8411
+actual value: 0.0 estimated value: 11.8411
+actual value: 8.0 estimated value: 11.8411
+actual value: 8.0 estimated value: 11.8411
+[*]----------------------------
+RMSE: 9.290182146685613
+MAPE: 40.3462415561
+[*]============================
+Epoch: 0146 cost = 317261.433585424
+[*]----------------------------
+actual value: 0.0 estimated value: 11.8997
+actual value: 0.0 estimated value: 11.8997
+actual value: 0.0 estimated value: 11.8997
+actual value: 28.0 estimated value: 11.8997
+actual value: 11.0 estimated value: 11.8997
+[*]----------------------------
+RMSE: 11.703307182661632
+MAPE: 32.840032503
+[*]============================
+Epoch: 0147 cost = 317258.869667749
+[*]----------------------------
+actual value: 0.0 estimated value: 11.9582
+actual value: 0.0 estimated value: 11.9582
+actual value: 0.0 estimated value: 11.9582
+actual value: 0.0 estimated value: 11.9582
+actual value: 0.0 estimated value: 11.9582
+[*]----------------------------
+RMSE: 11.958203315734863
+MAPE: 404
+[*]============================
+Epoch: 0148 cost = 317256.471016142
+[*]----------------------------
+actual value: 1.0 estimated value: 12.0164
+actual value: 0.0 estimated value: 12.0164
+actual value: 0.0 estimated value: 12.0164
+actual value: 0.0 estimated value: 12.0164
+actual value: 0.0 estimated value: 12.0164
+[*]----------------------------
+RMSE: 11.823147681306553
+MAPE: 1101.63793564
+[*]============================
+Epoch: 0149 cost = 317254.085347634
+[*]----------------------------
+actual value: 2.0 estimated value: 12.0744
+actual value: 0.0 estimated value: 12.0744
+actual value: 0.0 estimated value: 12.0744
+actual value: 1.0 estimated value: 12.0744
+actual value: 0.0 estimated value: 12.0744
+[*]----------------------------
+RMSE: 11.502206739910392
+MAPE: 805.57641983
+[*]============================
+Epoch: 0150 cost = 317251.671538752
+[*]----------------------------
+actual value: 6.0 estimated value: 12.1324
+actual value: 0.0 estimated value: 12.1324
+actual value: 0.0 estimated value: 12.1324
+actual value: 2.0 estimated value: 12.1324
+actual value: 0.0 estimated value: 12.1324
+[*]----------------------------
+RMSE: 10.787531589893364
+MAPE: 304.41236496
+[*]============================
+Epoch: 0151 cost = 317249.369575581
+[*]----------------------------
+actual value: 0.0 estimated value: 12.19
+actual value: 0.0 estimated value: 12.19
+actual value: 2.0 estimated value: 12.19
+actual value: 6.0 estimated value: 12.19
+actual value: 0.0 estimated value: 12.19
+[*]----------------------------
+RMSE: 10.843768881649286
+MAPE: 306.332111359
+[*]============================
+Epoch: 0152 cost = 317247.036806844
+[*]----------------------------
+actual value: 2.0 estimated value: 12.2476
+actual value: 0.0 estimated value: 12.2476
+actual value: 0.0 estimated value: 12.2476
+actual value: 0.0 estimated value: 12.2476
+actual value: 0.0 estimated value: 12.2476
+[*]----------------------------
+RMSE: 11.874544320282647
+MAPE: 512.378263474
+[*]============================
+Epoch: 0153 cost = 317244.631411608
+[*]----------------------------
+actual value: 28.0 estimated value: 12.3048
+actual value: 0.0 estimated value: 12.3048
+actual value: 0.0 estimated value: 12.3048
+actual value: 2.0 estimated value: 12.3048
+actual value: 0.0 estimated value: 12.3048
+[*]----------------------------
+RMSE: 12.702387009667707
+MAPE: 285.647386312
+[*]============================
+Epoch: 0154 cost = 317242.284567959
+[*]----------------------------
+actual value: 0.0 estimated value: 12.3618
+actual value: 8.0 estimated value: 12.3618
+actual value: 0.0 estimated value: 12.3618
+actual value: 28.0 estimated value: 12.3618
+actual value: 0.0 estimated value: 12.3618
+[*]----------------------------
+RMSE: 12.016838506203085
+MAPE: 55.1867067814
+[*]============================
+Epoch: 0155 cost = 317239.896701923
+[*]----------------------------
+actual value: 39.0 estimated value: 12.4189
+actual value: 2.0 estimated value: 12.4189
+actual value: 0.0 estimated value: 12.4189
+actual value: 0.0 estimated value: 12.4189
+actual value: 8.0 estimated value: 12.4189
+[*]----------------------------
+RMSE: 15.120146805960925
+MAPE: 214.780114094
+[*]============================
+Epoch: 0156 cost = 317237.712195401
+[*]----------------------------
+actual value: 1.0 estimated value: 12.4756
+actual value: 8.0 estimated value: 12.4756
+actual value: 0.0 estimated value: 12.4756
+actual value: 39.0 estimated value: 12.4756
+actual value: 2.0 estimated value: 12.4756
+[*]----------------------------
+RMSE: 14.970919836193909
+MAPE: 448.822821677
+[*]============================
+Epoch: 0157 cost = 317235.092753718
+[*]----------------------------
+actual value: 1.0 estimated value: 12.5323
+actual value: 9.0 estimated value: 12.5323
+actual value: 0.0 estimated value: 12.5323
+actual value: 1.0 estimated value: 12.5323
+actual value: 8.0 estimated value: 12.5323
+[*]----------------------------
+RMSE: 9.550552159666678
+MAPE: 600.590328127
+[*]============================
+Epoch: 0158 cost = 317233.173802613
+[*]----------------------------
+actual value: 1.0 estimated value: 12.5886
+actual value: 1.0 estimated value: 12.5886
+actual value: 0.0 estimated value: 12.5886
+actual value: 1.0 estimated value: 12.5886
+actual value: 9.0 estimated value: 12.5886
+[*]----------------------------
+RMSE: 10.71666789468492
+MAPE: 879.111046344
+[*]============================
+Epoch: 0159 cost = 317230.897437474
+[*]----------------------------
+actual value: 1.0 estimated value: 12.6446
+actual value: 318.0 estimated value: 12.6446
+actual value: 0.0 estimated value: 12.6446
+actual value: 1.0 estimated value: 12.6446
+actual value: 1.0 estimated value: 12.6446
+[*]----------------------------
+RMSE: 136.97342924355738
+MAPE: 897.35135138
+[*]============================
+Epoch: 0160 cost = 317228.569320286
+[*]----------------------------
+actual value: 1.0 estimated value: 12.7009
+actual value: 0.0 estimated value: 12.7009
+actual value: 7.0 estimated value: 12.7009
+actual value: 1.0 estimated value: 12.7009
+actual value: 318.0 estimated value: 12.7009
+[*]----------------------------
+RMSE: 136.8759982823936
+MAPE: 629.405894876
+[*]============================
+Epoch: 0161 cost = 317177.174082670
+[*]----------------------------
+actual value: 1.0 estimated value: 12.7566
+actual value: 2657.0 estimated value: 12.7566
+actual value: 118.0 estimated value: 12.7566
+actual value: 1.0 estimated value: 12.7566
+actual value: 0.0 estimated value: 12.7566
+[*]----------------------------
+RMSE: 1183.5149804295343
+MAPE: 635.006181896
+[*]============================
+Epoch: 0162 cost = 317218.315890499
+[*]----------------------------
+actual value: 55.0 estimated value: 12.8125
+actual value: 3.0 estimated value: 12.8125
+actual value: 12.0 estimated value: 12.8125
+actual value: 1.0 estimated value: 12.8125
+actual value: 2657.0 estimated value: 12.8125
+[*]----------------------------
+RMSE: 1182.6870930040266
+MAPE: 338.26588586
+[*]============================
+Epoch: 0163 cost = 313522.943103931
+[*]----------------------------
+actual value: 3.0 estimated value: 12.8683
+actual value: 0.0 estimated value: 12.8683
+actual value: 0.0 estimated value: 12.8683
+actual value: 55.0 estimated value: 12.8683
+actual value: 3.0 estimated value: 12.8683
+[*]----------------------------
+RMSE: 21.45242577570323
+MAPE: 244.829571247
+[*]============================
+Epoch: 0164 cost = 317219.032024767
+[*]----------------------------
+actual value: 0.0 estimated value: 12.9239
+actual value: 1.0 estimated value: 12.9239
+actual value: 33.0 estimated value: 12.9239
+actual value: 3.0 estimated value: 12.9239
+actual value: 0.0 estimated value: 12.9239
+[*]----------------------------
+RMSE: 13.984058757286373
+MAPE: 528.00946037
+[*]============================
+Epoch: 0165 cost = 317217.565678591
+[*]----------------------------
+actual value: 0.0 estimated value: 12.9794
+actual value: 387.0 estimated value: 12.9794
+actual value: 1.0 estimated value: 12.9794
+actual value: 0.0 estimated value: 12.9794
+actual value: 1.0 estimated value: 12.9794
+[*]----------------------------
+RMSE: 167.63972763438375
+MAPE: 830.838918686
+[*]============================
+Epoch: 0166 cost = 317215.493199868
+[*]----------------------------
+actual value: 0.0 estimated value: 13.0347
+actual value: 0.0 estimated value: 13.0347
+actual value: 1.0 estimated value: 13.0347
+actual value: 0.0 estimated value: 13.0347
+actual value: 387.0 estimated value: 13.0347
+[*]----------------------------
+RMSE: 167.63329558348502
+MAPE: 650.048568845
+[*]============================
+Epoch: 0167 cost = 317139.465594418
+[*]----------------------------
+actual value: 0.0 estimated value: 13.0898
+actual value: 0.0 estimated value: 13.0898
+actual value: 1.0 estimated value: 13.0898
+actual value: 0.0 estimated value: 13.0898
+actual value: 0.0 estimated value: 13.0898
+[*]----------------------------
+RMSE: 12.896012471091401
+MAPE: 1208.98075104
+[*]============================
+Epoch: 0168 cost = 317211.215490250
+[*]----------------------------
+actual value: 3.0 estimated value: 13.1448
+actual value: 0.0 estimated value: 13.1448
+actual value: 8.0 estimated value: 13.1448
+actual value: 0.0 estimated value: 13.1448
+actual value: 0.0 estimated value: 13.1448
+[*]----------------------------
+RMSE: 11.381937663952659
+MAPE: 201.234847307
+[*]============================
+Epoch: 0169 cost = 317209.146940493
+[*]----------------------------
+actual value: 1.0 estimated value: 13.1996
+actual value: 0.0 estimated value: 13.1996
+actual value: 0.0 estimated value: 13.1996
+actual value: 3.0 estimated value: 13.1996
+actual value: 0.0 estimated value: 13.1996
+[*]----------------------------
+RMSE: 12.454340846364163
+MAPE: 779.974746704
+[*]============================
+Epoch: 0170 cost = 317206.958740275
+[*]----------------------------
+actual value: 0.0 estimated value: 13.2543
+actual value: 1.0 estimated value: 13.2543
+actual value: 20.0 estimated value: 13.2543
+actual value: 1.0 estimated value: 13.2543
+actual value: 0.0 estimated value: 13.2543
+[*]----------------------------
+RMSE: 11.808394957701822
+MAPE: 828.194562594
+[*]============================
+Epoch: 0171 cost = 317204.906357992
+[*]----------------------------
+actual value: 0.0 estimated value: 13.3088
+actual value: 2.0 estimated value: 13.3088
+actual value: 0.0 estimated value: 13.3088
+actual value: 0.0 estimated value: 13.3088
+actual value: 1.0 estimated value: 13.3088
+[*]----------------------------
+RMSE: 12.733912374486435
+MAPE: 898.156833649
+[*]============================
+Epoch: 0172 cost = 317202.743274204
+[*]----------------------------
+actual value: 0.0 estimated value: 13.3631
+actual value: 0.0 estimated value: 13.3631
+actual value: 0.0 estimated value: 13.3631
+actual value: 0.0 estimated value: 13.3631
+actual value: 2.0 estimated value: 13.3631
+[*]----------------------------
+RMSE: 12.987752527039756
+MAPE: 568.154525757
+[*]============================
+Epoch: 0173 cost = 317200.662384982
+[*]----------------------------
+actual value: 0.0 estimated value: 13.4173
+actual value: 0.0 estimated value: 13.4173
+actual value: 1.0 estimated value: 13.4173
+actual value: 0.0 estimated value: 13.4173
+actual value: 0.0 estimated value: 13.4173
+[*]----------------------------
+RMSE: 13.223313382842688
+MAPE: 1241.72620773
+[*]============================
+Epoch: 0174 cost = 317198.605310834
+[*]----------------------------
+actual value: 1.0 estimated value: 13.4713
+actual value: 0.0 estimated value: 13.4713
+actual value: 0.0 estimated value: 13.4713
+actual value: 0.0 estimated value: 13.4713
+actual value: 0.0 estimated value: 13.4713
+[*]----------------------------
+RMSE: 13.27728867249162
+MAPE: 1247.12619781
+[*]============================
+Epoch: 0175 cost = 317196.494316747
+[*]----------------------------
+actual value: 0.0 estimated value: 13.5251
+actual value: 0.0 estimated value: 13.5251
+actual value: 0.0 estimated value: 13.5251
+actual value: 1.0 estimated value: 13.5251
+actual value: 0.0 estimated value: 13.5251
+[*]----------------------------
+RMSE: 13.331108782552889
+MAPE: 1252.51064301
+[*]============================
+Epoch: 0176 cost = 317194.489104286
+[*]----------------------------
+actual value: 62.0 estimated value: 13.5788
+actual value: 0.0 estimated value: 13.5788
+actual value: 0.0 estimated value: 13.5788
+actual value: 0.0 estimated value: 13.5788
+actual value: 0.0 estimated value: 13.5788
+[*]----------------------------
+RMSE: 24.827997487945936
+MAPE: 78.0987679958
+[*]============================
+Epoch: 0177 cost = 317192.368008608
+[*]----------------------------
+actual value: 1.0 estimated value: 13.6323
+actual value: 0.0 estimated value: 13.6323
+actual value: 0.0 estimated value: 13.6323
+actual value: 62.0 estimated value: 13.6323
+actual value: 0.0 estimated value: 13.6323
+[*]----------------------------
+RMSE: 24.724595176833176
+MAPE: 670.620337129
+[*]============================
+Epoch: 0178 cost = 317189.235012277
+[*]----------------------------
+actual value: 5.0 estimated value: 13.6856
+actual value: 0.0 estimated value: 13.6856
+actual value: 0.0 estimated value: 13.6856
+actual value: 1.0 estimated value: 13.6856
+actual value: 0.0 estimated value: 13.6856
+[*]----------------------------
+RMSE: 12.63532087639327
+MAPE: 721.138703823
+[*]============================
+Epoch: 0179 cost = 317188.396666814
+[*]----------------------------
+actual value: 0.0 estimated value: 13.7388
+actual value: 0.0 estimated value: 13.7388
+actual value: 0.0 estimated value: 13.7388
+actual value: 5.0 estimated value: 13.7388
+actual value: 0.0 estimated value: 13.7388
+[*]----------------------------
+RMSE: 12.89487134523088
+MAPE: 174.776530266
+[*]============================
+Epoch: 0180 cost = 317186.360185593
+[*]----------------------------
+actual value: 0.0 estimated value: 13.7919
+actual value: 1.0 estimated value: 13.7919
+actual value: 11.0 estimated value: 13.7919
+actual value: 0.0 estimated value: 13.7919
+actual value: 0.0 estimated value: 13.7919
+[*]----------------------------
+RMSE: 12.182558290241765
+MAPE: 652.283877134
+[*]============================
+Epoch: 0181 cost = 317184.444084793
+[*]----------------------------
+actual value: 1.0 estimated value: 13.8447
+actual value: 1.0 estimated value: 13.8447
+actual value: 0.0 estimated value: 13.8447
+actual value: 0.0 estimated value: 13.8447
+actual value: 1.0 estimated value: 13.8447
+[*]----------------------------
+RMSE: 13.25377509823774
+MAPE: 1284.47179794
+[*]============================
+Epoch: 0182 cost = 317182.336635166
+[*]----------------------------
+actual value: 0.0 estimated value: 13.8974
+actual value: 2.0 estimated value: 13.8974
+actual value: 1.0 estimated value: 13.8974
+actual value: 1.0 estimated value: 13.8974
+actual value: 1.0 estimated value: 13.8974
+[*]----------------------------
+RMSE: 12.91291664334986
+MAPE: 1116.02416039
+[*]============================
+Epoch: 0183 cost = 317180.411556304
+[*]----------------------------
+actual value: 5.0 estimated value: 13.95
+actual value: 0.0 estimated value: 13.95
+actual value: 0.0 estimated value: 13.95
+actual value: 0.0 estimated value: 13.95
+actual value: 2.0 estimated value: 13.95
+[*]----------------------------
+RMSE: 12.702047727371331
+MAPE: 388.249325752
+[*]============================
+Epoch: 0184 cost = 317178.431345602
+[*]----------------------------
+actual value: 0.0 estimated value: 14.0023
+actual value: 1.0 estimated value: 14.0023
+actual value: 2.0 estimated value: 14.0023
+actual value: 5.0 estimated value: 14.0023
+actual value: 0.0 estimated value: 14.0023
+[*]----------------------------
+RMSE: 12.54026642017621
+MAPE: 693.466492494
+[*]============================
+Epoch: 0185 cost = 317176.592310345
+[*]----------------------------
+actual value: 2.0 estimated value: 14.0546
+actual value: 0.0 estimated value: 14.0546
+actual value: 0.0 estimated value: 14.0546
+actual value: 0.0 estimated value: 14.0546
+actual value: 1.0 estimated value: 14.0546
+[*]----------------------------
+RMSE: 13.478375793520694
+MAPE: 954.095983505
+[*]============================
+Epoch: 0186 cost = 317174.575507290
+[*]----------------------------
+actual value: 12.0 estimated value: 14.1066
+actual value: 0.0 estimated value: 14.1066
+actual value: 0.0 estimated value: 14.1066
+actual value: 2.0 estimated value: 14.1066
+actual value: 0.0 estimated value: 14.1066
+[*]----------------------------
+RMSE: 12.231115698625675
+MAPE: 311.443773657
+[*]============================
+Epoch: 0187 cost = 317172.619052886
+[*]----------------------------
+actual value: 0.0 estimated value: 14.1585
+actual value: 4.0 estimated value: 14.1585
+actual value: 8.0 estimated value: 14.1585
+actual value: 12.0 estimated value: 14.1585
+actual value: 0.0 estimated value: 14.1585
+[*]----------------------------
+RMSE: 10.456688675902287
+MAPE: 116.311082741
+[*]============================
+Epoch: 0188 cost = 317170.893490665
+[*]----------------------------
+actual value: 3.0 estimated value: 14.2103
+actual value: 20.0 estimated value: 14.2103
+actual value: 0.0 estimated value: 14.2103
+actual value: 0.0 estimated value: 14.2103
+actual value: 4.0 estimated value: 14.2103
+[*]----------------------------
+RMSE: 11.552556512920056
+MAPE: 219.294397036
+[*]============================
+Epoch: 0189 cost = 317168.803749791
+[*]----------------------------
+actual value: 0.0 estimated value: 14.2619
+actual value: 5.0 estimated value: 14.2619
+actual value: 0.0 estimated value: 14.2619
+actual value: 3.0 estimated value: 14.2619
+actual value: 20.0 estimated value: 14.2619
+[*]----------------------------
+RMSE: 11.422263970047908
+MAPE: 196.441349387
+[*]============================
+Epoch: 0190 cost = 317167.032027229
+[*]----------------------------
+actual value: 0.0 estimated value: 14.3134
+actual value: 0.0 estimated value: 14.3134
+actual value: 1.0 estimated value: 14.3134
+actual value: 0.0 estimated value: 14.3134
+actual value: 5.0 estimated value: 14.3134
+[*]----------------------------
+RMSE: 13.255950215214277
+MAPE: 758.801615238
+[*]============================
+Epoch: 0191 cost = 317165.102726346
+[*]----------------------------
+actual value: 0.0 estimated value: 14.3646
+actual value: 0.0 estimated value: 14.3646
+actual value: 2.0 estimated value: 14.3646
+actual value: 0.0 estimated value: 14.3646
+actual value: 0.0 estimated value: 14.3646
+[*]----------------------------
+RMSE: 13.987496496205914
+MAPE: 618.230009079
+[*]============================
+Epoch: 0192 cost = 317163.132018438
+[*]----------------------------
+actual value: 0.0 estimated value: 14.4157
+actual value: 0.0 estimated value: 14.4157
+actual value: 0.0 estimated value: 14.4157
+actual value: 0.0 estimated value: 14.4157
+actual value: 0.0 estimated value: 14.4157
+[*]----------------------------
+RMSE: 14.415716171264648
+MAPE: 404
+[*]============================
+Epoch: 0193 cost = 317161.271552212
+[*]----------------------------
+actual value: 1.0 estimated value: 14.4667
+actual value: 1.0 estimated value: 14.4667
+actual value: 0.0 estimated value: 14.4667
+actual value: 0.0 estimated value: 14.4667
+actual value: 0.0 estimated value: 14.4667
+[*]----------------------------
+RMSE: 14.075227800743468
+MAPE: 1346.66996002
+[*]============================
+Epoch: 0194 cost = 317159.440549336
+[*]----------------------------
+actual value: 0.0 estimated value: 14.5175
+actual value: 450.0 estimated value: 14.5175
+actual value: 0.0 estimated value: 14.5175
+actual value: 1.0 estimated value: 14.5175
+actual value: 1.0 estimated value: 14.5175
+[*]----------------------------
+RMSE: 195.15737405161983
+MAPE: 933.422211806
+[*]============================
+Epoch: 0195 cost = 317157.619246912
+[*]----------------------------
+actual value: 4.0 estimated value: 14.5682
+actual value: 0.0 estimated value: 14.5682
+actual value: 0.0 estimated value: 14.5682
+actual value: 0.0 estimated value: 14.5682
+actual value: 450.0 estimated value: 14.5682
+[*]----------------------------
+RMSE: 195.11496801178373
+MAPE: 180.483397841
+[*]============================
+Epoch: 0196 cost = 317055.604448571
+[*]----------------------------
+actual value: 0.0 estimated value: 14.6187
+actual value: 1.0 estimated value: 14.6187
+actual value: 6.0 estimated value: 14.6187
+actual value: 4.0 estimated value: 14.6187
+actual value: 0.0 estimated value: 14.6187
+[*]----------------------------
+RMSE: 12.648459123663445
+MAPE: 590.326376756
+[*]============================
+Epoch: 0197 cost = 317154.150922100
+[*]----------------------------
+actual value: 0.0 estimated value: 14.6691
+actual value: 0.0 estimated value: 14.6691
+actual value: 0.0 estimated value: 14.6691
+actual value: 0.0 estimated value: 14.6691
+actual value: 1.0 estimated value: 14.6691
+[*]----------------------------
+RMSE: 14.474612522781715
+MAPE: 1366.9084549
+[*]============================
+Epoch: 0198 cost = 317152.206831937
+[*]----------------------------
+actual value: 2.0 estimated value: 14.7193
+actual value: 2.0 estimated value: 14.7193
+actual value: 0.0 estimated value: 14.7193
+actual value: 0.0 estimated value: 14.7193
+actual value: 0.0 estimated value: 14.7193
+[*]----------------------------
+RMSE: 13.953737394114022
+MAPE: 635.964775085
+[*]============================
+Epoch: 0199 cost = 317150.389566351
+[*]----------------------------
+actual value: 0.0 estimated value: 14.7694
+actual value: 22.0 estimated value: 14.7694
+actual value: 0.0 estimated value: 14.7694
+actual value: 2.0 estimated value: 14.7694
+actual value: 2.0 estimated value: 14.7694
+[*]----------------------------
+RMSE: 12.764501436389539
+MAPE: 436.600592732
+[*]============================
+Epoch: 0200 cost = 317148.659471219
+[*]----------------------------
+actual value: 0.0 estimated value: 14.8193
+actual value: 0.0 estimated value: 14.8193
+actual value: 0.0 estimated value: 14.8193
+actual value: 0.0 estimated value: 14.8193
+actual value: 22.0 estimated value: 14.8193
+[*]----------------------------
+RMSE: 13.638247915115725
+MAPE: 32.6395481825
+[*]============================
+Epoch: 0201 cost = 317146.911684732
+[*]----------------------------
+actual value: 0.0 estimated value: 14.869
+actual value: 0.0 estimated value: 14.869
+actual value: 53.0 estimated value: 14.869
+actual value: 0.0 estimated value: 14.869
+actual value: 0.0 estimated value: 14.869
+[*]----------------------------
+RMSE: 21.625558032514842
+MAPE: 71.9452023506
+[*]============================
+Epoch: 0202 cost = 317144.399964630
+[*]----------------------------
+actual value: 0.0 estimated value: 14.9187
+actual value: 0.0 estimated value: 14.9187
+actual value: 2.0 estimated value: 14.9187
+actual value: 0.0 estimated value: 14.9187
+actual value: 0.0 estimated value: 14.9187
+[*]----------------------------
+RMSE: 14.540726911081777
+MAPE: 645.935153961
+[*]============================
+Epoch: 0203 cost = 317143.335223869
+[*]----------------------------
+actual value: 2.0 estimated value: 14.9681
+actual value: 0.0 estimated value: 14.9681
+actual value: 1.0 estimated value: 14.9681
+actual value: 0.0 estimated value: 14.9681
+actual value: 0.0 estimated value: 14.9681
+[*]----------------------------
+RMSE: 14.39039391250294
+MAPE: 1022.61047363
+[*]============================
+Epoch: 0204 cost = 317141.573810537
+[*]----------------------------
+actual value: 0.0 estimated value: 15.0174
+actual value: 0.0 estimated value: 15.0174
+actual value: 0.0 estimated value: 15.0174
+actual value: 2.0 estimated value: 15.0174
+actual value: 0.0 estimated value: 15.0174
+[*]----------------------------
+RMSE: 14.639317988988115
+MAPE: 650.872135162
+[*]============================
+Epoch: 0205 cost = 317139.832293112
+[*]----------------------------
+actual value: 0.0 estimated value: 15.0666
+actual value: 0.0 estimated value: 15.0666
+actual value: 0.0 estimated value: 15.0666
+actual value: 0.0 estimated value: 15.0666
+actual value: 0.0 estimated value: 15.0666
+[*]----------------------------
+RMSE: 15.066638946533203
+MAPE: 404
+[*]============================
+Epoch: 0206 cost = 317138.105708955
+[*]----------------------------
+actual value: 127.0 estimated value: 15.1156
+actual value: 5.0 estimated value: 15.1156
+actual value: 4.0 estimated value: 15.1156
+actual value: 0.0 estimated value: 15.1156
+actual value: 0.0 estimated value: 15.1156
+[*]----------------------------
+RMSE: 51.38280057842296
+MAPE: 189.433695873
+[*]============================
+Epoch: 0207 cost = 317136.434023680
+[*]----------------------------
+actual value: 11.0 estimated value: 15.1645
+actual value: 4.0 estimated value: 15.1645
+actual value: 0.0 estimated value: 15.1645
+actual value: 127.0 estimated value: 15.1645
+actual value: 5.0 estimated value: 15.1645
+[*]----------------------------
+RMSE: 50.95574991000797
+MAPE: 152.080730349
+[*]============================
+Epoch: 0208 cost = 317128.261721072
+[*]----------------------------
+actual value: 0.0 estimated value: 15.2132
+actual value: 2.0 estimated value: 15.2132
+actual value: 0.0 estimated value: 15.2132
+actual value: 11.0 estimated value: 15.2132
+actual value: 4.0 estimated value: 15.2132
+[*]----------------------------
+RMSE: 12.497696034732058
+MAPE: 326.431450248
+[*]============================
+Epoch: 0209 cost = 317133.140002882
+[*]----------------------------
+actual value: 8.0 estimated value: 15.2618
+actual value: 0.0 estimated value: 15.2618
+actual value: 0.0 estimated value: 15.2618
+actual value: 0.0 estimated value: 15.2618
+actual value: 2.0 estimated value: 15.2618
+[*]----------------------------
+RMSE: 13.618909717398207
+MAPE: 376.930499077
+[*]============================
+Epoch: 0210 cost = 317131.312114837
+[*]----------------------------
+actual value: 0.0 estimated value: 15.3102
+actual value: 3.0 estimated value: 15.3102
+actual value: 8.0 estimated value: 15.3102
+actual value: 8.0 estimated value: 15.3102
+actual value: 0.0 estimated value: 15.3102
+[*]----------------------------
+RMSE: 12.060092852330884
+MAPE: 197.699292501
+[*]============================
+Epoch: 0211 cost = 317129.802315061
+[*]----------------------------
+actual value: 8.0 estimated value: 15.3585
+actual value: 39.0 estimated value: 15.3585
+actual value: 4.0 estimated value: 15.3585
+actual value: 0.0 estimated value: 15.3585
+actual value: 3.0 estimated value: 15.3585
+[*]----------------------------
+RMSE: 15.037950416066025
+MAPE: 212.128302455
+[*]============================
+Epoch: 0212 cost = 317128.035955157
+[*]----------------------------
+actual value: 0.0 estimated value: 15.4067
+actual value: 5.0 estimated value: 15.4067
+actual value: 0.0 estimated value: 15.4067
+actual value: 8.0 estimated value: 15.4067
+actual value: 39.0 estimated value: 15.4067
+[*]----------------------------
+RMSE: 15.456612023483135
+MAPE: 120.404277245
+[*]============================
+Epoch: 0213 cost = 317126.233847442
+[*]----------------------------
+actual value: 5.0 estimated value: 15.4546
+actual value: 0.0 estimated value: 15.4546
+actual value: 0.0 estimated value: 15.4546
+actual value: 0.0 estimated value: 15.4546
+actual value: 5.0 estimated value: 15.4546
+[*]----------------------------
+RMSE: 13.675791421175287
+MAPE: 209.092760086
+[*]============================
+Epoch: 0214 cost = 317124.703127906
+[*]----------------------------
+actual value: 0.0 estimated value: 15.5024
+actual value: 35.0 estimated value: 15.5024
+actual value: 0.0 estimated value: 15.5024
+actual value: 5.0 estimated value: 15.5024
+actual value: 0.0 estimated value: 15.5024
+[*]----------------------------
+RMSE: 15.565558303726709
+MAPE: 132.878065109
+[*]============================
+Epoch: 0215 cost = 317123.109974109
+[*]----------------------------
+actual value: 0.0 estimated value: 15.5502
+actual value: 0.0 estimated value: 15.5502
+actual value: 0.0 estimated value: 15.5502
+actual value: 0.0 estimated value: 15.5502
+actual value: 35.0 estimated value: 15.5502
+[*]----------------------------
+RMSE: 16.404439969315032
+MAPE: 55.5709004402
+[*]============================
+Epoch: 0216 cost = 317121.372060745
+[*]----------------------------
+actual value: 7.0 estimated value: 15.5977
+actual value: 12.0 estimated value: 15.5977
+actual value: 0.0 estimated value: 15.5977
+actual value: 0.0 estimated value: 15.5977
+actual value: 0.0 estimated value: 15.5977
+[*]----------------------------
+RMSE: 12.780684082420054
+MAPE: 76.4026358724
+[*]============================
+Epoch: 0217 cost = 317119.788945193
+[*]----------------------------
+actual value: 15.0 estimated value: 15.6452
+actual value: 0.0 estimated value: 15.6452
+actual value: 0.0 estimated value: 15.6452
+actual value: 7.0 estimated value: 15.6452
+actual value: 12.0 estimated value: 15.6452
+[*]----------------------------
+RMSE: 10.751599932523723
+MAPE: 52.7265879015
+[*]============================
+Epoch: 0218 cost = 317118.405586686
+[*]----------------------------
+actual value: 2.0 estimated value: 15.6924
+actual value: 0.0 estimated value: 15.6924
+actual value: 4.0 estimated value: 15.6924
+actual value: 15.0 estimated value: 15.6924
+actual value: 0.0 estimated value: 15.6924
+[*]----------------------------
+RMSE: 12.784142239124353
+MAPE: 327.180857087
+[*]============================
+Epoch: 0219 cost = 317116.777215362
+[*]----------------------------
+actual value: 7.0 estimated value: 15.7394
+actual value: 0.0 estimated value: 15.7394
+actual value: 0.0 estimated value: 15.7394
+actual value: 2.0 estimated value: 15.7394
+actual value: 0.0 estimated value: 15.7394
+[*]----------------------------
+RMSE: 14.200961067727702
+MAPE: 405.909770727
+[*]============================
+Epoch: 0220 cost = 317115.013098843
+[*]----------------------------
+actual value: 0.0 estimated value: 15.7864
+actual value: 6.0 estimated value: 15.7864
+actual value: 16.0 estimated value: 15.7864
+actual value: 7.0 estimated value: 15.7864
+actual value: 0.0 estimated value: 15.7864
+[*]----------------------------
+RMSE: 11.588313936215087
+MAPE: 96.654232343
+[*]============================
+Epoch: 0221 cost = 317113.625308042
+[*]----------------------------
+actual value: 10.0 estimated value: 15.8332
+actual value: 28.0 estimated value: 15.8332
+actual value: 47.0 estimated value: 15.8332
+actual value: 0.0 estimated value: 15.8332
+actual value: 6.0 estimated value: 15.8332
+[*]----------------------------
+RMSE: 17.325173353955645
+MAPE: 82.9960890114
+[*]============================
+Epoch: 0222 cost = 317111.516249480
+[*]----------------------------
+actual value: 0.0 estimated value: 15.88
+actual value: 0.0 estimated value: 15.88
+actual value: 2.0 estimated value: 15.88
+actual value: 10.0 estimated value: 15.88
+actual value: 28.0 estimated value: 15.88
+[*]----------------------------
+RMSE: 13.254958916470926
+MAPE: 265.361351768
+[*]============================
+Epoch: 0223 cost = 317110.506682865
+[*]----------------------------
+actual value: 0.0 estimated value: 15.9264
+actual value: 0.0 estimated value: 15.9264
+actual value: 0.0 estimated value: 15.9264
+actual value: 0.0 estimated value: 15.9264
+actual value: 0.0 estimated value: 15.9264
+[*]----------------------------
+RMSE: 15.926430702209473
+MAPE: 404
+[*]============================
+Epoch: 0224 cost = 317108.726520296
+[*]----------------------------
+actual value: 0.0 estimated value: 15.9727
+actual value: 0.0 estimated value: 15.9727
+actual value: 0.0 estimated value: 15.9727
+actual value: 0.0 estimated value: 15.9727
+actual value: 0.0 estimated value: 15.9727
+[*]----------------------------
+RMSE: 15.972748756408691
+MAPE: 404
+[*]============================
+Epoch: 0225 cost = 317107.156383171
+[*]----------------------------
+actual value: 1.0 estimated value: 16.0191
+actual value: 84.0 estimated value: 16.0191
+actual value: 0.0 estimated value: 16.0191
+actual value: 0.0 estimated value: 16.0191
+actual value: 0.0 estimated value: 16.0191
+[*]----------------------------
+RMSE: 33.516595645585284
+MAPE: 791.418039799
+[*]============================
+Epoch: 0226 cost = 317105.676064103
+[*]----------------------------
+actual value: 19.0 estimated value: 16.0651
+actual value: 2.0 estimated value: 16.0651
+actual value: 0.0 estimated value: 16.0651
+actual value: 1.0 estimated value: 16.0651
+actual value: 84.0 estimated value: 16.0651
+[*]----------------------------
+RMSE: 32.578015639144574
+MAPE: 576.522013545
+[*]============================
+Epoch: 0227 cost = 317101.832569203
+[*]----------------------------
+actual value: 0.0 estimated value: 16.1112
+actual value: 2.0 estimated value: 16.1112
+actual value: 2.0 estimated value: 16.1112
+actual value: 19.0 estimated value: 16.1112
+actual value: 2.0 estimated value: 16.1112
+[*]----------------------------
+RMSE: 13.155153069175297
+MAPE: 532.96989128
+[*]============================
+Epoch: 0228 cost = 317102.816475500
+[*]----------------------------
+actual value: 10.0 estimated value: 16.1569
+actual value: 0.0 estimated value: 16.1569
+actual value: 1180.0 estimated value: 16.1569
+actual value: 0.0 estimated value: 16.1569
+actual value: 2.0 estimated value: 16.1569
+[*]----------------------------
+RMSE: 520.6325517328196
+MAPE: 289.348228772
+[*]============================
+Epoch: 0229 cost = 316384.610736423
+[*]----------------------------
+actual value: 28.0 estimated value: 16.2027
+actual value: 0.0 estimated value: 16.2027
+actual value: 0.0 estimated value: 16.2027
+actual value: 10.0 estimated value: 16.2027
+actual value: 0.0 estimated value: 16.2027
+[*]----------------------------
+RMSE: 13.894097639362922
+MAPE: 52.0800128579
+[*]============================
+Epoch: 0230 cost = 317099.784097056
+[*]----------------------------
+actual value: 0.0 estimated value: 16.2483
+actual value: 0.0 estimated value: 16.2483
+actual value: 4.0 estimated value: 16.2483
+actual value: 28.0 estimated value: 16.2483
+actual value: 0.0 estimated value: 16.2483
+[*]----------------------------
+RMSE: 14.697928388257987
+MAPE: 174.088975787
+[*]============================
+Epoch: 0231 cost = 317098.254441741
+[*]----------------------------
+actual value: 2.0 estimated value: 16.2938
+actual value: 0.0 estimated value: 16.2938
+actual value: 2.0 estimated value: 16.2938
+actual value: 0.0 estimated value: 16.2938
+actual value: 0.0 estimated value: 16.2938
+[*]----------------------------
+RMSE: 15.524772418948677
+MAPE: 714.691162109
+[*]============================
+Epoch: 0232 cost = 317096.688026226
+[*]----------------------------
+actual value: 0.0 estimated value: 16.3392
+actual value: 0.0 estimated value: 16.3392
+actual value: 21.0 estimated value: 16.3392
+actual value: 2.0 estimated value: 16.3392
+actual value: 0.0 estimated value: 16.3392
+[*]----------------------------
+RMSE: 14.340455375285067
+MAPE: 369.576992095
+[*]============================
+Epoch: 0233 cost = 317095.339997246
+[*]----------------------------
+actual value: 0.0 estimated value: 16.3844
+actual value: 1.0 estimated value: 16.3844
+actual value: 0.0 estimated value: 16.3844
+actual value: 0.0 estimated value: 16.3844
+actual value: 0.0 estimated value: 16.3844
+[*]----------------------------
+RMSE: 16.18937219944569
+MAPE: 1538.44299316
+[*]============================
+Epoch: 0234 cost = 317093.721513960
+[*]----------------------------
+actual value: 0.0 estimated value: 16.4295
+actual value: 5.0 estimated value: 16.4295
+actual value: 1.0 estimated value: 16.4295
+actual value: 0.0 estimated value: 16.4295
+actual value: 1.0 estimated value: 16.4295
+[*]----------------------------
+RMSE: 15.143528684211667
+MAPE: 1104.83144124
+[*]============================
+Epoch: 0235 cost = 317092.305657806
+[*]----------------------------
+actual value: 0.0 estimated value: 16.4745
+actual value: 0.0 estimated value: 16.4745
+actual value: 0.0 estimated value: 16.4745
+actual value: 0.0 estimated value: 16.4745
+actual value: 5.0 estimated value: 16.4745
+[*]----------------------------
+RMSE: 15.603178106990073
+MAPE: 229.489374161
+[*]============================
+Epoch: 0236 cost = 317090.875983546
+[*]----------------------------
+actual value: 0.0 estimated value: 16.5193
+actual value: 0.0 estimated value: 16.5193
+actual value: 1.0 estimated value: 16.5193
+actual value: 0.0 estimated value: 16.5193
+actual value: 0.0 estimated value: 16.5193
+[*]----------------------------
+RMSE: 16.32419998888716
+MAPE: 1551.92985535
+[*]============================
+Epoch: 0237 cost = 317089.392090066
+[*]----------------------------
+actual value: 0.0 estimated value: 16.564
+actual value: 0.0 estimated value: 16.564
+actual value: 0.0 estimated value: 16.564
+actual value: 0.0 estimated value: 16.564
+actual value: 0.0 estimated value: 16.564
+[*]----------------------------
+RMSE: 16.563989639282227
+MAPE: 404
+[*]============================
+Epoch: 0238 cost = 317087.952349264
+[*]----------------------------
+actual value: 1.0 estimated value: 16.6086
+actual value: 23.0 estimated value: 16.6086
+actual value: 3.0 estimated value: 16.6086
+actual value: 0.0 estimated value: 16.6086
+actual value: 0.0 estimated value: 16.6086
+[*]----------------------------
+RMSE: 14.292362159166876
+MAPE: 680.754131079
+[*]============================
+Epoch: 0239 cost = 317086.609179825
+[*]----------------------------
+actual value: 0.0 estimated value: 16.653
+actual value: 0.0 estimated value: 16.653
+actual value: 2.0 estimated value: 16.653
+actual value: 1.0 estimated value: 16.653
+actual value: 23.0 estimated value: 16.653
+[*]----------------------------
+RMSE: 14.523443799249007
+MAPE: 775.180211663
+[*]============================
+Epoch: 0240 cost = 317085.275142831
+[*]----------------------------
+actual value: 19.0 estimated value: 16.6972
+actual value: 9.0 estimated value: 16.6972
+actual value: 0.0 estimated value: 16.6972
+actual value: 0.0 estimated value: 16.6972
+actual value: 0.0 estimated value: 16.6972
+[*]----------------------------
+RMSE: 13.423431008190569
+MAPE: 48.8223094493
+[*]============================
+Epoch: 0241 cost = 317083.720327428
+[*]----------------------------
+actual value: 0.0 estimated value: 16.7414
+actual value: 0.0 estimated value: 16.7414
+actual value: 0.0 estimated value: 16.7414
+actual value: 19.0 estimated value: 16.7414
+actual value: 9.0 estimated value: 16.7414
+[*]----------------------------
+RMSE: 13.459963548229164
+MAPE: 48.9514391869
+[*]============================
+Epoch: 0242 cost = 317082.574029670
+[*]----------------------------
+actual value: 0.0 estimated value: 16.7854
+actual value: 0.0 estimated value: 16.7854
+actual value: 0.0 estimated value: 16.7854
+actual value: 0.0 estimated value: 16.7854
+actual value: 0.0 estimated value: 16.7854
+[*]----------------------------
+RMSE: 16.78540802001953
+MAPE: 404
+[*]============================
+Epoch: 0243 cost = 317080.870701643
+[*]----------------------------
+actual value: 5.0 estimated value: 16.8293
+actual value: 0.0 estimated value: 16.8293
+actual value: 39.0 estimated value: 16.8293
+actual value: 0.0 estimated value: 16.8293
+actual value: 0.0 estimated value: 16.8293
+[*]----------------------------
+RMSE: 17.211321740504147
+MAPE: 146.716943383
+[*]============================
+Epoch: 0244 cost = 317079.438028790
+[*]----------------------------
+actual value: 5.0 estimated value: 16.873
+actual value: 0.0 estimated value: 16.873
+actual value: 0.0 estimated value: 16.873
+actual value: 5.0 estimated value: 16.873
+actual value: 0.0 estimated value: 16.873
+[*]----------------------------
+RMSE: 15.073402622161316
+MAPE: 237.460899353
+[*]============================
+Epoch: 0245 cost = 317078.190932743
+[*]----------------------------
+actual value: 0.0 estimated value: 16.9166
+actual value: 0.0 estimated value: 16.9166
+actual value: 0.0 estimated value: 16.9166
+actual value: 5.0 estimated value: 16.9166
+actual value: 0.0 estimated value: 16.9166
+[*]----------------------------
+RMSE: 16.041803770614255
+MAPE: 238.332819939
+[*]============================
+Epoch: 0246 cost = 317076.818165310
+[*]----------------------------
+actual value: 2.0 estimated value: 16.9601
+actual value: 0.0 estimated value: 16.9601
+actual value: 2.0 estimated value: 16.9601
+actual value: 0.0 estimated value: 16.9601
+actual value: 0.0 estimated value: 16.9601
+[*]----------------------------
+RMSE: 16.18982140530152
+MAPE: 748.007297516
+[*]============================
+Epoch: 0247 cost = 317075.446613574
+[*]----------------------------
+actual value: 2.0 estimated value: 17.0035
+actual value: 0.0 estimated value: 17.0035
+actual value: 0.0 estimated value: 17.0035
+actual value: 2.0 estimated value: 17.0035
+actual value: 0.0 estimated value: 17.0035
+[*]----------------------------
+RMSE: 16.23308476189775
+MAPE: 750.174427032
+[*]============================
+Epoch: 0248 cost = 317074.123027660
+[*]----------------------------
+actual value: 2.0 estimated value: 17.0467
+actual value: 1.0 estimated value: 17.0467
+actual value: 0.0 estimated value: 17.0467
+actual value: 2.0 estimated value: 17.0467
+actual value: 0.0 estimated value: 17.0467
+[*]----------------------------
+RMSE: 16.071637907347963
+MAPE: 1036.44866943
+[*]============================
+Epoch: 0249 cost = 317072.728094979
+[*]----------------------------
+actual value: 0.0 estimated value: 17.0898
+actual value: 0.0 estimated value: 17.0898
+actual value: 0.0 estimated value: 17.0898
+actual value: 2.0 estimated value: 17.0898
+actual value: 1.0 estimated value: 17.0898
+[*]----------------------------
+RMSE: 16.50920012676665
+MAPE: 1181.73542023
+[*]============================
+Epoch: 0250 cost = 317071.449852030
+[*]----------------------------
+actual value: 3.0 estimated value: 17.1327
+actual value: 0.0 estimated value: 17.1327
+actual value: 18.0 estimated value: 17.1327
+actual value: 0.0 estimated value: 17.1327
+actual value: 0.0 estimated value: 17.1327
+[*]----------------------------
+RMSE: 14.704277079964157
+MAPE: 237.954714522
+[*]============================
+Epoch: 0251 cost = 317070.207372979
+[*]----------------------------
+actual value: 28.0 estimated value: 17.1756
+actual value: 8.0 estimated value: 17.1756
+actual value: 10.0 estimated value: 17.1756
+actual value: 3.0 estimated value: 17.1756
+actual value: 0.0 estimated value: 17.1756
+[*]----------------------------
+RMSE: 12.237621979709916
+MAPE: 174.40732345
+[*]============================
+Epoch: 0252 cost = 317068.898047735
+[*]----------------------------
+actual value: 0.0 estimated value: 17.2183
+actual value: 332.0 estimated value: 17.2183
+actual value: 2.0 estimated value: 17.2183
+actual value: 28.0 estimated value: 17.2183
+actual value: 8.0 estimated value: 17.2183
+[*]----------------------------
+RMSE: 141.29176257545473
+MAPE: 252.365586907
+[*]============================
+Epoch: 0253 cost = 317067.636038361
+[*]----------------------------
+actual value: 0.0 estimated value: 17.2609
+actual value: 0.0 estimated value: 17.2609
+actual value: 2.0 estimated value: 17.2609
+actual value: 0.0 estimated value: 17.2609
+actual value: 332.0 estimated value: 17.2609
+[*]----------------------------
+RMSE: 141.55381552859689
+MAPE: 428.922599554
+[*]============================
+Epoch: 0254 cost = 317013.876919902
+[*]----------------------------
+actual value: 0.0 estimated value: 17.3034
+actual value: 0.0 estimated value: 17.3034
+actual value: 1.0 estimated value: 17.3034
+actual value: 0.0 estimated value: 17.3034
+actual value: 0.0 estimated value: 17.3034
+[*]----------------------------
+RMSE: 17.10803678943101
+MAPE: 1630.33599854
+[*]============================
+Epoch: 0255 cost = 317064.871934073
+[*]----------------------------
+actual value: 5.0 estimated value: 17.3457
+actual value: 0.0 estimated value: 17.3457
+actual value: 0.0 estimated value: 17.3457
+actual value: 0.0 estimated value: 17.3457
+actual value: 0.0 estimated value: 17.3457
+[*]----------------------------
+RMSE: 16.467606778295
+MAPE: 246.914100647
+[*]============================
+Epoch: 0256 cost = 317063.525576395
+[*]----------------------------
+actual value: 0.0 estimated value: 17.3879
+actual value: 0.0 estimated value: 17.3879
+actual value: 2.0 estimated value: 17.3879
+actual value: 5.0 estimated value: 17.3879
+actual value: 0.0 estimated value: 17.3879
+[*]----------------------------
+RMSE: 16.107559594411807
+MAPE: 508.577084541
+[*]============================
+Epoch: 0257 cost = 317062.375965220
+[*]----------------------------
+actual value: 2.0 estimated value: 17.43
+actual value: 0.0 estimated value: 17.43
+actual value: 0.0 estimated value: 17.43
+actual value: 0.0 estimated value: 17.43
+actual value: 0.0 estimated value: 17.43
+[*]----------------------------
+RMSE: 17.048791751329233
+MAPE: 771.500587463
+[*]============================
+Epoch: 0258 cost = 317060.967583066
+[*]----------------------------
+actual value: 11.0 estimated value: 17.472
+actual value: 1.0 estimated value: 17.472
+actual value: 2.0 estimated value: 17.472
+actual value: 2.0 estimated value: 17.472
+actual value: 0.0 estimated value: 17.472
+[*]----------------------------
+RMSE: 14.813826077389338
+MAPE: 813.308100402
+[*]============================
+Epoch: 0259 cost = 317059.788896632
+[*]----------------------------
+actual value: 0.0 estimated value: 17.5138
+actual value: 2.0 estimated value: 17.5138
+actual value: 0.0 estimated value: 17.5138
+actual value: 11.0 estimated value: 17.5138
+actual value: 1.0 estimated value: 17.5138
+[*]----------------------------
+RMSE: 15.292375308706788
+MAPE: 828.763620059
+[*]============================
+Epoch: 0260 cost = 317058.585017976
+[*]----------------------------
+actual value: 0.0 estimated value: 17.5555
+actual value: 0.0 estimated value: 17.5555
+actual value: 1.0 estimated value: 17.5555
+actual value: 0.0 estimated value: 17.5555
+actual value: 2.0 estimated value: 17.5555
+[*]----------------------------
+RMSE: 16.974398669999694
+MAPE: 1216.66522026
+[*]============================
+Epoch: 0261 cost = 317057.241816889
+[*]----------------------------
+actual value: 1.0 estimated value: 17.5971
+actual value: 0.0 estimated value: 17.5971
+actual value: 0.0 estimated value: 17.5971
+actual value: 0.0 estimated value: 17.5971
+actual value: 0.0 estimated value: 17.5971
+[*]----------------------------
+RMSE: 17.401723860187587
+MAPE: 1659.71260071
+[*]============================
+Epoch: 0262 cost = 317055.968880790
+[*]----------------------------
+actual value: 0.0 estimated value: 17.6386
+actual value: 0.0 estimated value: 17.6386
+actual value: 23.0 estimated value: 17.6386
+actual value: 1.0 estimated value: 17.6386
+actual value: 0.0 estimated value: 17.6386
+[*]----------------------------
+RMSE: 15.741324328568757
+MAPE: 843.584550172
+[*]============================
+Epoch: 0263 cost = 317054.869205939
+[*]----------------------------
+actual value: 6.0 estimated value: 17.6799
+actual value: 0.0 estimated value: 17.6799
+actual value: 0.0 estimated value: 17.6799
+actual value: 0.0 estimated value: 17.6799
+actual value: 0.0 estimated value: 17.6799
+[*]----------------------------
+RMSE: 16.65376331493915
+MAPE: 194.665372372
+[*]============================
+Epoch: 0264 cost = 317053.480186220
+[*]----------------------------
+actual value: 0.0 estimated value: 17.7211
+actual value: 9.0 estimated value: 17.7211
+actual value: 1.0 estimated value: 17.7211
+actual value: 6.0 estimated value: 17.7211
+actual value: 0.0 estimated value: 17.7211
+[*]----------------------------
+RMSE: 14.974096287146352
+MAPE: 654.789374272
+[*]============================
+Epoch: 0265 cost = 317052.379301727
+[*]----------------------------
+actual value: 0.0 estimated value: 17.7622
+actual value: 4.0 estimated value: 17.7622
+actual value: 0.0 estimated value: 17.7622
+actual value: 0.0 estimated value: 17.7622
+actual value: 9.0 estimated value: 17.7622
+[*]----------------------------
+RMSE: 15.57346682964317
+MAPE: 220.70672214
+[*]============================
+Epoch: 0266 cost = 317051.146413067
+[*]----------------------------
+actual value: 23.0 estimated value: 17.8032
+actual value: 0.0 estimated value: 17.8032
+actual value: 0.0 estimated value: 17.8032
+actual value: 0.0 estimated value: 17.8032
+actual value: 4.0 estimated value: 17.8032
+[*]----------------------------
+RMSE: 15.286559172763631
+MAPE: 183.837191761
+[*]============================
+Epoch: 0267 cost = 317049.904151189
+[*]----------------------------
+actual value: 3.0 estimated value: 17.844
+actual value: 0.0 estimated value: 17.844
+actual value: 5.0 estimated value: 17.844
+actual value: 23.0 estimated value: 17.844
+actual value: 0.0 estimated value: 17.844
+[*]----------------------------
+RMSE: 14.482515866465226
+MAPE: 258.032833536
+[*]============================
+Epoch: 0268 cost = 317048.822782203
+[*]----------------------------
+actual value: 0.0 estimated value: 17.8847
+actual value: 0.0 estimated value: 17.8847
+actual value: 0.0 estimated value: 17.8847
+actual value: 3.0 estimated value: 17.8847
+actual value: 0.0 estimated value: 17.8847
+[*]----------------------------
+RMSE: 17.326336481255733
+MAPE: 496.157693863
+[*]============================
+Epoch: 0269 cost = 317047.450026739
+[*]----------------------------
+actual value: 1.0 estimated value: 17.9253
+actual value: 0.0 estimated value: 17.9253
+actual value: 0.0 estimated value: 17.9253
+actual value: 0.0 estimated value: 17.9253
+actual value: 0.0 estimated value: 17.9253
+[*]----------------------------
+RMSE: 17.729838135519515
+MAPE: 1692.53253937
+[*]============================
+Epoch: 0270 cost = 317046.214614666
+[*]----------------------------
+actual value: 1.0 estimated value: 17.9658
+actual value: 28.0 estimated value: 17.9658
+actual value: 1.0 estimated value: 17.9658
+actual value: 1.0 estimated value: 17.9658
+actual value: 0.0 estimated value: 17.9658
+[*]----------------------------
+RMSE: 16.043503016176068
+MAPE: 1281.39391616
+[*]============================
+Epoch: 0271 cost = 317045.073381777
+[*]----------------------------
+actual value: 0.0 estimated value: 18.0061
+actual value: 0.0 estimated value: 18.0061
+actual value: 9.0 estimated value: 18.0061
+actual value: 1.0 estimated value: 18.0061
+actual value: 28.0 estimated value: 18.0061
+[*]----------------------------
+RMSE: 14.957538002199076
+MAPE: 612.125195066
+[*]============================
+Epoch: 0272 cost = 317044.133802505
+[*]----------------------------
+actual value: 0.0 estimated value: 18.0464
+actual value: 0.0 estimated value: 18.0464
+actual value: 1.0 estimated value: 18.0464
+actual value: 0.0 estimated value: 18.0464
+actual value: 0.0 estimated value: 18.0464
+[*]----------------------------
+RMSE: 17.850853601072085
+MAPE: 1704.637146
+[*]============================
+Epoch: 0273 cost = 317042.710751004
+[*]----------------------------
+actual value: 0.0 estimated value: 18.0865
+actual value: 1.0 estimated value: 18.0865
+actual value: 5.0 estimated value: 18.0865
+actual value: 0.0 estimated value: 18.0865
+actual value: 0.0 estimated value: 18.0865
+[*]----------------------------
+RMSE: 16.99744625917023
+MAPE: 985.188746452
+[*]============================
+Epoch: 0274 cost = 317041.587901161
+[*]----------------------------
+actual value: 4.0 estimated value: 18.1265
+actual value: 0.0 estimated value: 18.1265
+actual value: 2.0 estimated value: 18.1265
+actual value: 0.0 estimated value: 18.1265
+actual value: 1.0 estimated value: 18.1265
+[*]----------------------------
+RMSE: 16.793289206192117
+MAPE: 957.377004623
+[*]============================
+Epoch: 0275 cost = 317040.418145316
+[*]----------------------------
+actual value: 0.0 estimated value: 18.1663
+actual value: 26.0 estimated value: 18.1663
+actual value: 27.0 estimated value: 18.1663
+actual value: 4.0 estimated value: 18.1663
+actual value: 0.0 estimated value: 18.1663
+[*]----------------------------
+RMSE: 14.142957683879589
+MAPE: 139.001695315
+[*]============================
+Epoch: 0276 cost = 317039.396062094
+[*]----------------------------
+actual value: 0.0 estimated value: 18.2061
+actual value: 1.0 estimated value: 18.2061
+actual value: 6.0 estimated value: 18.2061
+actual value: 0.0 estimated value: 18.2061
+actual value: 26.0 estimated value: 18.2061
+[*]----------------------------
+RMSE: 15.288594612983395
+MAPE: 651.339810093
+[*]============================
+Epoch: 0277 cost = 317038.284280162
+[*]----------------------------
+actual value: 10.0 estimated value: 18.2457
+actual value: 0.0 estimated value: 18.2457
+actual value: 0.0 estimated value: 18.2457
+actual value: 0.0 estimated value: 18.2457
+actual value: 1.0 estimated value: 18.2457
+[*]----------------------------
+RMSE: 16.517411497608148
+MAPE: 903.514176607
+[*]============================
+Epoch: 0278 cost = 317036.934737110
+[*]----------------------------
+actual value: 5.0 estimated value: 18.2852
+actual value: 0.0 estimated value: 18.2852
+actual value: 0.0 estimated value: 18.2852
+actual value: 10.0 estimated value: 18.2852
+actual value: 0.0 estimated value: 18.2852
+[*]----------------------------
+RMSE: 15.799943585514153
+MAPE: 174.278435111
+[*]============================
+Epoch: 0279 cost = 317035.968519867
+[*]----------------------------
+actual value: 2.0 estimated value: 18.3246
+actual value: 1.0 estimated value: 18.3246
+actual value: 0.0 estimated value: 18.3246
+actual value: 5.0 estimated value: 18.3246
+actual value: 0.0 estimated value: 18.3246
+[*]----------------------------
+RMSE: 16.827147426195232
+MAPE: 938.395094872
+[*]============================
+Epoch: 0280 cost = 317034.796007469
+[*]----------------------------
+actual value: 1.0 estimated value: 18.3639
+actual value: 0.0 estimated value: 18.3639
+actual value: 0.0 estimated value: 18.3639
+actual value: 2.0 estimated value: 18.3639
+actual value: 1.0 estimated value: 18.3639
+[*]----------------------------
+RMSE: 17.57983188754256
+MAPE: 1430.32477697
+[*]============================
+Epoch: 0281 cost = 317033.638638149
+[*]----------------------------
+actual value: 2.0 estimated value: 18.403
+actual value: 0.0 estimated value: 18.403
+actual value: 4.0 estimated value: 18.403
+actual value: 1.0 estimated value: 18.403
+actual value: 0.0 estimated value: 18.403
+[*]----------------------------
+RMSE: 17.06878340531982
+MAPE: 973.510662715
+[*]============================
+Epoch: 0282 cost = 317032.547329696
+[*]----------------------------
+actual value: 0.0 estimated value: 18.4421
+actual value: 1.0 estimated value: 18.4421
+actual value: 0.0 estimated value: 18.4421
+actual value: 2.0 estimated value: 18.4421
+actual value: 0.0 estimated value: 18.4421
+[*]----------------------------
+RMSE: 17.86001710048876
+MAPE: 1283.15682411
+[*]============================
+Epoch: 0283 cost = 317031.421824985
+[*]----------------------------
+actual value: 0.0 estimated value: 18.481
+actual value: 0.0 estimated value: 18.481
+actual value: 0.0 estimated value: 18.481
+actual value: 0.0 estimated value: 18.481
+actual value: 1.0 estimated value: 18.481
+[*]----------------------------
+RMSE: 18.28538985286305
+MAPE: 1748.10142517
+[*]============================
+Epoch: 0284 cost = 317030.283511167
+[*]----------------------------
+actual value: 1.0 estimated value: 18.5198
+actual value: 0.0 estimated value: 18.5198
+actual value: 13.0 estimated value: 18.5198
+actual value: 0.0 estimated value: 18.5198
+actual value: 0.0 estimated value: 18.5198
+[*]----------------------------
+RMSE: 16.53094969418206
+MAPE: 897.220318019
+[*]============================
+Epoch: 0285 cost = 317029.321285187
+[*]----------------------------
+actual value: 0.0 estimated value: 18.5585
+actual value: 1.0 estimated value: 18.5585
+actual value: 8.0 estimated value: 18.5585
+actual value: 1.0 estimated value: 18.5585
+actual value: 0.0 estimated value: 18.5585
+[*]----------------------------
+RMSE: 16.83399990665669
+MAPE: 1214.55962658
+[*]============================
+Epoch: 0286 cost = 317028.199899300
+[*]----------------------------
+actual value: 0.0 estimated value: 18.597
+actual value: 48.0 estimated value: 18.597
+actual value: 0.0 estimated value: 18.597
+actual value: 0.0 estimated value: 18.597
+actual value: 1.0 estimated value: 18.597
+[*]----------------------------
+RMSE: 21.03206715349141
+MAPE: 910.479906201
+[*]============================
+Epoch: 0287 cost = 317027.033500227
+[*]----------------------------
+actual value: 0.0 estimated value: 18.6355
+actual value: 0.0 estimated value: 18.6355
+actual value: 0.0 estimated value: 18.6355
+actual value: 0.0 estimated value: 18.6355
+actual value: 48.0 estimated value: 18.6355
+[*]----------------------------
+RMSE: 21.219802500237243
+MAPE: 61.1760675907
+[*]============================
+Epoch: 0288 cost = 317025.618934389
+[*]----------------------------
+actual value: 0.0 estimated value: 18.6738
+actual value: 0.0 estimated value: 18.6738
+actual value: 0.0 estimated value: 18.6738
+actual value: 0.0 estimated value: 18.6738
+actual value: 0.0 estimated value: 18.6738
+[*]----------------------------
+RMSE: 18.67382049560547
+MAPE: 404
+[*]============================
+Epoch: 0289 cost = 317024.812256344
+[*]----------------------------
+actual value: 9.0 estimated value: 18.712
+actual value: 1.0 estimated value: 18.712
+actual value: 0.0 estimated value: 18.712
+actual value: 0.0 estimated value: 18.712
+actual value: 0.0 estimated value: 18.712
+[*]----------------------------
+RMSE: 17.079002984909245
+MAPE: 939.557880163
+[*]============================
+Epoch: 0290 cost = 317023.776427335
+[*]----------------------------
+actual value: 0.0 estimated value: 18.7501
+actual value: 1.0 estimated value: 18.7501
+actual value: 34.0 estimated value: 18.7501
+actual value: 9.0 estimated value: 18.7501
+actual value: 1.0 estimated value: 18.7501
+[*]----------------------------
+RMSE: 16.182253449742
+MAPE: 925.804113597
+[*]============================
+Epoch: 0291 cost = 317022.938566299
+[*]----------------------------
+actual value: 2.0 estimated value: 18.7881
+actual value: 0.0 estimated value: 18.7881
+actual value: 104.0 estimated value: 18.7881
+actual value: 0.0 estimated value: 18.7881
+actual value: 1.0 estimated value: 18.7881
+[*]----------------------------
+RMSE: 41.38915190962617
+MAPE: 900.051035484
+[*]============================
+Epoch: 0292 cost = 317018.047506504
+[*]----------------------------
+actual value: 2.0 estimated value: 18.826
+actual value: 0.0 estimated value: 18.826
+actual value: 0.0 estimated value: 18.826
+actual value: 2.0 estimated value: 18.826
+actual value: 0.0 estimated value: 18.826
+[*]----------------------------
+RMSE: 18.052620205501235
+MAPE: 841.300582886
+[*]============================
+Epoch: 0293 cost = 317020.678946077
+[*]----------------------------
+actual value: 0.0 estimated value: 18.8638
+actual value: 9.0 estimated value: 18.8638
+actual value: 0.0 estimated value: 18.8638
+actual value: 2.0 estimated value: 18.8638
+actual value: 0.0 estimated value: 18.8638
+[*]----------------------------
+RMSE: 17.024723639184746
+MAPE: 476.392960548
+[*]============================
+Epoch: 0294 cost = 317019.643980360
+[*]----------------------------
+actual value: 4.0 estimated value: 18.9014
+actual value: 0.0 estimated value: 18.9014
+actual value: 1.0 estimated value: 18.9014
+actual value: 0.0 estimated value: 18.9014
+actual value: 9.0 estimated value: 18.9014
+[*]----------------------------
+RMSE: 16.462559581219967
+MAPE: 757.564624151
+[*]============================
+Epoch: 0295 cost = 317018.700552602
+[*]----------------------------
+actual value: 6.0 estimated value: 18.939
+actual value: 0.0 estimated value: 18.939
+actual value: 0.0 estimated value: 18.939
+actual value: 4.0 estimated value: 18.939
+actual value: 0.0 estimated value: 18.939
+[*]----------------------------
+RMSE: 17.126827111078544
+MAPE: 294.561564922
+[*]============================
+Epoch: 0296 cost = 317017.601270363
+[*]----------------------------
+actual value: 0.0 estimated value: 18.9764
+actual value: 3.0 estimated value: 18.9764
+actual value: 0.0 estimated value: 18.9764
+actual value: 6.0 estimated value: 18.9764
+actual value: 0.0 estimated value: 18.9764
+[*]----------------------------
+RMSE: 17.3432447987759
+MAPE: 374.40956831
+[*]============================
+Epoch: 0297 cost = 317016.616955631
+[*]----------------------------
+actual value: 3.0 estimated value: 19.0137
+actual value: 0.0 estimated value: 19.0137
+actual value: 24.0 estimated value: 19.0137
+actual value: 0.0 estimated value: 19.0137
+actual value: 3.0 estimated value: 19.0137
+[*]----------------------------
+RMSE: 15.879437938707971
+MAPE: 362.785545985
+[*]============================
+Epoch: 0298 cost = 317015.754154952
+[*]----------------------------
+actual value: 0.0 estimated value: 19.0509
+actual value: 3.0 estimated value: 19.0509
+actual value: 7.0 estimated value: 19.0509
+actual value: 3.0 estimated value: 19.0509
+actual value: 0.0 estimated value: 19.0509
+[*]----------------------------
+RMSE: 16.651491143409846
+MAPE: 414.071933428
+[*]============================
+Epoch: 0299 cost = 317014.664407801
+[*]----------------------------
+actual value: 21.0 estimated value: 19.088
+actual value: 0.0 estimated value: 19.088
+actual value: 0.0 estimated value: 19.088
+actual value: 0.0 estimated value: 19.088
+actual value: 3.0 estimated value: 19.088
+[*]----------------------------
+RMSE: 16.465319970694324
+MAPE: 272.685630992
+[*]============================
+Epoch: 0300 cost = 317013.553135302
+[*]----------------------------
+actual value: 0.0 estimated value: 19.125
+actual value: 0.0 estimated value: 19.125
+actual value: 0.0 estimated value: 19.125
+actual value: 21.0 estimated value: 19.125
+actual value: 0.0 estimated value: 19.125
+[*]----------------------------
+RMSE: 17.126433196997684
+MAPE: 8.92871692777
+[*]============================
+Model Accuracy: 0.00%
+RMSE: 23.939965744775964

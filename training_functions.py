@@ -5,9 +5,11 @@ from logging_functions import LoggingFunctions
 
 class TrainingSettings:
 
+    dataset_source = "dataset.csv"
+
     n_total_data = 1893
     batch_size = 10
-    n_batches = 170
+    n_batches = 180
 
     load_previous_training = False
 
@@ -30,7 +32,7 @@ class TrainingSettings:
         self.logger = LoggingFunctions(self.model_name)
 
     def get_features(self):
-        filename_queue = tf.train.string_input_producer(["dataset.csv"])
+        filename_queue = tf.train.string_input_producer([self.dataset_source])
         reader = tf.TextLineReader()
         key, value = reader.read(filename_queue)
 
@@ -126,6 +128,7 @@ class TrainingSettings:
                 feed_dict = {self.x: train_x, self.y: train_y}
                 _, c, p = sess.run(fetches, feed_dict)
                 epoch_loss += c / self.n_batches
+
 
             saver.save(sess, self.model_name)
 
