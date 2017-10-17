@@ -8,8 +8,8 @@ from logging_functions import LoggingFunctions
 class TrainingSettings:
     load_previous_training = False
 
-    learning_rate = 0.001
-    n_epoch = 500
+    learning_rate = 0.1
+    n_epoch = 300
 
     def __init__(self, dataset_source, model_name, variable_list, test_split):
         self.dataset_source = dataset_source
@@ -125,12 +125,13 @@ class TrainingSettings:
 
     def train_neural_network(self, sess):
         saver = tf.train.Saver()
+        train_x, train_y = self.get_rows(self.features, self.col_y, sess, self.n_train)
 
         for epoch in range(self.n_epoch):
             if self.load_previous_training and epoch == 0:
                 saver.restore(sess, self.model_name)
 
-            train_x, train_y = self.get_rows(self.features, self.col_y, sess, self.n_train)
+
             fetches = [self.optimizer, self.cost, self.prediction]
             feed_dict = {self.x: train_x, self.y: train_y}
             _, c, p = sess.run(fetches, feed_dict)
@@ -158,5 +159,6 @@ class TrainingSettings:
         else:
             accuracy = 0
 
+        self.logger.log_to_file("*****TEST*****")
         self.logger.log_actual_estimated_values(test_y, predicted_values)
         self.logger.log_accuracy_rmse(accuracy, mse)

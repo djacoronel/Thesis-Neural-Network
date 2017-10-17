@@ -2,7 +2,7 @@ import tensorflow as tf
 
 
 class NeuralNetworkModel():
-    n_hidden_layers = 4
+    n_hidden_layers = 2
 
     def __init__(self, data, n_input):
         self.data = data
@@ -14,14 +14,15 @@ class NeuralNetworkModel():
         hidden_layers = []
 
         input_layer = {'weights': tf.Variable(tf.random_normal([self.n_input, self.n_nodes])),
-                          'biases': tf.Variable(tf.random_normal([self.n_nodes]))}
+                       'biases': tf.Variable(tf.random_normal([self.n_nodes]))}
+
         for n in range(self.n_hidden_layers):
             layer = {'weights': tf.Variable(tf.random_normal([self.n_nodes, self.n_nodes])),
-                          'biases': tf.Variable(tf.random_normal([self.n_nodes]))}
+                     'biases': tf.Variable(tf.random_normal([self.n_nodes]))}
             hidden_layers.append(layer)
 
         output_layer = {'weights': tf.Variable(tf.random_normal([self.n_nodes, n_output])),
-                        'biases': tf.Variable(tf.random_normal([n_output])), }
+                        'biases': tf.Variable(tf.random_normal([n_output]))}
 
         l1 = tf.add(tf.matmul(self.data, input_layer['weights']), input_layer['biases'])
         l1 = tf.nn.relu(l1)
