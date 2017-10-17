@@ -1,43 +1,45 @@
+import csv
+
 import tensorflow as tf
 from neural_network_model import NeuralNetworkModel
 from logging_functions import LoggingFunctions
 
 
 class TrainingSettings:
-
-    dataset_source = "dataset.csv"
-
-    n_total_data = 1893
-    batch_size = 10
-    n_batches = 180
-
     load_previous_training = False
 
     learning_rate = 0.001
-    n_epoch = 100
+    n_epoch = 500
 
-    display_step = 1
+    def __init__(self, dataset_source, model_name, variable_list, test_split):
+        self.dataset_source = dataset_source
+        self.n_total_data = sum(1 for row in csv.reader(open(dataset_source)))
 
-    def __init__(self, model_name):
+        self.n_train = int(self.n_total_data * test_split)
+        self.n_test = int(self.n_total_data * (1 - test_split))
+        self.test_split = test_split
+
         self.model_name = model_name
         self.x = tf.placeholder('float')
         self.y = tf.placeholder('float')
-        self.feature_list, self.col_y = self.get_features()
+        self.feature_list, self.col_y = self.get_features(variable_list)
         self.features = tf.stack(self.feature_list)
         self.n_inputs = len(self.feature_list)
         self.model = NeuralNetworkModel(self.x, self.n_inputs)
         self.prediction = self.model.use_model()
         self.cost = tf.reduce_mean(tf.square(self.prediction - self.y))
         self.optimizer = tf.train.AdamOptimizer(self.learning_rate).minimize(self.cost)
-        self.logger = LoggingFunctions(self.model_name)
 
-    def get_features(self):
+        self.logger = LoggingFunctions(self.model_name)
+        self.logger.log_variables_used(variable_list)
+
+    def get_features(self, variable_list):
         filename_queue = tf.train.string_input_producer([self.dataset_source])
-        reader = tf.TextLineReader()
+        reader = tf.TextLineReader(skip_header_lines=1)
         key, value = reader.read(filename_queue)
 
         record_defaults = [[1], [""], [""], [""], [1.0],
-                           [""], [1.0], [1.0], [1.0], [1.0],
+                           [1.0], [1.0], [1.0], [1.0], [1.0],
                            [1.0], [1.0], [1.0], [1.0], [1.0],
                            [1.0], [1.0], [1.0], [1.0], [1.0],
                            [1.0], [1.0], [1.0], [1.0], [1.0],
@@ -50,26 +52,30 @@ class TrainingSettings:
         HMB, HMC, HMD, \
         CASUALTIES, DAMAGED_HOUSES, DAMAGED_PROPERTIES = tf.decode_csv(value, record_defaults=record_defaults)
 
-        feature_list_1 = [DURATION, INTENSITY, SIGNAL, DR, FLR]
-        col_y_1 = CASUALTIES
+        feature_dict = {
+            "ROW_NUMBER": ROW_NUMBER, "NAME": NAME, "REGION": REGION, "PROVINCE": PROVINCE, "YEAR": YEAR,
+            "TYPE": TYPE, "DURATION": DURATION, "WIND": WIND, "INTENSITY": INTENSITY, "SIGNAL": SIGNAL,
+            "POP": POP, "DEN": DEN, "AI": AI, "PR": PR, "DR": DR,
+            "SR": SR, "FLR": FLR, "HP": HP, "HS": HS, "HMA": HMA,
+            "HMB": HMB, "HMC": HMC, "HMD": HMD,
+            "CASUALTIES": CASUALTIES, "DAMAGED_HOUSES": DAMAGED_HOUSES, "DAMAGED_PROPERTIES": DAMAGED_PROPERTIES
+        }
 
-        feature_list_2 = [DURATION, WIND, SIGNAL, DEN, FLR, HMB, HMD]
-        col_y_2 = DAMAGED_HOUSES
+        feature_list = []
+        for variable in variable_list:
+            feature_list.append(feature_dict[variable])
 
-        feature_list_3 = [INTENSITY, SIGNAL, DEN, DR, FLR, HMD]
-        col_y_3 = DAMAGED_PROPERTIES
+        if "cas" in self.model_name:
+            return feature_list, CASUALTIES
+        elif "dh" in self.model_name:
+            return feature_list, DAMAGED_HOUSES
+        elif "dp" in self.model_name:
+            return feature_list, DAMAGED_PROPERTIES
 
-        if "casualties" in self.model_name:
-            return feature_list_1, col_y_1
-        elif "damagedhouses" in self.model_name:
-            return feature_list_2, col_y_2
-        elif "damagedproperties" in self.model_name:
-            return feature_list_3, col_y_3
-
-    def next_batch(self, features, col_y, sess):
+    def get_rows(self, features, col_y, sess, batch_size):
         batch_x = []
         batch_y = []
-        for iteration in range(self.batch_size):
+        for iteration in range(batch_size):
             x, y = sess.run([features, col_y])
             batch_x.append(x)
             batch_y.append(y)
@@ -81,7 +87,7 @@ class TrainingSettings:
         n_spe_included = 0
         for i in range(len(actual_value)):
             error = (actual_value[i] - estimated_value[i][0])
-            sqerror = error**2
+            sqerror = error ** 2
             sse += sqerror
 
             if actual_value[i] != 0:
@@ -92,7 +98,7 @@ class TrainingSettings:
         if n_spe_included != 0:
             mape = (spe / n_spe_included) * 100
         else:
-            mape = 404
+            mape = 0
 
         return mse, mape
 
@@ -100,7 +106,11 @@ class TrainingSettings:
         self.logger.log_training_settings(self.model.n_nodes,
                                           self.model.n_hidden_layers,
                                           self.learning_rate,
-                                          self.n_epoch, self.batch_size)
+                                          self.n_epoch,
+                                          self.n_total_data,
+                                          self.test_split,
+                                          self.n_train,
+                                          self.n_test)
 
         with tf.Session() as sess:
             sess.run(tf.global_variables_initializer())
@@ -120,44 +130,33 @@ class TrainingSettings:
             if self.load_previous_training and epoch == 0:
                 saver.restore(sess, self.model_name)
 
-            epoch_loss = 0
-
-            for i in range(self.n_batches):
-                train_x, train_y = self.next_batch(self.features, self.col_y, sess)
-                fetches = [self.optimizer, self.cost, self.prediction]
-                feed_dict = {self.x: train_x, self.y: train_y}
-                _, c, p = sess.run(fetches, feed_dict)
-                epoch_loss += c / self.n_batches
-
+            train_x, train_y = self.get_rows(self.features, self.col_y, sess, self.n_train)
+            fetches = [self.optimizer, self.cost, self.prediction]
+            feed_dict = {self.x: train_x, self.y: train_y}
+            _, c, p = sess.run(fetches, feed_dict)
 
             saver.save(sess, self.model_name)
 
+            epoch_loss = c / self.n_train
             actual_value = train_y
             estimated_value = p
+            mse, mape = self.compute_mse_mape(actual_value, estimated_value)
 
-            if epoch % self.display_step == 0:
-                self.logger.log_epoch_cost(epoch, epoch_loss)
-                self.logger.log_actual_estimated_values(actual_value, estimated_value)
-                mse, mape = self.compute_mse_mape(actual_value, estimated_value)
-                self.logger.log_rmse_mape(mse, mape)
+            self.logger.log_epoch_cost(epoch, epoch_loss)
+            self.logger.log_actual_estimated_values(actual_value, estimated_value)
+            self.logger.log_rmse_mape(mse, mape)
 
     def test_neural_network(self, sess):
-        accuracies = []
-        smse = []
 
-        for n in range(5):
-            test_x, test_y = self.next_batch(self.features, self.col_y, sess)
-            predicted_values = sess.run(self.prediction, feed_dict={self.x: test_x})
+        test_x, test_y = self.get_rows(self.features, self.col_y, sess, self.n_test)
+        predicted_values = sess.run(self.prediction, feed_dict={self.x: test_x})
 
-            mse, mape = self.compute_mse_mape(test_y, predicted_values)
-            smse.append(mse)
-            if mape < 100:
-                accuracies.append(100 - mape)
+        mse, mape = self.compute_mse_mape(test_y, predicted_values)
 
-        mse = sum(smse) / len(smse)
-        if len(accuracies) != 0:
-            mean_accuracy = sum(accuracies) / len(accuracies)
+        if mape < 100:
+            accuracy = 100 - mape
         else:
-            mean_accuracy = 0
+            accuracy = 0
 
-        self.logger.log_accuracy_rmse(mean_accuracy, mse)
+        self.logger.log_actual_estimated_values(test_y, predicted_values)
+        self.logger.log_accuracy_rmse(accuracy, mse)

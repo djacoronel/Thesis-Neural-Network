@@ -45,11 +45,19 @@ class LoggingFunctions:
         self.log_to_file(output)
         print(output)
 
-    def log_training_settings(self, n_nodes_per_layer, n_hidden_layers, learning_rate, n_epoch, batch_size):
+    def log_training_settings(self, n_nodes_per_layer, n_hidden_layers, learning_rate,
+                              n_epoch, n_total_data, split, train_rows, test_rows):
         output = "Number of hidden layers: " + str(n_hidden_layers) + \
             "\nNodes per layer: " + str(n_nodes_per_layer) + \
             "\nLearning rate: " + str(learning_rate) + \
             "\nNumber of epoch: " + str(n_epoch) + \
-            "\nBatch size: " + str(batch_size)
+            "\nTotal data: " + str(n_total_data) + \
+            "\nSplit: " + str(split) + \
+            "\nTraining rows: " + str(train_rows) + " Test rows: " + str(test_rows)
+        self.log_to_file(output)
+        print(output)
+
+    def log_variables_used(self, variable_list):
+        output = "Variables used: " + " ".join(variable for variable in variable_list)
         self.log_to_file(output)
         print(output)

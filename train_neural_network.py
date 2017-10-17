@@ -1,95 +1,75 @@
 from training_functions import TrainingSettings as train
 
-def set_parameters(training, dataset_source):
-    training.dataset_source = dataset_source
-    training.n_epoch = 50
-    training.batch_size = 5
-    training.n_batches = int(training.n_total_data / training.batch_size)
-    training.learning_rate = .001
+dataset_source_1 = "arranged/byYear/LUZ-CA.csv"
+dataset_source_2 = "arranged/byYear/LUZ-DAH.csv"
+dataset_source_3 = "arranged/byYear/LUZ-DAP.csv"
 
-dataset_source = "/csv/ds-meannormalisation.csv"
-
-model_name_1 = "models/normalized_ds/mean/casualties_test.ckpt"
-model_name_2 = "models/normalized_ds/mean/damagedhouses_test.ckpt"
-model_name_3 = "models/normalized_ds/mean/damagedproperties_test.ckpt"
+model_name_1 = "arranged/byYear/LUZON/LUZON_cas.ckpt"
+model_name_2 = "arranged/byYear/LUZON/LUZON_dh.ckpt"
+model_name_3 = "arranged/byYear/LUZON/LUZON_dp.ckpt"
 
 print("\n\n***********CASUALTIES**************")
-training = train(model_name_1)
-set_parameters(training,dataset_source)
+feature_list = ["YEAR", "INTENSITY", "SIGNAL", "POP", "DR", "FLR", "HP", "HMB"]
+training = train(dataset_source_1, model_name_1, feature_list, 0.9)
 training.train_and_test_network()
 
 print("\n\n***********DAMAGED HOUSES**************")
-training = train(model_name_2)
-set_parameters(training,dataset_source)
+feature_list = ["YEAR", "SIGNAL", "POP", "AI", "DR", "FLR", "HP", "HS", "HMA", "HMB"]
+training = train(dataset_source_2,model_name_2, feature_list)
 training.train_and_test_network()
 
 print("\n\n***********DAMAGED PROPERTIES**************")
-training = train(model_name_3)
-set_parameters(training,dataset_source)
+feature_list = ["YEAR", "DURATION", "SIGNAL", "AI", "DR", "SR", "HP", "HS"]
+training = train(dataset_source_3,model_name_3, feature_list)
 training.train_and_test_network()
 
 
-dataset_source = "/csv/ds-minmaxscaling.csv"
+dataset_source_1 = "arranged/byYear/VIS-CA.csv"
+dataset_source_2 = "arranged/byYear/VIS-DAH.csv"
+dataset_source_3 = "arranged/byYear/VIS-DAP.csv"
 
-model_name_1 = "models/normalized_ds/minmax/casualties_test.ckpt"
-model_name_2 = "models/normalized_ds/minmax/damagedhouses_test.ckpt"
-model_name_3 = "models/normalized_ds/minmax/damagedproperties_test.ckpt"
+model_name_1 = "arranged/byYear/VISAYAS/VIS_cas.ckpt"
+model_name_2 = "arranged/byYear/VISAYAS/VIS_dh.ckpt"
+model_name_3 = "arranged/byYear/VISAYAS/VIS_dp.ckpt"
 
 print("\n\n***********CASUALTIES**************")
-training = train(model_name_1)
-set_parameters(training,dataset_source)
+feature_list = ["DURATION", "WIND", "INTENSITY", "FLR"]
+training = train(dataset_source_1,model_name_1,feature_list)
 training.train_and_test_network()
 
 print("\n\n***********DAMAGED HOUSES**************")
-training = train(model_name_2)
-set_parameters(training,dataset_source)
+feature_list = ["YEAR", "DURATION", "WIND", "INTENSITY",
+                "SIGNAL", "POP", "DEN", "AI", "PR", "DR",
+                "SR", "FLR", "HP", "HS", "HMA", "HMC"]
+training = train(dataset_source_2,model_name_2, feature_list)
 training.train_and_test_network()
 
 print("\n\n***********DAMAGED PROPERTIES**************")
-training = train(model_name_3)
-set_parameters(training,dataset_source)
+feature_list = ["YEAR", "DURATION", "WIND", "INTENSITY", "SIGNAL", "AI", "SR"]
+training = train(dataset_source_3,model_name_3, feature_list)
 training.train_and_test_network()
 
 
-dataset_source = "/csv/ds-standardization.csv"
+dataset_source_1 = "arranged/byYear/MIN-CA.csv"
+dataset_source_2 = "arranged/random/MIN-DAH.csv"
+dataset_source_3 = "arranged/byYear/MIN-DAP.csv"
 
-model_name_1 = "models/normalized_ds/standard_deviation/casualties_test.ckpt"
-model_name_2 = "models/normalized_ds/standard_deviation/damagedhouses_test.ckpt"
-model_name_3 = "models/normalized_ds/standard_deviation/damagedproperties_test.ckpt"
+model_name_1 = "arranged/byYear/MINDANAO/MIN_cas.ckpt"
+model_name_2 = "arranged/byYear/MINDANAO/MIN_dh.ckpt"
+model_name_3 = "arranged/byYear/MINDANAO/MIN_dp.ckpt"
 
 print("\n\n***********CASUALTIES**************")
-training = train(model_name_1)
-set_parameters(training,dataset_source)
+feature_list = ["YEAR", "WIND", "SIGNAL", "AI", "DR", "FLR", "HMD"]
+training = train(dataset_source_1,model_name_1,feature_list)
 training.train_and_test_network()
 
 print("\n\n***********DAMAGED HOUSES**************")
-training = train(model_name_2)
-set_parameters(training,dataset_source)
+feature_list = ["YEAR", "DURATION", "WIND", "INTENSITY", "AI", "DR", "FLR", "HP"]
+training = train(dataset_source_2,model_name_2, feature_list,0.9)
 training.train_and_test_network()
 
 print("\n\n***********DAMAGED PROPERTIES**************")
-training = train(model_name_3)
-set_parameters(training,dataset_source)
+feature_list = ["DURATION", "TYPE", "WIND", "INTENSITY", "SIGNAL", "POP"]
+training = train(dataset_source_3,model_name_3, feature_list)
 training.train_and_test_network()
 
-
-dataset_source = "/csv/ds-thousands.csv"
-
-model_name_1 = "models/normalized_ds/thousands/casualties_test.ckpt"
-model_name_2 = "models/normalized_ds/thousands/damagedhouses_test.ckpt"
-model_name_3 = "models/normalized_ds/thousands/damagedproperties_test.ckpt"
-
-print("\n\n***********CASUALTIES**************")
-training = train(model_name_1)
-set_parameters(training,dataset_source)
-training.train_and_test_network()
-
-print("\n\n***********DAMAGED HOUSES**************")
-training = train(model_name_2)
-set_parameters(training,dataset_source)
-training.train_and_test_network()
-
-print("\n\n***********DAMAGED PROPERTIES**************")
-training = train(model_name_3)
-set_parameters(training,dataset_source)
-training.train_and_test_network()
