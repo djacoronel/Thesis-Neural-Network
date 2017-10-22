@@ -1,4 +1,5 @@
 import csv
+import random
 
 import tensorflow as tf
 from neural_network_model import NeuralNetworkModel
@@ -79,7 +80,35 @@ class TrainingSettings:
             x, y = sess.run([features, col_y])
             batch_x.append(x)
             batch_y.append(y)
+
+        batch_x, batch_y = self.shuffle_rows(batch_x, batch_y)
+        batch_x = self.normalize(batch_x)
+        #batch_x = self.standardize(batch_x)
+
         return batch_x, batch_y
+
+    def shuffle_rows(self, batch_x, batch_y):
+        combined = list(zip(batch_x, batch_y))
+        random.shuffle(combined)
+
+        shuffled_x, shuffled_y = [],[]
+        shuffled_x[:], shuffled_y[:] = zip(*combined)
+        return shuffled_x,shuffled_y
+
+
+    def normalize(self, data):
+        from sklearn.preprocessing import Normalizer
+        scaler = Normalizer().fit(data)
+        normalized_x = scaler.transform(data)
+
+        return normalized_x
+
+    def standardize(self, data):
+        from sklearn.preprocessing import StandardScaler
+        scaler = StandardScaler().fit(data)
+        standardized_x = scaler.transform(data)
+
+        return standardized_x
 
     def compute_mse_mape(self, actual_value, estimated_value):
         sse = 0
@@ -131,6 +160,7 @@ class TrainingSettings:
             if self.load_previous_training and epoch == 0:
                 saver.restore(sess, self.model_name)
 
+            train_x, train_y  = self.shuffle_rows(train_x, train_y)
 
             fetches = [self.optimizer, self.cost, self.prediction]
             feed_dict = {self.x: train_x, self.y: train_y}
@@ -143,12 +173,16 @@ class TrainingSettings:
             estimated_value = p
             mse, mape = self.compute_mse_mape(actual_value, estimated_value)
 
+            if mape < 100:
+                accuracy = 100 - mape
+            else:
+                accuracy = 0
+
             self.logger.log_epoch_cost(epoch, epoch_loss)
             self.logger.log_actual_estimated_values(actual_value, estimated_value)
-            self.logger.log_rmse_mape(mse, mape)
+            self.logger.log_accuracy_rmse(accuracy, mse)
 
     def test_neural_network(self, sess):
-
         test_x, test_y = self.get_rows(self.features, self.col_y, sess, self.n_test)
         predicted_values = sess.run(self.prediction, feed_dict={self.x: test_x})
 

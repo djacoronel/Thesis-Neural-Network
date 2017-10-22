@@ -2,7 +2,7 @@ import tensorflow as tf
 
 
 class NeuralNetworkModel():
-    n_hidden_layers = 2
+    n_hidden_layers = 4
 
     def __init__(self, data, n_input):
         self.data = data
