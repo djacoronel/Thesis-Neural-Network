@@ -1,38 +1,36 @@
-import csv
-import random
-
+import numpy
 import tensorflow as tf
 from neural_network_model import NeuralNetworkModel
 from logging_functions import LoggingFunctions
+from data_processing_functions import DataFunctions
 
 
 class TrainingSettings:
     load_previous_training = False
 
-    learning_rate = 0.01
-    n_epoch = 400
+    learning_rate = 0.001
+    n_epoch = 1
 
     def __init__(self, dataset_source, model_name, variable_list, test_split):
         self.dataset_source = dataset_source
-        self.n_total_data = sum(1 for row in csv.reader(open(dataset_source)))
-
-        self.n_train = int(self.n_total_data * test_split)
-        self.n_test = int(self.n_total_data * (1 - test_split))
-        self.test_split = test_split
-
         self.model_name = model_name
+
         self.x = tf.placeholder('float')
-        self.y = tf.placeholder('float')
+        self.y = tf.placeholder(tf.float32, shape=[None, 5])
+
         self.feature_list, self.col_y = self.get_features(variable_list)
         self.features = tf.stack(self.feature_list)
-        self.n_inputs = len(self.feature_list)
-        self.model = NeuralNetworkModel(self.x, self.n_inputs)
+
+        self.model = NeuralNetworkModel(self.x, len(self.feature_list))
         self.prediction = self.model.use_model()
-        self.cost = tf.reduce_mean(tf.square(self.prediction - self.y))
+
+        self.cost = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits=self.prediction, labels=self.y))
         self.optimizer = tf.train.AdamOptimizer(self.learning_rate).minimize(self.cost)
 
         self.logger = LoggingFunctions(self.model_name)
         self.logger.log_variables_used(variable_list)
+
+        self.data_functions = DataFunctions(dataset_source, test_split)
 
     def get_features(self, variable_list):
         filename_queue = tf.train.string_input_producer([self.dataset_source])
@@ -43,8 +41,8 @@ class TrainingSettings:
                            [1.0], [1.0], [1.0], [1.0], [1.0],
                            [1.0], [1.0], [1.0], [1.0], [1.0],
                            [1.0], [1.0], [1.0], [1.0], [1.0],
-                           [1.0], [1.0], [1.0], [1.0], [1.0],
-                           [1.0]]
+                           [1.0], [1.0], [1.0], [1], [1],
+                           [1]]
 
         ROW_NUMBER, NAME, REGION, PROVINCE, YEAR, \
         TYPE, DURATION, WIND, INTENSITY, SIGNAL, \
@@ -68,99 +66,44 @@ class TrainingSettings:
 
         if "cas" in self.model_name:
             return feature_list, CASUALTIES
-        elif "dh" in self.model_name:
+        elif "dah" in self.model_name:
             return feature_list, DAMAGED_HOUSES
-        elif "dp" in self.model_name:
+        elif "dap" in self.model_name:
             return feature_list, DAMAGED_PROPERTIES
 
-    def get_rows(self, features, col_y, sess, batch_size):
-        batch_x = []
-        batch_y = []
-        for iteration in range(batch_size):
-            x, y = sess.run([features, col_y])
-            batch_x.append(x)
-            batch_y.append(y)
-
-        batch_x, batch_y = self.shuffle_rows(batch_x, batch_y)
-        batch_x = self.normalize(batch_x)
-        #batch_x = self.standardize(batch_x)
-
-        return batch_x, batch_y
-
-    def shuffle_rows(self, batch_x, batch_y):
-        combined = list(zip(batch_x, batch_y))
-        random.shuffle(combined)
-
-        shuffled_x, shuffled_y = [],[]
-        shuffled_x[:], shuffled_y[:] = zip(*combined)
-        return shuffled_x,shuffled_y
-
-
-    def normalize(self, data):
-        from sklearn.preprocessing import Normalizer
-        scaler = Normalizer().fit(data)
-        normalized_x = scaler.transform(data)
-
-        return normalized_x
-
-    def standardize(self, data):
-        from sklearn.preprocessing import StandardScaler
-        scaler = StandardScaler().fit(data)
-        standardized_x = scaler.transform(data)
-
-        return standardized_x
-
-    def compute_mse_mape(self, actual_value, estimated_value):
-        sse = 0
-        spe = 0
-        n_spe_included = 0
-        for i in range(len(actual_value)):
-            error = (actual_value[i] - estimated_value[i][0])
-            sqerror = error ** 2
-            sse += sqerror
-
-            if actual_value[i] != 0:
-                spe += abs((actual_value[i] - estimated_value[i][0]) / actual_value[i])
-                n_spe_included += 1
-
-        mse = sse / len(actual_value)
-        if n_spe_included != 0:
-            mape = (spe / n_spe_included) * 100
-        else:
-            mape = 0
-
-        return mse, mape
-
     def train_and_test_network(self):
-        self.logger.log_training_settings(self.model.n_nodes,
-                                          self.model.n_hidden_layers,
-                                          self.learning_rate,
-                                          self.n_epoch,
-                                          self.n_total_data,
-                                          self.test_split,
-                                          self.n_train,
-                                          self.n_test)
 
         with tf.Session() as sess:
             sess.run(tf.global_variables_initializer())
             coord = tf.train.Coordinator()
             threads = tf.train.start_queue_runners(coord=coord)
 
-            self.train_neural_network(sess)
-            self.test_neural_network(sess)
+            dataset_x, dataset_y = self.data_functions.load_data(self.features, self.col_y, sess)
+            train_x, train_y, test_x, test_y = self.data_functions.split_train_test(dataset_x, dataset_y)
+
+            self.logger.log_training_settings(self.model.n_nodes,
+                                              self.model.n_hidden_layers,
+                                              self.learning_rate,
+                                              self.n_epoch,
+                                              self.data_functions.split,
+                                              len(dataset_x),
+                                              len(train_x),
+                                              len(test_x))
+
+            self.train_neural_network(sess, train_x, train_y)
+            self.test_neural_network(sess, test_x, test_y)
 
             coord.request_stop()
             coord.join(threads)
 
-    def train_neural_network(self, sess):
+    def train_neural_network(self, sess, train_x, train_y):
         saver = tf.train.Saver()
-        train_x, train_y = self.get_rows(self.features, self.col_y, sess, self.n_train)
 
         for epoch in range(self.n_epoch):
             if self.load_previous_training and epoch == 0:
                 saver.restore(sess, self.model_name)
 
-            train_x, train_y  = self.shuffle_rows(train_x, train_y)
+            train_x, train_y = self.data_functions.shuffle_rows(train_x, train_y)
 
             fetches = [self.optimizer, self.cost, self.prediction]
             feed_dict = {self.x: train_x, self.y: train_y}
@@ -168,31 +111,28 @@ class TrainingSettings:
 
             saver.save(sess, self.model_name)
 
-            epoch_loss = c / self.n_train
-            actual_value = train_y
-            estimated_value = p
-            mse, mape = self.compute_mse_mape(actual_value, estimated_value)
-
-            if mape < 100:
-                accuracy = 100 - mape
-            else:
-                accuracy = 0
+            epoch_loss = c / len(train_x)
+            actual_class = train_y
+            predicted_class = p
 
             self.logger.log_epoch_cost(epoch, epoch_loss)
-            self.logger.log_actual_estimated_values(actual_value, estimated_value)
-            self.logger.log_accuracy_rmse(accuracy, mse)
+            self.logger.log_actual_predicted_values(actual_class, predicted_class)
 
-    def test_neural_network(self, sess):
-        test_x, test_y = self.get_rows(self.features, self.col_y, sess, self.n_test)
-        predicted_values = sess.run(self.prediction, feed_dict={self.x: test_x})
+    def test_neural_network(self, sess, test_x, test_y):
+        correct = tf.equal(tf.argmax(self.prediction, 1), tf.argmax(self.y, 1))
+        accuracy = tf.reduce_mean(tf.cast(correct, 'float'))
 
-        mse, mape = self.compute_mse_mape(test_y, predicted_values)
+        accuracy_value = accuracy.eval({self.x: test_x, self.y: test_y})
 
-        if mape < 100:
-            accuracy = 100 - mape
-        else:
-            accuracy = 0
+        feed_dict = {self.x: test_x, self.y: test_y}
+        p = sess.run(self.prediction, feed_dict)
+
+        num_of_correct = 0
+        for i in range(len(p)):
+            if numpy.argmax(test_y[i], axis=None) == p[i].argmax(axis=None):
+                num_of_correct += 1
 
         self.logger.log_to_file("*****TEST*****")
-        self.logger.log_actual_estimated_values(test_y, predicted_values)
-        self.logger.log_accuracy_rmse(accuracy, mse)
+        self.logger.log_actual_predicted_values(test_y, p)
+        self.logger.log_to_file(str(num_of_correct) + " correct predictions out of " + str(len(p)))
+        self.logger.log_accuracy(accuracy_value * 100)

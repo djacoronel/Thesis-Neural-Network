@@ -2,7 +2,7 @@ import tensorflow as tf
 
 
 class NeuralNetworkModel():
-    n_hidden_layers = 1
+    n_hidden_layers = 3
 
     def __init__(self, data, n_input):
         self.data = data
@@ -10,7 +10,7 @@ class NeuralNetworkModel():
 
     def use_model(self):
         self.n_nodes = self.n_input
-        n_output = 1
+        n_output = 5
         hidden_layers = []
 
         input_layer = {'weights': tf.Variable(tf.random_normal([self.n_input, self.n_nodes])),
