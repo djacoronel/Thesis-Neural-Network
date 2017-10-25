@@ -9,8 +9,8 @@ from logging_functions import LoggingFunctions
 class TrainingSettings:
     load_previous_training = False
 
-    learning_rate = 0.1
-    n_epoch = 300
+    learning_rate = 0.01
+    n_epoch = 400
 
     def __init__(self, dataset_source, model_name, variable_list, test_split):
         self.dataset_source = dataset_source
