@@ -25,6 +25,7 @@ def reg_m(y, x):
         X = sm.add_constant(np.column_stack((ele, X)))
     results = sm.OLS(y, X).fit()
 
+    #print(results.predict([1, 1, 1, 1, 1, 1, 1, 1, 1, 1]))
     return results
 
 
@@ -37,6 +38,9 @@ def print_coefficients(attribute_names, coefficients):
 
 
 def print_values(attribute_names, coefficients):
+    print("Set one of the variables to the suggested value")
+    print("to reduce risk to zero.")
+    print("************")
     for i in range(len(attribute_names)):
         print(str(attribute_names[i]) + ": " + str(coefficients[i]))
 
@@ -75,14 +79,30 @@ def compute(coefficients, inputs):
     return values
 
 
-x_list = ["YEAR", "INTENSITY", "WIND", "SIGNAL", "POP", "DR", "FLR", "HP", "HMB"]
-inputs = [1, 1, 1, 1, 1, 1, 1, 1, 1]
+def eval(coefficients, inputs):
+    sum = 0
+
+    for j in range(len(inputs)):
+        sum += coefficients[j] * inputs[j]
+
+    sum += coefficients[-1]
+
+    return sum
+
+
+x_list = ["WIND", "POP", "AI", "PR", "HP", "HMB"]
+inputs = [1, 1, 1, 1, 1, 1]
 coef = get_coefficients("Q-CAS.csv", x_list, "CASUALTIES")
 val = compute(coef, inputs)
 print_values(x_list, val)
 
-x_list = ["YEAR", "SIGNAL", "POP", "AI", "DR", "FLR", "HP", "HS", "HMA", "HMB"]
-# get_coefficients("Q-DAH.csv", x_list, "DAMAGED HOUSES")
 
-x_list = ["YEAR", "DURATION", "SIGNAL", "AI", "DR", "SR", "HP", "HS"]
-# get_coefficients("Q-DAP.csv", x_list, "DAMAGED PROPERTIES")
+x_list = ["TYPE", "DURATION", "WIND", "AI", "HMB", "HMC"]
+coef = get_coefficients("Q-DAH.csv", x_list, "DAMAGED HOUSES")
+val = compute(coef, inputs)
+print_values(x_list, val)
+
+x_list = ["WIND", "TYPE", "DURATION", "INTENSITY", "AI", "PR"]
+coef = get_coefficients("Q-DAP.csv", x_list, "DAMAGED PROPERTIES")
+val = compute(coef, inputs)
+print_values(x_list, val)
