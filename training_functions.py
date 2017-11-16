@@ -96,6 +96,8 @@ class TrainingSettings:
             coord.request_stop()
             coord.join(threads)
 
+        tf.reset_default_graph()
+
     def train_neural_network(self, sess, train_x, train_y):
         saver = tf.train.Saver()
 
@@ -103,7 +105,7 @@ class TrainingSettings:
             if self.load_previous_training and epoch == 0:
                 saver.restore(sess, self.model_name)
 
-            train_x, train_y = self.data_functions.shuffle_rows(train_x, train_y)
+            train_x, train_y = shuffle_rows(train_x, train_y)
 
             fetches = [self.optimizer, self.cost, self.prediction]
             feed_dict = {self.x: train_x, self.y: train_y}
@@ -132,7 +134,16 @@ class TrainingSettings:
             if numpy.argmax(test_y[i], axis=None) == p[i].argmax(axis=None):
                 num_of_correct += 1
 
+        variable_names, values = self.get_weights(sess)
+
         self.logger.log_to_file("*****TEST*****")
         self.logger.log_actual_predicted_values(test_y, p)
         self.logger.log_to_file(str(num_of_correct) + " correct predictions out of " + str(len(p)))
         self.logger.log_accuracy(accuracy_value * 100)
+        self.logger.log_weights(variable_names, values)
+
+    def get_weights(self,sess):
+        variables_names = [v.name for v in tf.trainable_variables()]
+        values = sess.run(variables_names)
+
+        return variables_names, values

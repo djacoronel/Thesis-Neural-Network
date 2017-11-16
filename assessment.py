@@ -25,7 +25,7 @@ def reg_m(y, x):
         X = sm.add_constant(np.column_stack((ele, X)))
     results = sm.OLS(y, X).fit()
 
-    #print(results.predict([1, 1, 1, 1, 1, 1, 1, 1, 1, 1]))
+    # print(results.predict([1, 1, 1, 1, 1, 1, 1, 1, 1, 1]))
     return results
 
 
@@ -52,11 +52,17 @@ def get_coefficients(dataset_source, predictor_list, dependent):
     data_x = [np.array(data[x]).astype(np.float).tolist() for x in predictor_list]
     data_y = (np.array(data[dependent]).astype(np.float).tolist())
 
+    from sklearn.preprocessing import normalize
+    data_x = normalize(data_x, axis=1)
+
+    from sklearn.preprocessing import scale
+    data_x = scale(data_x, axis=1)
+
     results = reg_m(data_y, data_x)
     coefficients = results.params
 
     print_coefficients(predictor_list, coefficients)
-    # print(results.summary())
+    #print(results.summary())
 
     return coefficients
 
@@ -92,17 +98,18 @@ def eval(coefficients, inputs):
 def get_suggested(dataset_source, x_list, y, inputs):
     coefficients = get_coefficients(dataset_source, x_list, y)
     suggested = compute_suggested(coefficients, inputs)
-    
+
     adjustable = ["AI", "PR", "HP", "HMB", "HMC"]
     suggestable = {}
 
     for i in range(len(x_list)):
         if (suggested[i] > 0 and x_list[i] in adjustable):
             suggestable[x_list[i]] = suggested[i]
-    
+
     return suggestable
 
-dataset_source = "Q-CAS.csv"
+
+dataset_source = "Quantile/Q-CAS.csv"
 x_list = ["WIND", "POP", "AI", "PR", "HP", "HMB"]
 y = "CASUALTIES"
 inputs = [160, 2882408, 148641, 30, 86, 267643]
@@ -110,18 +117,9 @@ inputs = [160, 2882408, 148641, 30, 86, 267643]
 suggested = get_suggested(dataset_source, x_list, y, inputs)
 print_suggested(suggested)
 
-dataset_source = "Q-DAH.csv"
-x_list = ["TYPE", "DURATION", "WIND", "AI", "HMB", "HMC"]
-y = "DAMAGED HOUSES"
-inputs = [1,1,1,1,1,1]
+inputs = [160, 2882408, 148641, 30, 86, 267643]
+coeff = get_coefficients(dataset_source,x_list,y)
 
-suggested = get_suggested(dataset_source, x_list, y, inputs)
-print_suggested(suggested)
+print("risk: " + str(eval(coeff, inputs)))
 
-dataset_source = "Q-DAP.csv"
-x_list = ["WIND", "TYPE", "DURATION", "INTENSITY", "AI", "PR"]
-y = "DAMAGED PROPERTIES"
-inputs = [1,1,1,1,1,1]
 
-suggested = get_suggested(dataset_source, x_list, y, inputs)
-print_suggested(suggested)

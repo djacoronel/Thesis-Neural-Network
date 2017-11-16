@@ -44,3 +44,10 @@ class LoggingFunctions:
     def log_variables_used(self, variable_list):
         output = "Variables used: " + " ".join(variable for variable in variable_list)
         self.log_to_file(output)
+
+    def log_weights(self, variable_names, values):
+        output = "***** NEURAL NETWORK WEIGHTS *****"
+        self.log_to_file(output)
+        for k, v in zip(variable_names, values):
+            self.log_to_file(str(k))
+            self.log_to_file(str(v) + "\n")
