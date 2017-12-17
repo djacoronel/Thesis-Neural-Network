@@ -5,11 +5,11 @@ from logging_functions import LoggingFunctions
 from data_processing_functions import DataFunctions
 
 
-class TrainingSettings:
+class NeuralNetworkTrainer:
     load_previous_training = False
 
     learning_rate = 0.001
-    n_epoch = 1
+    n_epoch = 20
 
     def __init__(self, dataset_source, model_name, variable_list, test_split):
         self.dataset_source = dataset_source
@@ -105,8 +105,6 @@ class TrainingSettings:
             if self.load_previous_training and epoch == 0:
                 saver.restore(sess, self.model_name)
 
-            train_x, train_y = shuffle_rows(train_x, train_y)
-
             fetches = [self.optimizer, self.cost, self.prediction]
             feed_dict = {self.x: train_x, self.y: train_y}
             _, c, p = sess.run(fetches, feed_dict)
@@ -140,10 +138,77 @@ class TrainingSettings:
         self.logger.log_actual_predicted_values(test_y, p)
         self.logger.log_to_file(str(num_of_correct) + " correct predictions out of " + str(len(p)))
         self.logger.log_accuracy(accuracy_value * 100)
+
+        precisions = self.compute_precision_recall(self.convert_labels(p), self.convert_labels(test_y))
+        for precision in precisions:
+            self.logger.log_to_file(precision)
+
         self.logger.log_weights(variable_names, values)
 
-    def get_weights(self,sess):
+    def get_weights(self, sess):
         variables_names = [v.name for v in tf.trainable_variables()]
         values = sess.run(variables_names)
 
         return variables_names, values
+
+    def compute_precision_recall(self, predicted_y, test_y):
+        labels = []
+        outputs = []
+
+        total_precision = 0
+        total_recall = 0
+        total_harmony = 0
+
+        for row in test_y:
+            if row not in labels:
+                labels.append(row)
+
+        for label in labels:
+            true_positive = 0
+            predicted_positive = 0
+            total_positive = 0
+
+            for i in range(len(predicted_y)):
+                if predicted_y[i] == label:
+                    predicted_positive += 1
+                    if predicted_y[i] == test_y[i]:
+                        true_positive += 1
+
+            for row in test_y:
+                if row == label:
+                    total_positive += 1
+
+            precision = 0
+            harmony = 0
+            recall = 0
+
+            if predicted_positive != 0:
+                precision = true_positive / predicted_positive
+            if total_positive != 0:
+                recall = true_positive / total_positive
+            if precision + recall != 0:
+                harmony = 2 * ((precision * recall) / (precision + recall))
+
+            total_precision += precision
+            total_recall += recall
+            total_harmony += harmony
+
+            output = "\nclass: " + str(label) + \
+                     "\n    precision: " + str(precision) + \
+                     "\n    recall: " + str(recall) + \
+                     "\n    harmonic mean: " + str(harmony)
+
+            outputs.append(output)
+
+        n_labels = len(labels)
+        average_precision = total_precision / n_labels
+        average_recall = total_recall / n_labels
+        average_harmony = total_harmony / n_labels
+
+        output = "\nAverage" + \
+                 "\n    precision: " + str(average_precision) + \
+                 "\n    recall: " + str(average_recall) + \
+                 "\n    harmonic mean: " + str(average_harmony) + "\n"
+        outputs.append(output)
+
+        return outputs

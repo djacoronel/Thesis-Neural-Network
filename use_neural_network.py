@@ -1,26 +1,22 @@
+import csv
+
 import tensorflow as tf
+import numpy as np
+import time
+
+from Iterations.neural_network_model import NeuralNetworkModel
+
+CASUALTIES_MODEL = "DWT-ARIMA-ANN/CAS/D_cas.ckpt"
+DAMAGED_HOUSES_MODEL = "DWT-ARIMA-ANN/DAH/D_dah.ckpt"
+DAMAGED_PROPERTIES_MODEL = "DWT-ARIMA-ANN/DAP/D_dap.ckpt"
 
 
-CASUALTIES_MODEL = "models/casualties_test.ckpt"
-DAMAGED_HOUSES_MODEL = "models/damagedhouses_test.ckpt"
-DAMAGED_PROPERTIES_MODEL = "models/damagedproperties_test.ckpt"
 
-DURATION = 4.0
-WIND = 105.0
-INTENSITY = 1004.9
-SIGNAL = 3.0
-DEN = 258
-
-DR = 76.0
-FLR = 75.0
-
-HS = 805
-HMB = 135829.0
-HMD = 12955.0
-
-CASUALTY = 48
-DAMAGED_HOUSES = 1283
-DAMAGED_PROPERTIES = 8392000
+def get_predicted_levels(result):
+    result_levels = []
+    for i in result:
+        result_levels.append(i.argmax(axis=None) + 1)
+    return result_levels
 
 
 def use_neural_network(x, model_name):
@@ -30,7 +26,8 @@ def use_neural_network(x, model_name):
 
     x_placeholder = tf.placeholder('float')
 
-    from neural_network_model import NeuralNetworkModel
+    x = np.array(x).astype(np.float32)
+
     model = NeuralNetworkModel(x, n_inputs)
     prediction = model.use_model()
 
@@ -40,62 +37,95 @@ def use_neural_network(x, model_name):
         saver.restore(sess, model_name)
 
         result = prediction.eval(feed_dict={x_placeholder: x})
-        return result[0][0]
+        return result
 
 
-def predict_casualties():
-    CASUALTIES_x = [[DURATION, INTENSITY, SIGNAL, DR, FLR]]
+def predict_casualties(input):
+    start_time = time.time()
+    CASUALTIES_x = input
     result = use_neural_network(CASUALTIES_x, CASUALTIES_MODEL)
-    if result < 0:
-        result = 0
-
-    print("\n*****PREDICT CASUALTIES*****")
-    print("DURATION: " + str(DURATION))
-    print("WIND: " + str(WIND))
-    print("INTENSITY: " + str(INTENSITY))
-    print("PR: " + str(DR))
-    print("FLR: " + str(FLR))
-    print("Actual casualties: " + str(CASUALTY))
-    print("Predicted casualties: " + str(result))
+    return result
 
 
-def predict_damaged_houses():
-    DAMAGED_HOUSES_x = [[DURATION, WIND, SIGNAL, DEN, FLR, HMB, HMD]]
+def predict_damaged_houses(input):
+    start_time = time.time()
+    DAMAGED_HOUSES_x = input
     result = use_neural_network(DAMAGED_HOUSES_x, DAMAGED_HOUSES_MODEL)
-    if result < 0:
-        result = 0
-
-    print("\n*****PREDICT DAMAGED HOUSES*****")
-    print("DURATION: " + str(DURATION))
-    print("WIND: " + str(WIND))
-    print("INTENSITY: " + str(INTENSITY))
-    print("SIGNAL: " + str(SIGNAL))
-    print("DEN: " + str(DEN))
-    print("FLR: " + str(FLR))
-    print("HMB: " + str(HMB))
-    print("HMD: " + str(HMD))
-    print("Actual damaged houses: " + str(DAMAGED_HOUSES))
-    print("Predicted damaged houses: " + str(result))
+    return result
 
 
-def predict_damaged_properties():
-    DAMAGED_PROPERTIES_x = [[INTENSITY, SIGNAL, DEN, DR, FLR, HMD]]
+def predict_damaged_properties(input):
+    start_time = time.time()
+    DAMAGED_PROPERTIES_x = input
     result = use_neural_network(DAMAGED_PROPERTIES_x, DAMAGED_PROPERTIES_MODEL)
-    if result < 0:
-        result = 0
+    return result
 
-    print("\n*****PREDICT DAMAGED PROPERTIES*****")
-    print("WIND: " + str(WIND))
-    print("INTENSITY: " + str(INTENSITY))
-    print("SIGNAL: " + str(SIGNAL))
-    print("DEN: " + str(DEN))
-    print("DR: " + str(DR))
-    print("FLR: " + str(FLR))
-    print("HMB: " + str(HMB))
-    print("HMD: " + str(HMD))
-    print("Actual damaged properties: " + str(DAMAGED_PROPERTIES))
-    print("Predicted damaged properties: " + str(result))
+def load_file(file_name):
+    data = []
+    with open(file_name, 'rU') as file:
+        reader = csv.reader(file)
+        next(reader)
+        for row in reader:
+            data.append(row[0:-2])
 
-predict_casualties()
-predict_damaged_houses()
-predict_damaged_properties()
+    return data
+
+def load_sug(file_name):
+    data = []
+    with open(file_name, 'rU') as file:
+        reader = csv.reader(file)
+        for row in reader:
+            data.append(row[6:])
+
+    return data
+
+def create_file(file_name, data):
+    with open(file_name, 'w') as f:
+        for row in data:
+            f.write(",".join(str(item) for item in row) + '\n')
+
+
+cas = load_file("CAS_suggested.csv")
+cas_sug = load_sug("cas_suggest.csv")
+
+#[print(row) for row in cas]
+
+newset = []
+for row,sug in zip(cas,cas_sug):
+    for i in range(len(sug)):
+        newrow = list(row)
+        newrow[2+i] = sug[i]
+        newset.append(newrow)
+
+[print(row) for row in newset]
+
+
+result = get_predicted_levels(predict_casualties(newset))
+
+sup = []
+row = []
+for i in result:
+    if len(row) == 4:
+        print(row)
+        sup.append(row)
+        row = []
+        row.append(i)
+    else:
+        row.append(i)
+sup.append(row)
+
+pred = get_predicted_levels(predict_casualties(cas))
+print( len(pred))
+print( len(sup))
+print( len(result))
+
+for i,j in zip(pred,sup):
+    print(",".join(str(item) for item in ([i]+j)))
+
+
+
+dah = load_file("DAH_suggested.csv")
+dah_sug = load_sug("dah_suggest.csv")
+
+dap = load_file("DAP_suggested.csv")
+dap_sug = load_sug("dap_suggest.csv")

@@ -29,9 +29,20 @@ def get_weights(n_input, model_location):
         return variables_names, values
 
 
-model_location = "Quantile/Q_cas.ckpt"
-variable_names, values = get_weights(9,model_location)
+def print_weights(variable_names, values):
+    for k, v in zip(variable_names, values):
+        print(str(k))
 
-for k, v in zip(variable_names, values):
-    print(str(k))
-    print(str(v) + "\n")
+        if len(v.shape) == 2:
+            for row in v:
+                print(','.join(str(x) for x in list(row)))
+        else:
+            print(','.join(str(x) for x in list(v)))
+
+        print("")
+
+
+model_location = "Iterations/models/CAS/Q-CAS-ARIMAspl0.6set1e5r1.cktp"
+variable_names, values = get_weights(4,model_location)
+print_weights(variable_names, values)
+

@@ -13,7 +13,6 @@ def load_data(dataset_source):
                     data[header].append(value)
                 except KeyError:
                     data[header] = [value]
-
     return data
 
 
@@ -25,7 +24,6 @@ def reg_m(y, x):
         X = sm.add_constant(np.column_stack((ele, X)))
     results = sm.OLS(y, X).fit()
 
-    # print(results.predict([1, 1, 1, 1, 1, 1, 1, 1, 1, 1]))
     return results
 
 
@@ -61,8 +59,8 @@ def get_coefficients(dataset_source, predictor_list, dependent):
     results = reg_m(data_y, data_x)
     coefficients = results.params
 
-    print_coefficients(predictor_list, coefficients)
-    #print(results.summary())
+    # print_coefficients(predictor_list, coefficients)
+    # print(results.summary())
 
     return coefficients
 
@@ -74,7 +72,7 @@ def compute_suggested(coefficients, inputs):
         sum = 0
 
         for j in range(len(inputs)):
-            sum += coefficients[j] * inputs[j]
+            sum += float(coefficients[j]) * float(inputs[j])
 
         sum += coefficients[-1]
         sum -= coefficients[i]
@@ -99,27 +97,74 @@ def get_suggested(dataset_source, x_list, y, inputs):
     coefficients = get_coefficients(dataset_source, x_list, y)
     suggested = compute_suggested(coefficients, inputs)
 
-    adjustable = ["AI", "PR", "HP", "HMB", "HMC"]
-    suggestable = {}
+    if y == "CASUALTIES":
+        suggested = suggested[2:]
+    elif y == "DAMAGED HOUSES":
+        suggested = suggested[3:]
+    else:
+        suggested = suggested[4:]
 
-    for i in range(len(x_list)):
-        if (suggested[i] > 0 and x_list[i] in adjustable):
-            suggestable[x_list[i]] = suggested[i]
+    suggestable = []
+
+    for sug in suggested:
+        if (sug > 0):
+            suggestable.append(sug)
+        else:
+            suggestable.append(0)
 
     return suggestable
 
 
-dataset_source = "Quantile/Q-CAS.csv"
-x_list = ["WIND", "POP", "AI", "PR", "HP", "HMB"]
-y = "CASUALTIES"
-inputs = [160, 2882408, 148641, 30, 86, 267643]
+def load_file(file_name):
+    data = []
+    with open(file_name, 'rU') as file:
+        reader = csv.reader(file)
+        next(reader)
+        for row in reader:
+            data.append(row[0:-2])
 
-suggested = get_suggested(dataset_source, x_list, y, inputs)
-print_suggested(suggested)
-
-inputs = [160, 2882408, 148641, 30, 86, 267643]
-coeff = get_coefficients(dataset_source,x_list,y)
-
-print("risk: " + str(eval(coeff, inputs)))
+    return data
 
 
+def create_file(file_name, data):
+    with open(file_name, 'w') as f:
+        for row in data:
+            f.write(",".join(str(item) for item in row) + '\n')
+
+
+# usage
+dataset_source1 = "DWTARIMA-CAS.csv"
+dataset_source2 = "DWTARIMA-DAH.csv"
+dataset_source3 = "DWTARIMA-DAP.csv"
+
+x_list1 = ["WIND", "POP", "AI", "PR", "HP", "HMB"]
+x_list2 = ["TYPE", "DURATION", "WIND", "AI", "HMB", "HMC"]
+x_list3 = ["WIND", "TYPE", "DURATION", "INTENSITY", "AI", "PR"]
+y1 = "CASUALTIES"
+y2 = "DAMAGED HOUSES"
+y3 = "DAMAGED PROPERTIES"
+
+cas = load_file("CAS_suggested.csv")
+dah = load_file("DAH_suggested.csv")
+dap = load_file("DAP_suggested.csv")
+
+newcas = []
+for row in cas:
+    suggested = get_suggested(dataset_source1, x_list1, y1, row)
+    newcas.append(row + suggested)
+
+create_file("cas_suggest.csv", newcas)
+
+newdah = []
+for row in cas:
+    suggested = get_suggested(dataset_source2, x_list2, y2, row)
+    newdah.append(row + suggested)
+
+create_file("dah_suggest.csv", newdah)
+
+newdap = []
+for row in cas:
+    suggested = get_suggested(dataset_source3, x_list3, y3, row)
+    newdap.append(row + suggested)
+
+create_file("dap_suggest.csv", newdap)

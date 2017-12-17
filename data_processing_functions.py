@@ -1,6 +1,8 @@
 import csv
 import random
 
+import numpy
+
 
 class DataFunctions:
     cas_thresholds = [[0, 9], [10, 19], [20, 31], [32, 129], [130, None]]
@@ -69,6 +71,13 @@ class DataFunctions:
         one_hot_y = [0 for n in range(5)]
         one_hot_y[y - 1] = 1
         return one_hot_y
+
+    def convert_to_labels(self, y):
+        converted_y = []
+        for row in y:
+            converted_y.append(numpy.argmax(row, axis=None) + 1)
+
+        return converted_y
 
     def shuffle_rows(self, batch_x, batch_y):
         combined = list(zip(batch_x, batch_y))
